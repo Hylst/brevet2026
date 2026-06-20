@@ -3,7 +3,7 @@
  * Source unique de vérité pour la version de l'application.
  * Mettre à jour à chaque release avant `npm run build`.
  */
-export const APP_VERSION = '1.14.0';
+export const APP_VERSION = '1.16.0';
 
 /** Format YYYY-MM-DD de la dernière release */
 export const APP_RELEASE_DATE = '2026-06-21';
@@ -19,6 +19,35 @@ export interface ChangelogEntry {
 }
 
 export const CHANGELOG: ChangelogEntry[] = [
+  {
+    version: '1.16.0',
+    date: '2026-06-21',
+    highlights: [
+      '🌿 Nouvelle fiche SVT 35 : « Exploitation des ressources naturelles » — eau douce (rareté, nappes phréatiques, pollution, stations d\'épuration), pétrole (formation fossile, raffinage, marées noires, CO₂), minerais et recyclage. 4 mini-quiz, method-box, drag-and-drop',
+      '🌱 Nouvelle fiche SVT 36 : « Nutrition et organisation des plantes » — photosynthèse, chloroplastes, chlorophylle, stomates, sève brute et élaborée, respiration végétale. 4 mini-quiz, method-box, drag-and-drop',
+      '🏃 SVT 17 enrichie : « Effort physique et Sport/santé » — message nerveux moteur, rythme cardiaque et respiratoire, respiration cellulaire (glucose+O₂→énergie), bienfaits du sport, échauffement, dangers du dopage (EPO). 4 mini-quiz, method-box, fill-in-the-blanks',
+      '👤 Profil amélioré : badges débloqués affichés en grille, barre de progression XP animée, personnalisation d\'avatar (7 styles DiceBear), formulaire repliable, statistiques niveau/série/XP/vies',
+      '📘 SVT : couverture à 100 % du programme SchoolMouv (14 chapitres)',
+    ],
+  },
+  {
+    version: '1.15.0',
+    date: '2026-06-21',
+    highlights: [
+      '📘 Nouvelle fiche : « Triangles Semblables » (Maths 19) — triangles homologues, égalité des angles, proportionnalité, lien Thalès/agrandissement',
+      '📊 Maths 08 enrichie : Quartiles (Q1, Q3) et écart interquartile, effectif cumulé croissant, 4 mini-quiz',
+      '🔗 Maths 07 enrichie : Grandeurs composées détaillées (débit, masse volumique), 3 mini-quiz',
+      '⬡ Maths 13 enrichie : Polygone régulier (angle au centre 360/n), Angles inscrits/au centre, 3 mini-quiz',
+      '🧮 Maths 05 enrichie : Systèmes d\'équations à 2 inconnues (substitution + combinaison), 3 mini-quiz',
+      '📘 Nouvelle fiche Techno 34 : « Mécanismes de transmission et transformation » — engrenages, rapport R = Z₂/Z₁, poulies/courroies, pignon-crémaillère, bielle-manivelle, came. 4 mini-quiz',
+      '🛠️ Techno 22 enrichie : OST (définition/évolution), fonction technique vs principe technique, organisation projet (Gantt), modes de représentation (croquis/schéma/plan coté), tester et valider',
+      '📐 Techno 23 enrichie : Critères de choix d\'un OST (fonctionnels, économiques, esthétiques, environnementaux, ergonomiques)',
+      '🌐 Techno 25 enrichie : Structuration des données (JSON, CSV), système d\'information (NAS, cloud, règle 3-2-1)',
+      '💻 Techno 26 enrichie : Programmation textuelle Python vs Scratch, débogage (erreur syntaxe vs logique)',
+      '🔬 Techno 29 enrichie : 4 familles de procédés de fabrication (additif, soustractif, déformation, moulage), EPI et règles de sécurité',
+      '🧹 Quiz Techno : 2 questions hors-sujet retirées, 6 nouvelles questions (mécanismes, JSON, EPI, cloud, engrenages, protocoles)',
+    ],
+  },
   {
     version: '1.14.0',
     date: '2026-06-21',

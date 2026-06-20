@@ -33,7 +33,54 @@ Un programme réagit souvent à des éléments extérieurs : on appelle cela la 
 
 <drag-and-drop-list title="Associe chaque principe de programmation" items='[ {"id": "1", "content": "Une boîte stockant une valeur", "match": "La variable"}, {"id": "2", "content": "Répéter 10 fois", "match": "La boucle"}, {"id": "3", "content": "Si... Alors...", "match": "La condition"} ]' ></drag-and-drop-list>
 
-<flashcard front="Qu'est-ce qu'une variable en informatique ?" back="C'est un espace de stockage en mémoire pour retenir une valeur qui peut changer (ex : un score de jeu) !"></flashcard>
+### 4. Programmation graphique vs textuelle
+
+On peut programmer de deux manières différentes, mais qui reposent sur les mêmes concepts :
+
+| Programmation graphique (Scratch) | Programmation textuelle (Python) |
+|:---|:---|
+| Blocs visuels à emboîter | Lignes de code écrites |
+| Pas de fautes de syntaxe possibles | Attention aux majuscules, espaces, deux-points |
+| "avancer de 10" | `turtle.forward(10)` |
+| "répéter 10 fois" | `for i in range(10):` |
+| "si ... alors ..." | `if condition:` |
+| Idéal pour débuter | Plus puissant et professionnel |
+
+<formula-box title="Comparaison Scratch ↔ Python (carré)">
+```python
+# Python avec la bibliothèque Turtle
+import turtle
+t = turtle.Turtle()
+
+for i in range(4):
+    t.forward(100)
+    t.right(90)
+
+turtle.done()
+```
+Ce programme trace un carré de 100 pixels de côté, exactement comme le ferait le bloc Scratch "Répéter 4 fois (avancer de 100, tourner à droite de 90°)".
+</formula-box>
+
+<callout type="tip" title="Astuce Python">
+En Python, l'**indentation** (les espaces au début des lignes) est cruciale ! Tout ce qui est dans la boucle `for` doit être décalé de 4 espaces. Si tu oublies, le programme ne fonctionnera pas.
+</callout>
+
+<flashcard front="Quelle est la différence entre Scratch et Python ?" back="Scratch utilise des blocs visuels qu'on emboîte (programmation graphique), alors que Python utilise du texte qu'on écrit (programmation textuelle). Python est plus puissant mais exige de respecter la syntaxe (indentation, parenthèses, deux-points)."></flashcard>
+
+### 5. Écrire, mettre au point et exécuter un programme
+
+Un programme ne fonctionne jamais du premier coup ! Savoir le **tester** et le **corriger** fait partie du travail.
+
+*   **Débogage (debugging)** : Trouver et corriger les bugs (erreurs) dans le programme.
+*   **Erreur de syntaxe** : Le langage n'est pas respecté (ex: oubli d'un deux-points en Python). Le programme ne s'exécute pas.
+*   **Erreur de logique** : Le programme s'exécute mais fait quelque chose d'autre que ce qui était prévu (ex: tourner à gauche au lieu de tourner à droite).
+*   **Tester pas à pas** : Exécuter le programme instruction par instruction pour vérifier chaque étape.
+
+<method-box title="Méthode de débogage" steps='["Lire attentivement le message d&apos;erreur (il indique souvent la ligne du problème).","Tester chaque partie du programme séparément (isoler le problème).","Ajouter des affichages temporaires pour voir la valeur des variables.","Vérifier les conditions aux limites : que se passe-t-il si la variable vaut 0 ou un nombre négatif ?"]' example="Un programme qui calcule la moyenne plante si la liste de notes est vide. La solution : ajouter une condition `if len(notes) &gt; 0:` avant de diviser."></method-box>
+
+<concept-card title="À savoir pour le Brevet" icon="GraduationCap" description="Au Brevet, on peut te demander de : 1) Compléter un programme Scratch, 2) Repérer et corriger une erreur, 3) Expliquer ce que fait un bloc d'instructions, 4) Proposer une modification." theme="primary"></concept-card>
+
+<flashcard front="Quelle est la différence entre une erreur de syntaxe et une erreur de logique ?" back="L'**erreur de syntaxe** empêche le programme de s'exécuter (le code est mal écrit). L'**erreur de logique** laisse le programme s'exécuter mais produit un mauvais résultat (l'algorithme est mal conçu)."></flashcard>
 
 ## 📝 Entraînement
 
@@ -41,4 +88,8 @@ Un programme réagit souvent à des éléments extérieurs : on appelle cela la 
 
 <mini-quiz question="Comment appelle-t-on le concept qui permet à un programme de faire un choix (ex: SI la touche Espace est pressée ALORS sauter, SINON avancer) ?" options='["Une boucle", "Une variable", "L&apos;état mémoire", "Une condition (ou Test)"]' correctAnswer="3" explanation="Les blocs 'Si... Alors... Sinon' sont des conditions. Ils permettent au programme de s'adapter à la situation."></mini-quiz>
 
-<brevet-checklist items='[ "Je sais lire un algorithme simple (en blocs type Scratch).", "Je fais la différence entre une boucle (répétition) et un test (Si... Alors...).", "Je comprends l&apos;utilité d&apos;une variable." ]'></brevet-checklist>
+<mini-quiz question="En Python, que signifie l'instruction suivante : for i in range(4):" options='["Répéter 4 fois", "Dessiner un carré", "Créer une variable i", "Tant que i &lt; 4"]' correctAnswer="0" explanation="En Python, 'for i in range(4):' est une boucle qui répète le bloc indenté 4 fois (i prend successivement les valeurs 0, 1, 2, 3)."></mini-quiz>
+
+<mini-quiz question="Un programme s'exécute mais affiche un résultat faux. De quel type d'erreur s'agit-il ?" options='["Erreur de syntaxe", "Erreur de logique", "Erreur d&apos;indentation", "Erreur réseau"]' correctAnswer="1" explanation="L'erreur de logique ne bloque pas l'exécution mais produit un résultat incorrect car l'algorithme ou sa traduction est mal conçu."></mini-quiz>
+
+<brevet-checklist items='[ "Je sais lire un algorithme simple (en blocs type Scratch).", "Je fais la différence entre une boucle (répétition) et un test (Si... Alors...).", "Je comprends l&apos;utilité d&apos;une variable.", "Je connais la différence entre Scratch (graphique) et Python (textuel).", "Je sais ce qu&apos;est le débogage et les types d&apos;erreurs." ]'></brevet-checklist>

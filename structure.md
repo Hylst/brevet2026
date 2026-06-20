@@ -1,6 +1,6 @@
 # Structure du Projet 📂
 
-Voici un aperçu de l'architecture du projet **Brevet PWA 2026 v2** (Version 1.11.2) :
+Voici un aperçu de l'architecture du projet **Brevet PWA 2026 v2** (Version 1.16.0) :
 
 ```text
 /

@@ -41,12 +41,23 @@ Les ratios sont très à la mode dans les sujets récents du Brevet. C'est une f
   front="Qu'est-ce qu'un ratio ?" 
   back="C'est une façon de comparer les quantités de deux ou plusieurs éléments. Par exemple, faire un sirop avec 1 volume de sirop pour 3 volumes d'eau signifie un ratio de 1:3." ></flashcard>
 
-### 4. Grandeurs composées : Vitesse, Masse volumique... 🏎️
+### 4. Grandeurs composées : Vitesse, masse volumique, débit... 🏎️
 
-Ce sont des formules qui mélangent deux unités différentes (comme des kilomètres ET des heures = km/h).
+Une **grandeur simple** s'exprime avec une seule unité (mètre, kilo, seconde). Une **grandeur composée** mélange deux unités.
 
-*   **Vitesse moyenne** : $v = \frac{d}{t}$ (Vitesse = Distance divisée par le Temps).
-*   **Masse volumique** : $\rho = \frac{m}{V}$ (Masse divisée par le Volume).
+<formula-box title="Les 3 formules à retenir">
+
+$$ \text{Vitesse} = \frac{\text{Distance}}{\text{Temps}} \quad (v = \frac{d}{t}) $$
+
+$$ \text{Masse volumique} = \frac{\text{Masse}}{\text{Volume}} \quad (\rho = \frac{m}{V}) $$
+
+$$ \text{Débit} = \frac{\text{Volume}}{\text{Temps}} \quad (D = \frac{V}{t}) $$
+
+</formula-box>
+
+*   **Vitesse** : km/h (ou m/s). Question typique : "Quelle distance parcourt-on en 15 min à 120 km/h ?"
+*   **Masse volumique** : g/cm³ (ou kg/m³). Sert à savoir si un objet flotte ou coule.
+*   **Débit** : L/min (ou m³/h). Utile pour une fuite d'eau ou le remplissage d'une piscine.
 
 <callout type="warning" title="Le piège classique du Brevet 🚨">
 
@@ -57,6 +68,8 @@ Pour convertir des minutes en heures décimales, divise par 60. (Ex: 15 min = 15
 </callout>
 
 <flashcard front="Comment passer des m/s aux km/h ?" back="On multiplie par 3,6 ! (Et inversement, on divise par 3,6 pour passer des km/h aux m/s)."></flashcard>
+
+<flashcard front="Un objet de masse volumique 0,8 g/cm³ flotte-t-il sur l'eau (1 g/cm³) ?" back="Oui ! Plus la masse volumique est faible, plus l'objet est léger pour sa taille. Il flotte si sa masse volumique est inférieure à celle de l'eau (1 g/cm³)."></flashcard>
 
 ## 📝 Entraînement
 
@@ -70,4 +83,10 @@ Pour convertir des minutes en heures décimales, divise par 60. (Ex: 15 min = 15
 
 <mini-quiz question="Un article à 100€ subit une hausse de 10% puis une baisse de 10%. Quel est son prix final ?" options='["100€","101€","99€","110€"]' correctAnswer="2" explanation="Attention ! 100 × 1,1 = 110. Puis 110 × 0,9 = 99€. Une hausse et une baisse du même pourcentage ne s'annulent jamais."></mini-quiz>
 
-<brevet-checklist items='[ "Je sais faire un produit en croix sans me tromper.", "Je sais appliquer une réduction de 15% en multipliant par 0,85.", "Je sais partager une somme selon un ratio (ex: 3:4).", "Je sais que 45 minutes = 0,75 heure dans un calcul de vitesse." ]'></brevet-checklist>
+<mini-quiz question="Un robinet fuit à raison de 3 litres par heure. Quel volume d'eau s'écoule en 2h30 ?" options='["6 L","7,5 L","9 L","5,5 L"]' correctAnswer="1" explanation="Débit = 3 L/h, temps = 2,5 h. Volume = D × t = 3 × 2,5 = 7,5 litres."></mini-quiz>
+
+<mini-quiz question="Un cube de 10 cm de côté pèse 800 g. Quelle est sa masse volumique ?" options='["0,8 g/cm³","80 g/cm³","8 g/cm³","800 g/cm³"]' correctAnswer="0" explanation="Volume du cube = 10 × 10 × 10 = 1000 cm³. ρ = m/V = 800 / 1000 = 0,8 g/cm³."></mini-quiz>
+
+<mini-quiz question="Je marche à 5 km/h. Combien de temps me faut-il pour parcourir 1,5 km ?" options='["30 min","18 min","20 min","45 min"]' correctAnswer="1" explanation="t = d / v = 1,5 / 5 = 0,3 h. 0,3 × 60 = 18 minutes."></mini-quiz>
+
+<brevet-checklist items='[ "Je sais faire un produit en croix sans me tromper.", "Je sais appliquer une réduction de 15% en multipliant par 0,85.", "Je sais partager une somme selon un ratio (ex: 3:4).", "Je sais que 45 minutes = 0,75 heure dans un calcul de vitesse.", "Je connais les formules : v = d/t, ρ = m/V, D = V/t.", "Je sais convertir des minutes en heures décimales (÷ 60).", "Je sais convertir des m/s en km/h (× 3,6)." ]'></brevet-checklist>

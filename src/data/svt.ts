@@ -8,15 +8,6 @@ export const svt: Subject = {
   color: 'bg-emerald-600',
   topics: [
   {
-    id: 'sciences-cm2-1',
-    category: 'SVT',
-    title: 'Le Système Solaire',
-    description: "Voyage dans l'espace pour découvrir nos planètes voisines.",
-    type: 'sheet',
-    difficulty: 1,
-    level: 'cm2'
-  },
-  {
     id: 'svt-1',
     category: 'SVT',
     title: 'Système solaire et planète Terre',
@@ -113,6 +104,24 @@ export const svt: Subject = {
     description: 'Cerveau, moelle épinière, neurones, synapses, drogues et addictions.',
     type: 'sheet',
     difficulty: 3,
+    level: '3eme'
+  },
+  {
+    id: 'svt-12',
+    category: 'SVT',
+    title: 'Exploitation des ressources naturelles',
+    description: 'Eau douce, pétrole, gaz, minerais : exploitation, pollution, gestion durable et alternatives.',
+    type: 'sheet',
+    difficulty: 2,
+    level: '3eme'
+  },
+  {
+    id: 'svt-13',
+    category: 'SVT',
+    title: 'Nutrition et organisation des plantes',
+    description: 'Photosynthèse, chloroplastes, chlorophylle, sève brute et élaborée, stomates et respiration végétale.',
+    type: 'sheet',
+    difficulty: 2,
     level: '3eme'
   },
   {

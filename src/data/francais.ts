@@ -7,15 +7,6 @@ export const francais: Subject = {
   color: 'bg-red-500',
   topics: [
     {
-      id: 'francais-6eme-1',
-      category: 'Grammaire',
-      title: 'Le groupe nominal',
-      description: 'Découvre comment fonctionne le groupe nominal (nom, déterminant, adjectif).',
-      type: 'sheet',
-      difficulty: 1,
-      level: '6eme'
-    },
-    {
       id: 'francais-1',
       category: 'Grammaire',
       title: 'Classes et Fonctions',

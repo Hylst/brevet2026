@@ -55,6 +55,22 @@ Au Brevet, on te demandera souvent de dessiner la solution.
 
 <flashcard front="Que se passe-t-il si je divise une inéquation par 3 ?" back="Rien de spécial ! 3 est positif, donc le signe de l'inéquation ne bouge pas. On ne retourne le signe QUE si on divise par un nombre négatif."></flashcard>
 
+### 4. Systèmes d'équations à 2 inconnues 🔗
+
+Un système, c'est deux équations avec **deux inconnues** (souvent $x$ et $y$). On cherche le couple $(x ; y)$ qui vérifie les **deux équations en même temps**.
+
+$$ \begin{cases} 2x + y = 7 \\ x - y = 2 \end{cases} $$
+
+2 méthodes sont possibles au Brevet :
+
+<method-box title="Méthode 1 : Par substitution" steps='["Isolet une inconnue dans une équation (ex: y = 7 - 2x).", "Remplace (substitue) dans l&apos;autre équation.", "Résous l&apos;équation à une inconnue.", "Remplace pour trouver la deuxième inconnue."]' example="Système :<br/>(1) 2x + y = 7<br/>(2) x - y = 2<br/><br/>1. De (1) : y = 7 - 2x<br/>2. Dans (2) : x - (7 - 2x) = 2<br/>3. x - 7 + 2x = 2 → 3x = 9 → x = <b>3</b><br/>4. y = 7 - 2×3 = 7 - 6 = <b>1</b><br/>Solution : (3 ; 1)"></method-box>
+
+<method-box title="Méthode 2 : Par combinaison (addition)" steps='["Multiplie les équations pour avoir le même coefficient devant x ou y.", "Ajoute ou soustrait les deux équations pour éliminer une inconnue.", "Résous l&apos;équation restante.", "Remplace pour trouver la deuxième inconnue."]' example="Même système :<br/>2x + y = 7<br/>x - y = 2<br/><br/>1. On additionne les deux : les y s&apos;annulent<br/>2. (2x + y) + (x - y) = 7 + 2<br/>3. 3x = 9 → x = <b>3</b><br/>4. 2×3 + y = 7 → y = 7 - 6 = <b>1</b><br/>Solution : (3 ; 1)"></method-box>
+
+<callout type="warning" title="Attention à la rédaction !">
+Au Brevet, pour un système, **on attend une phrase de conclusion claire** : "Les solutions du système sont $x = ...$ et $y = ...$" ou "Le couple solution est $(... ; ...)$". N'oublie surtout pas de vérifier en remplaçant dans les équations de départ !
+</callout>
+
 ## 📝 Entraînement
 
 <mini-quiz  question="Si 4x = 20, que vaut x ?"  options='["16","5","24","80"]'  correctAnswer="1"  explanation="On divise les deux côtés par 4. Donc x = 20 / 4 = 5."></mini-quiz>
@@ -73,4 +89,10 @@ Au Brevet, on te demandera souvent de dessiner la solution.
   correctAnswer="1"
   explanation="C'est la règle cruciale des inéquations : multiplier ou diviser par un nombre négatif inverse l'ordre."></mini-quiz>
 
-<brevet-checklist items='[ "Je sais résoudre une équation simple (ax + b = cx + d).", "Je connais la phrase magique pour l&apos;équation produit nul.", "Je n&apos;oublie pas de retourner le signe si je divise une inéquation par un nombre négatif.", "Je sais représenter les solutions d&apos;une inéquation sur une droite graduée." ]'></brevet-checklist>
+<mini-quiz question="Résous par substitution : { y = 2x, x + y = 9 }" options='["(3 ; 6)","(2 ; 4)","(6 ; 3)","(4 ; 8)"]' correctAnswer="0" explanation="On remplace y par 2x dans la 2ème : x + 2x = 9 → 3x = 9 → x = 3. y = 2×3 = 6. Solution : (3 ; 6)."></mini-quiz>
+
+<mini-quiz question="Quel est l'avantage de la méthode par combinaison quand les équations sont : x + y = 10 et x - y = 4 ?" options='["On peut les additionner pour éliminer y immédiatement","On doit multiplier par 2","On ne peut pas utiliser la combinaison","On doit d&apos;abord isoler x"]' correctAnswer="0" explanation="En additionnant : (x + y) + (x - y) = 10 + 4 → 2x = 14 → x = 7. Puis y = 10 - 7 = 3. Simple et rapide !"></mini-quiz>
+
+<mini-quiz question="Quel couple vérifie le système { 2x + 3y = 12, x - y = 1 } ?" options='["(3 ; 2)","(2 ; 3)","(5 ; 4)","(4 ; 5)"]' correctAnswer="0" explanation="De la 2ème : x = y + 1. Dans la 1ère : 2(y+1) + 3y = 12 → 2y + 2 + 3y = 12 → 5y = 10 → y = 2. x = 2 + 1 = 3."></mini-quiz>
+
+<brevet-checklist items='[ "Je sais résoudre une équation simple (ax + b = cx + d).", "Je connais la phrase magique pour l&apos;équation produit nul.", "Je n&apos;oublie pas de retourner le signe si je divise une inéquation par un nombre négatif.", "Je sais représenter les solutions d&apos;une inéquation sur une droite graduée.", "Je sais résoudre un système par substitution et par combinaison.", "Je n&apos;oublie pas la phrase de conclusion : Le couple solution est (... ; ...)." ]'></brevet-checklist>

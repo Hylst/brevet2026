@@ -20,6 +20,8 @@ Ce document liste l'ensemble des fonctionnalités actuellement implémentées da
   - Front Populaire (Histoire) : Schéma animé 3 panneaux (crise 1930, Accords Matignon, échec du Front Populaire).
 - **Contenu Géographie enrichi** : 12 fiches dont « La politique de la ville » (quartiers prioritaires, loi SRU, ANRU, mixité sociale, écoquartiers).
 - **Contenu Histoire enrichi** : 14 fiches — les 10 fiches originales + « La France entre-deux-guerres (1919-1939) » (hg-36) et « Les années de Gaulle (1958-1969) » (hg-37) créés en 1.11.2 pour couvrir l'intégralité du programme SchoolMouv.
+- **Contenu Technologie enrichi** : 10 fiches couvrant l'intégralité du programme SchoolMouv — Design/OST, Analyse fonctionnelle (CDCF), Chaînes info/action, Réseaux et Internet, Programmation (Scratch + Python), Matériaux, Énergie/DD, Modélisation 3D, Objets connectés IoT, et Mécanismes de transmission/transformation (engrenages, poulies, bielle-manivelle, pignon-crémaillère, came).
+- **Contenu SVT enrichi** : 13 fiches couvrant l'intégralité du programme SchoolMouv — Système Terre, Climat, Sismologie/Volcanisme, Immunité/Vaccination, Génétique, Nutrition/Digestion, Respiration/Circulation + Effort physique + Sport/santé, Reproduction, Écosystèmes, Évolution, Système nerveux, Exploitation des ressources naturelles, Nutrition des plantes.
 
 ## 2. Système d'Évaluation (Quiz)
 - **Quiz par matière** : Séries de questions à choix multiples (QCM) couvrant l'ensemble du programme.

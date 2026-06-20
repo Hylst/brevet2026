@@ -2,7 +2,41 @@
 
 Toutes les modifications notables apportées à ce projet seront documentées dans ce fichier.
 
-## [1.12.0] - 2026-06-21
+## [1.16.0] - 2026-06-21
+
+### Ajouts (Added)
+- **Nouvelle fiche SVT 35** : « Exploitation des ressources naturelles » (svt-12) — eau douce (rareté 0,02 %, nappes phréatiques, usages, pollution, stations d'épuration, gestion durable), pétrole (formation fossile, extraction, raffinage, plastiques, marées noires, alternatives), minerais et recyclage. 4 mini-quiz, method-box, drag-and-drop, fill-in-the-blanks, 5 items checklist.
+- **Nouvelle fiche SVT 36** : « Nutrition et organisation des plantes » (svt-13) — besoins nutritifs, chloroplastes et chlorophylle, photosynthèse (équation bilan 6CO₂+6H₂O+lum→C₆H₁₂O₆+6O₂), stomates, sève brute vs sève élaborée, organisation aérienne/souterraine, respiration végétale. 4 mini-quiz, method-box, drag-and-drop, fill-in-the-blanks, 5 items checklist.
+- **Profil amélioré** : badges débloqués affichés en grille (4×6, bouton Voir tout), barre de progression XP animée avec seuil niveau suivant, personnalisation d'avatar (7 styles DiceBear, randomisation), statistiques niveau/série/XP/vies en cartes, formulaire repliable « Plus d'options », emojis sur les objectifs mention.
+
+### Enrichissements (Enhanced)
+- **SVT 17 (Respiration et circulation)** : Section « Effort physique » ajoutée (message nerveux moteur, rythme cardiaque et respiratoire, respiration cellulaire glucose+O₂→énergie). Section « Sport et santé » (bienfaits cardio/respiratoires, échauffement, sédentarité, dopage/EPO). 4 mini-quiz (dont 3 nouveaux), method-box, fill-in-the-blanks, +1 item checklist.
+
+### Corrections (Fixed)
+- (aucune correction de bug dans cette version)
+
+## [1.15.0] - 2026-06-21
+
+### Ajouts (Added)
+- **Nouvelle fiche Maths** : « Triangles Semblables » (maths-23) — définition, triangles homologues, égalité des angles, proportionnalité des longueurs, lien avec Thalès et agrandissement. 3 mini-quiz, 2 flashcards, fill-in-the-blanks, method-box, 5 items checklist.
+- **Nouvelle fiche Techno** (34) : « Mécanismes de transmission et transformation » (tech-10) — engrenages, rapport de transmission R = Z₂/Z₁, réducteur/multiplicateur, poulies et courroies, pignon-crémaillère (rotation → translation), bielle-manivelle (rotation → alternatif), came/excentrique, tableau des applications quotidiennes. 4 mini-quiz, method-box avec calcul, formula-box, drag-and-drop, 2 flashcards, 5 items checklist.
+
+### Enrichissements (Enhanced)
+- **Maths 08 (Statistiques)** : Quartiles (Q1, Q3) et écart interquartile, effectif cumulé croissant, calcul et interprétation. 4 mini-quiz, method-box.
+- **Maths 07 (Proportionnalité)** : Section « Grandeurs composées » enrichie — débit (L/min, m³/h), masse volumique (kg/m³, g/L), formules et exemples. 3 mini-quiz.
+- **Maths 13 (Transformations du plan)** : Nouvelle section « Polygone régulier » (angle au centre 360/n, angle intérieur, lien Scratch). Nouvelle section « Angles inscrits et angles au centre » (propriété : angle inscrit = moitié de l'angle au centre). 4 mini-quiz, formula-box, method-box, 2 flashcards, +2 items checklist.
+- **Maths 05 (Équations)** : Nouvelle section « Systèmes d'équations à 2 inconnues » — méthode par substitution et par combinaison, exemples détaillés. 3 mini-quiz, method-box, 2 flashcards.
+- **Techno 22 (Design)** : Nouvelle section 0 « Qu'est-ce qu'un OST ? » (définition, évolution, innovation de rupture/continue, fonction technique vs principe technique). Section 3 « Organisation d'un projet » (rétroplanning, Gantt). Section 4 « Modes de représentation » (croquis, schéma, plan coté). Section 5 « Tester et valider » (conformité, résistance, usage, prototypage itératif). 3 mini-quiz, method-box, drag-and-drop, 2 flashcards, +4 items checklist.
+- **Techno 23 (Analyse fonctionnelle)** : Section 4 « Critères de choix d'un OST » (fonctionnels, économiques, esthétiques, environnementaux, ergonomiques). 1 mini-quiz, flashcard, +1 item checklist.
+- **Techno 25 (Réseaux)** : Section 4 « Structuration et traitement des données » (JSON, CSV, données structurées/non structurées). Section 5 « Système d'information et stockage » (NAS, cloud, règle 3-2-1). 2 mini-quiz, formula-box, method-box, 2 flashcards, +2 items checklist.
+- **Techno 26 (Programmation)** : Section 4 « Programmation graphique vs textuelle » (tableau Scratch/Python, exemple Python Turtle carré). Section 5 « Écrire, mettre au point et exécuter » (débogage, erreur syntaxe vs logique, méthode pas à pas). 2 mini-quiz, formula-box, method-box, concept-card, 2 flashcards, +2 items checklist.
+- **Techno 29 (Modélisation 3D)** : Section 4 « Les procédés de fabrication » (4 familles : additif, soustractif, déformation, moulage). Section 5 « Règles de sécurité » (EPI, machines, produits dangereux). 2 mini-quiz, method-box, 4 concept-cards, flashcard, +2 items checklist.
+
+### Corrections (Fixed)
+- **Quiz Techno (tech-1-quiz)** : 2 questions hors-sujet retirées (photosynthèse SVT, vaporisation Physique) remplacées par des questions Techno (impression 3D additive, pignon-crémaillère). 6 nouvelles questions ajoutées (mécanismes, JSON, EPI, bielle-manivelle, DNS, cloud).
+- **Duplicata ID maths-19** : Triangles Semblables renommé maths-24 pour éviter le conflit avec le quiz maths-19 existant.
+
+## [1.14.0] - 2026-06-21
 
 ### Ajouts (Added)
 - **Nouvelle fiche EMC** : « Tous différents mais une seule humanité » (hg-38) — identité personnelle/légale, différences et préjugés, une seule humanité (pyramide de Maslow). 3 mini-quiz, fill-in-the-blanks, 2 flashcards.

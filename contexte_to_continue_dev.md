@@ -4,41 +4,40 @@ Ce fichier est destiné au nouvel agent IA pour lui fournir tout le contexte né
 
 ## 🎯 Résumé de l'Application
 - **Application** : Une PWA de révisions du brevet (Maths, Français, Histoire-Géo, Sciences).
-- **Stack** : React (Vite), TypeScript, Tailwind CSS, `react-markdown` pour le rendu du contenu, `framer-motion` (importe via `motion/react`) pour les animations, `lucide-react` pour les icônes.
+- **Stack** : React 19, Vite 6, TypeScript 5, Tailwind CSS v4, `react-markdown` + `rehype-raw` + `rehype-katex` pour le rendu, `framer-motion` (importe via `motion/react`), `lucide-react`.
 - **Architecture Contenu** : Les cours sont rédigés en Markdown (`src/content/**/*.md`) et chargés via `import.meta.glob`. `react-markdown` + `rehype-raw` convertissent les balises HTML personnalisées (ex: `<callout>`, `<mini-quiz>`, `<concept-card>`) en composants React réutilisables.
-- **Version actuelle** : `1.11.0` (2026-06-20)
+- **Version actuelle** : `1.16.0` (2026-06-21)
 
-## ✅ Derniers Bugs Corrigés (v1.11.0)
+## ✅ Dernières Sessions (v1.15.0 → v1.16.0)
 
-### Accessibilité & Robustesse
-- **aria-label** ajouté sur les 3 boutons d'icône de QuizSession
-- **console.error** ajouté dans les 7 catches vides des JSON.parse (LessonContent.tsx)
-- **13 promesses non gérées** sécurisées : `.catch()` sur tous les `import(...).then()` et `getRegistration()`
-- **canvas-confetti** uniformisé : import statique partout, fin des dynamic imports
+### SVT — Couverture complète SchoolMouv (v1.16.0)
+- **Nouvelle fiche 35** : Exploitation des ressources naturelles (eau, pétrole, minerais)
+- **Nouvelle fiche 36** : Nutrition et organisation des plantes (photosynthèse, sève brute/élaborée)
+- **Fiche 17 enrichie** : Effort physique (message nerveux moteur, rythme cardiaque, respiration cellulaire) + Sport/santé (bienfaits, échauffement, dopage/EPO)
+- **Topics svt-12 et svt-13 ajoutés** dans src/data/svt.ts
 
-### Nettoyage de code
-- **6 dead imports retirés** : TrendingUp/Sparkles/Tooltip (Dashboard), Zap (QuizSession), BookOpen (Login), useUserStore (SubjectDetail)
-- **ChainesInfoActionSVG** supprimé : import, mapping et hasBlock — jamais utilisé dans les .md
-- **text-white → text-foreground** sur 3 titres sur fond uni (h1 markdown, titre matières, titre carte)
+### Profil amélioré (v1.16.0)
+- **Badges** : grille des badges débloqués avec compteur, bouton Voir tout
+- **XP** : barre de progression animée avec seuil du niveau suivant
+- **Avatar** : 7 styles DiceBear avec randomisation au clic
+- **Formulaire** : champs optionnels repliables, emojis sur objectifs mention
+- **Stats** : 4 cartes niveau/série/XP/vies
 
-### Précédents (v1.9.2)
+### Maths — Lacunes SchoolMouv comblées (v1.15.0)
+- **Nouvelle fiche** : Triangles Semblables (19-triangles-semblables.md, id maths-24)
+- **Statistiques enrichies** : Quartiles Q1/Q3, écart interquartile, effectif cumulé croissant
+- **Proportionnalité enrichie** : Grandeurs composées (débit, masse volumique)
+- **Transformations enrichies** : Polygone régulier (angle au centre 360/n), angles inscrits/au centre
+- **Équations enrichies** : Systèmes à 2 inconnues (substitution + combinaison)
 
-### Chapitre 28 — L'énergie et le développement durable
-**Problème** : Plusieurs composants n'apparaissaient pas à l'écran (SVG interactif, callout "Le saviez-vous ?", concept-card, FAQ).
-
-**Causes et corrections** :
-1. **Entités HTML non échappées** dans les attributs des balises `<callout>` et `<faq-item>` (`&apos;`, `&quot;`, `&rarr;`) — rehype-raw échouait silencieusement à parser ces nœuds.
-2. **Erreur TypeScript** dans le mapping `summary` — `children` n'était pas destructuré, provoquant un crash silencieux du rendu.
-3. **FAQ** : passage d'une structure `<details>/<summary>` brute (mal gérée par rehype-raw) à des `<faq-item>` personnalisés.
-
-**Fichiers modifiés** :
-- `src/content/cycle-4/sciences/3eme/chapters/28-lenergie-et-le-developpement-durable.md` — remplacement des entités HTML par leurs équivalents Unicode
-- `src/components/LessonContent.tsx` — correction du mapping `summary` + ajout des balises manquantes dans la liste `hasBlock`
-
-### Mini-quiz JSON
-**Problème** : Les options des mini-quiz dans 4 fiches Sciences contenaient des apostrophes non échappées (`'` au lieu de `&apos;`), cassant le parseur JSON et rendant les quiz invisibles.
-
-**Fichiers corrigés** (chap. 9, 19, 20, 29).
+### Technologie — Couverture complète SchoolMouv (v1.15.0)
+- **Nouvelle fiche 34** : Mécanismes de transmission et transformation (engrenages, poulies, pignon-crémaillère, bielle-manivelle, came)
+- **Fiche 22 enrichie** : OST (définition, évolution), organisation projet (Gantt), modes de représentation (croquis, schéma, plan coté), tester/valider
+- **Fiche 23 enrichie** : Critères de choix d'un OST
+- **Fiche 25 enrichie** : Structuration données (JSON, CSV), stockage (NAS, cloud, règle 3-2-1)
+- **Fiche 26 enrichie** : Python vs Scratch, débogage
+- **Fiche 29 enrichie** : 4 familles de procédés, EPI/sécurité
+- **Quiz HS fix** : 2 questions SVT/Physique retirées, 6 nouvelles questions Techno
 
 ## 🐛 Problèmes Connus (À Surveiller)
 

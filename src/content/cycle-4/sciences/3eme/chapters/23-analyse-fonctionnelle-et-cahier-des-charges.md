@@ -28,8 +28,24 @@ Toutes ces fonctions (principale et contraintes) sont regroupées dans un docume
 
 <flashcard front="Que signifie l'acronyme C.D.C.F ?" back="le Cahier Des Charges Fonctionnel. C'est le contrat qui répertorie toutes les fonctions de l'objet avec leurs niveaux d'exigences exacts !"></flashcard>
 
+### 4. Critères de choix d'un OST
+
+Quand on choisit un objet technique (ou qu'on le conçoit), on évalue plusieurs **critères** :
+
+*   **Critères fonctionnels** : L'objet remplit-il bien sa fonction principale ?
+*   **Critères économiques** : Son coût d'achat, d'utilisation et d'entretien est-il acceptable ?
+*   **Critères esthétiques** : Son apparence plaît-elle aux utilisateurs ?
+*   **Critères environnementaux** : Son impact écologique (fabrication, utilisation, recyclage) est-il limité ?
+*   **Critères ergonomiques** : Est-il confortable et facile à utiliser ?
+
+<concept-card title="Classification des critères" icon="ListChecks" description="Un même critère peut être à la fois une contrainte (le cahier des charges l'impose) et un choix utilisateur (le client le compare avec d'autres produits)." theme="info"></concept-card>
+
+<flashcard front="Cite deux critères de choix d&apos;un OST autres que son prix." back="Critère fonctionnel (remplit-il son rôle ?), critère esthétique (son design plaît-il ?), critère environnemental (est-il recyclable ?), ou critère ergonomique (est-il confortable ?)."></flashcard>
+
 ## 📝 Entraînement
 
 <mini-quiz question="Quel outil représente les fonctions principales et les contraintes d'un objet sous forme de tentacules ?" options='["La bête à cornes","Le diagramme pieuvre","Le diagramme FAST","Le cahier des charges"]' correctAnswer="1" explanation="Le diagramme des interactions, familièrement appelé 'Pieuvre', relie le produit à son environnement par des fonctions principales et des contraintes."></mini-quiz>
 
-<brevet-checklist items='[ "Je sais poser les 3 questions du besoin (Bête à cornes).", "Je sais différencier fonction d&apos;usage et fonction contrainte.", "Je sais lire un diagramme pieuvre." ]'></brevet-checklist>
+<mini-quiz question="Quel critère de choix évalue si un objet est facile et confortable à utiliser ?" options='["Critère esthétique","Critère économique","Critère ergonomique","Critère fonctionnel"]' correctAnswer="2" explanation="L'ergonomie étudie l'adaptation d'un produit aux capacités et aux limites du corps humain (confort, facilité d'utilisation)."></mini-quiz>
+
+<brevet-checklist items='[ "Je sais poser les 3 questions du besoin (Bête à cornes).", "Je sais différencier fonction d&apos;usage et fonction contrainte.", "Je sais lire un diagramme pieuvre.", "Je connais les critères de choix d&apos;un OST." ]'></brevet-checklist>

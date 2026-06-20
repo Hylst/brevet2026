@@ -16,24 +16,6 @@ export const maths: Subject = {
       level: '3eme'
     },
     {
-      id: 'maths-cm1-1',
-      category: 'Nombres et calculs',
-      title: 'Les grands nombres',
-      description: 'Lire, écrire et décomposer les nombres jusqu\'au million.',
-      type: 'sheet',
-      difficulty: 1,
-      level: 'cm1'
-    },
-    {
-      id: 'maths-4eme-1',
-      category: 'Nombres et calculs',
-      title: 'Introduction aux Fractions',
-      description: 'Additionner, soustraire et multiplier des fractions simples.',
-      type: 'sheet',
-      difficulty: 1,
-      level: '4eme'
-    },
-    {
       id: 'maths-2',
       category: 'Nombres et calculs',
       title: 'Fractions et Nombres relatifs',
@@ -177,6 +159,14 @@ export const maths: Subject = {
       category: 'Géométrie',
       title: 'Agrandissement et Réduction',
       description: 'Impact du rapport k sur les longueurs, aires et volumes.',
+      type: 'sheet',
+      difficulty: 2,
+    },
+    {
+      id: 'maths-24',
+      category: 'Géométrie',
+      title: 'Triangles Semblables',
+      description: 'Angles homologues, proportionnalité des côtés et lien avec Thalès.',
       type: 'sheet',
       difficulty: 2,
     },

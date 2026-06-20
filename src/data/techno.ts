@@ -89,10 +89,19 @@ export const techno: Subject = {
     level: '3eme'
   },
   {
+    id: 'tech-10-mecanismes',
+    category: 'Technologie',
+    title: 'Mécanismes de transmission et transformation',
+    description: 'Engrenages, poulies, bielle-manivelle, pignon-crémaillère et rapports de transmission.',
+    type: 'sheet',
+    difficulty: 2,
+    level: '3eme'
+  },
+  {
     id: 'tech-1-quiz',
     category: 'Technologie',
-    title: 'Quiz : Systèmes et réseaux',
-    description: 'Teste tes connaissances en technologie.',
+    title: 'Quiz : Technologie (tout le programme)',
+    description: 'Teste tes connaissances en technologie : chaînes info/action, réseaux, matériaux, mécanismes, programmation, fabrication.',
     type: 'quiz',
     difficulty: 1,
     questions: [
@@ -160,29 +169,17 @@ export const techno: Subject = {
       },
       {
         id: 's5q7',
-        text: 'Dans quel organe se déroule la photosynthèse ?',
-        options: [ 'La racine', 'La fleur', 'La feuille', 'Le tronc' ],
-        correctAnswer: 2,
-        explanation: 'La photosynthèse a lieu dans les chloroplastes des cellules des feuilles, en présence de lumière.'
+        text: 'Quel procédé de fabrication ajoute de la matière couche par couche ?',
+        options: [ 'Le fraisage', 'L\'impression 3D', 'La découpe laser', 'L\'emboutissage' ],
+        correctAnswer: 1,
+        explanation: 'L\'impression 3D est un procédé de fabrication additive : elle construit l\'objet en empilant des couches successives de matière (plastique fondu, résine, poudre).'
       },
       {
         id: 's5q8',
-        text: "Quelle est la principale source d'énergie d'un panneau solaire ?",
-        options: [ 'Le vent', 'Le soleil', 'La chaleur du sol', "L'eau" ],
+        text: 'Quel mécanisme transforme un mouvement de rotation en mouvement de translation ?',
+        options: [ 'Un engrenage', 'Un système pignon-crémaillère', 'Une poulie', 'Un système bielle-manivelle' ],
         correctAnswer: 1,
-        explanation: 'Les panneaux photovoltaïques transforment le rayonnement solaire en électricité.'
-      },
-      {
-        id: 's5q9',
-        text: "Comment appelle-t-on le passage de l'état liquide à l'état gazeux ?",
-        options: [
-          'La fusion',
-          'La solidification',
-          'La vaporisation',
-          'La condensation'
-        ],
-        correctAnswer: 2,
-        explanation: "La vaporisation est le passage de l'état liquide à l'état gazeux (ex: l'eau qui bout)."
+        explanation: 'Le pignon-crémaillère transforme la rotation du pignon (roue dentée) en translation rectiligne de la crémaillère (barre dentée).'
       },
       {
         id: 's5q10',
@@ -218,6 +215,48 @@ export const techno: Subject = {
         options: [ 'À éteindre l\'ordinateur en cas de surchauffe', 'À détruire les ondes Wi-Fi nocives', 'À surveiller et bloquer les échanges suspects pour protéger le réseau', 'À accélérer la connexion internet' ],
         correctAnswer: 2,
         explanation: 'Le pare-feu analyse les données (les paquets) qui entrent et qui sortent du réseau et bloque celles qui ne respectent pas les règles de sécurité afin de se protéger des pirates.'
+      },
+      {
+        id: 's5q15',
+        text: 'Un pignon de 20 dents entraîne une roue de 60 dents. Quel est le rapport de transmission ?',
+        options: [ '3', '0,33', '20', '60' ],
+        correctAnswer: 0,
+        explanation: 'R = Z2 / Z1 = 60 / 20 = 3. C\'est un réducteur : la roue menée tourne 3 fois moins vite mais avec 3 fois plus de force.'
+      },
+      {
+        id: 's5q16',
+        text: 'Dans quel format de données organise-t-on l\'information en paires clé-valeur pour les échanges entre applications ?',
+        options: [ 'CSV', 'JSON', 'PDF', 'HTML' ],
+        correctAnswer: 1,
+        explanation: 'Le JSON (JavaScript Object Notation) organise les données en couples clé-valeur : {"nom": "Dupont"}. C\'est le format standard des API web.'
+      },
+      {
+        id: 's5q17',
+        text: 'Que signifie l\'acronyme EPI en sécurité au travail ?',
+        options: [ 'Équipement de Protection Individuelle', 'Évaluation des Performances Industrielles', 'Énergie Potentielle Initiale', 'Engrenage Principal Inverse' ],
+        correctAnswer: 0,
+        explanation: 'Les EPI sont les équipements que le travailleur porte pour se protéger : gants, lunettes, casque, chaussures de sécurité, etc.'
+      },
+      {
+        id: 's5q18',
+        text: 'Dans un système bielle-manivelle, quel mouvement subit le piston ?',
+        options: [ 'Une rotation continue', 'Une translation rectiligne alternative (va-et-vient)', 'Une translation circulaire', 'Une oscillation' ],
+        correctAnswer: 1,
+        explanation: 'Le piston effectue un mouvement de va-et-vient rectiligne (mouvement alternatif) qui est transformé en rotation par la bielle et le vilebrequin.'
+      },
+      {
+        id: 's5q19',
+        text: 'Quel équipement réseau joue le rôle d\'annuaire en traduisant les noms de domaine en adresses IP ?',
+        options: [ 'Le routeur', 'Le serveur DNS', 'Le commutateur (switch)', 'Le pare-feu' ],
+        correctAnswer: 1,
+        explanation: 'Le serveur DNS (Domain Name System) agit comme un annuaire : il traduit les noms lisibles (google.fr) en adresses IP compréhensibles par les machines.'
+      },
+      {
+        id: 's5q20',
+        text: 'Qu\'est-ce que le cloud computing ?',
+        options: [ 'Un service météo en ligne', 'Du stockage et des services informatiques accessibles via Internet', 'Un nouveau type de câble réseau', 'Une imprimante sans fil' ],
+        correctAnswer: 1,
+        explanation: 'Le cloud (informatique en nuage) permet d\'accéder à des ressources (stockage, calcul, logiciels) via Internet, sans posséder l\'infrastructure physique.'
       }
     ]
   }

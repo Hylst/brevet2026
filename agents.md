@@ -64,28 +64,47 @@ import { motion } from 'framer-motion';
 - Passer par `src/services/storageService.ts` (pour la progression) ou `src/services/exportService.ts`.
 - La gamification passe par `useGamificationStore` (Zustand persist).
 
-## 🐛 Bugs corrigés récemment (v1.11.0)
-1. **BUG-A : `faq-item question=` au lieu de `title=`** : 15 occurrences dans 5 fichiers (sciences chap. 11, 12, 13 ; HG chap. 22, 23). L'attribut `question=` rendait `{title}` undefined → en-tête FAQ vide.
-2. **BUG-B : Trailing `&apos;` dans `method-box steps`** : 7 occurrences dans 5 fichiers français (chap. 18, 23, 24, 26, 27). Le `&apos;` après le `]` du JSON cassait `JSON.parse` silencieusement → tableau steps vide.
-3. **Dead entries dans `hasBlock`** : `systeme-solaire-svg`, `experience-lumiere-svg` supprimées (jamais utilisées dans les .md).
-4. **`periurbanisation-svg` manquant dans `hasBlock`** : ajouté pour éviter l'hydration error par wrapping `<p>`.
-5. **(v1.9.2) Chapter 28** : entités HTML (`&apos;`, `&quot;`, `&rarr;`) dans les attributs `<callout>` et `<faq-item>` cassaient rehype-raw.
-6. **(v1.9.2) LessonContent.tsx** : erreur TS sur `summary` — `children` n'était pas destructuré.
-7. **(v1.9.2) Mini-quiz JSON** : apostrophes non échappées dans `options='[…]'` dans 4 fichiers sciences (chap. 9, 19, 20, 29).
-8. **Promesses non gérées** : 13 `.catch()` ajoutés sur des `import(...).then()` et `getRegistration()` — élimination des unhandled promise rejections.
-9. **`ChainesInfoActionSVG` mort** : import, mapping et `hasBlock` retirés — jamais utilisé dans les fiches `.md`.
-10. **Imports inutilisés** : `TrendingUp`/`Sparkles`/`Tooltip` (Dashboard), `Zap` (QuizSession), `BookOpen` (Login), `useUserStore` (SubjectDetail) retirés.
+## 📘 Contenu SVT enrichi (v1.16.0)
+- **Nouvelle fiche 35** : « Exploitation des ressources naturelles » (svt-12) — eau douce (rareté, nappes, pollution, épuration), pétrole (formation fossile, raffinage, marées noires, CO₂), minerais/recyclage. 4 mini-quiz, method-box, drag-and-drop.
+- **Nouvelle fiche 36** : « Nutrition et organisation des plantes » (svt-13) — photosynthèse (6CO₂+6H₂O→C₆H₁₂O₆+6O₂), chloroplastes, stomates, sève brute vs élaborée, respiration végétale. 4 mini-quiz, method-box, drag-and-drop.
+- **Fiche 17 enrichie** : Effort physique (message nerveux moteur, rythme cardiaque/respiratoire, respiration cellulaire). Sport/santé (bienfaits, échauffement, dopage/EPO). 4 mini-quiz, method-box, fill-in-the-blanks.
+- **Profil amélioré** : badges en grille, barre XP animée, avatar DiceBear (7 styles), formulaire repliable, 4 cartes stats.
+- Couverture SchoolMouv SVT 100% (14 chapitres).
 
-## 🆕 Fonctionnalités ajoutées récemment
-- `src/services/exportService.ts` — export/import JSON versionné de toutes les données
-- `src/version.ts` — `APP_VERSION`, `CHANGELOG` (modal "Nouveautés")  
-- `src/hooks/useUpdateDetection.ts` — détection SW en attente + détection de nouvelle version
-- `src/pages/Settings.tsx` refonte — section « Mes Données » (export/import) + modal changelog + bandeau SW
-- `src/App.tsx` — toast flottant global quand un nouveau SW est en attente
-- `♿ Accessibilité` — aria-label sur les 3 boutons d'icône de QuizSession
-- `📝 Robustesse` — logs console.error dans les 7 catches vides des JSON.parse
-- `🔒 Sécurité promesses` — 13 `.catch()` sur les import() et getRegistration()
-- `♻️ Ménage` — 6 dead imports retirés, canvas-confetti uniformisé, ChainesInfoActionSVG mort supprimé
+## 📘 Contenu Techno enrichi (v1.15.0)
+- **Nouvelle fiche 34** : « Mécanismes de transmission et transformation » — engrenages (rapport R = Z₂/Z₁), poulies/courroies, pignon-crémaillère, bielle-manivelle, came/excentrique. 4 mini-quiz, formula-box, method-box.
+- **Fiche 22 enrichie** : OST (définition, évolution, fonction technique vs principe technique), organisation projet (Gantt, rétroplanning), modes de représentation (croquis, schéma, plan coté), tester/valider (vérification vs validation).
+- **Fiche 23 enrichie** : Critères de choix d'un OST (fonctionnels, économiques, esthétiques, environnementaux, ergonomiques).
+- **Fiche 25 enrichie** : Structuration données (JSON, CSV), stockage (NAS, cloud, règle 3-2-1).
+- **Fiche 26 enrichie** : Programmation textuelle Python vs Scratch graphique, débogage (syntaxe vs logique).
+- **Fiche 29 enrichie** : 4 familles de procédés de fabrication (additif, soustractif, déformation, moulage), EPI et règles de sécurité.
+- **Quiz Techno** : 2 questions HS retirées, 6 nouvelles questions.
+
+## 📘 Contenu Maths enrichi (v1.15.0)
+- **Nouvelle fiche 19** : « Triangles Semblables » (id: maths-24) — rapport de proportionnalité, lien Thalès.
+- **Fiche 08 enrichie** : Quartiles Q1/Q3, écart interquartile, effectif cumulé croissant.
+- **Fiche 07 enrichie** : Grandeurs composées (débit, masse volumique).
+- **Fiche 13 enrichie** : Polygone régulier (angle au centre 360/n), angles inscrits = moitié angle au centre.
+- **Fiche 05 enrichie** : Systèmes d'équations à 2 inconnues (substitution + combinaison).
+
+## 🐛 Bugs corrigés récents (v1.15.0)
+1. **Quiz Techno HS** : 2 questions SVT/Physique retirées du quiz Techno, remplacées par des questions Techno.
+2. **ID maths-19 dupliqué** : Triangles Semblables renommé maths-24 (conflit avec quiz existant).
+3. **(v1.14.0) 4 nouvelles fiches Français** : Poésie, Conjonctive, Étymologie, Types de textes + enrichissements de 8 fiches FR.
+4. **(v1.11.0) BUG-A : `faq-item question=` au lieu de `title=`** : 15 occurrences dans 5 fichiers.
+5. **(v1.11.0) BUG-B : Trailing `&apos;` dans `method-box steps`** : 7 occurrences dans 5 fichiers français.
+6. **(v1.11.0) Dead entries dans `hasBlock`** + **periurbanisation-svg** manquant.
+7. **(v1.9.2) Chapter 28** : entités HTML dans attributs, erreur TS `summary`, mini-quiz JSON.
+8. **Promesses non gérées** : 13 `.catch()` ajoutés.
+9. **Ménage** : 6 dead imports, ChainesInfoActionSVG mort, canvas-confetti uniformisé.
+
+## 🆕 Fonctionnalités clés
+- **Fiches Md interactives** : callout, concept-card, mini-quiz, flashcard, fill-in-the-blanks, drag-and-drop, method-box, formula-box, brevet-checklist, faq-item, brevet-exercise
+- **SVG interactifs** : 40+ composants animés Thalès, cycle eau, digestion, etc.
+- **Zustand persist** : gamification, progression, streaks, badges, niveaux
+- **PWA offline** : précache Service Worker, installation mobile
+- **Export/Import JSON** : sauvegarde versionnée des données (Settings)
+- **Détection mise à jour** : toast de nouveau SW disponible
 
 ## 🚀 Commandes
 ```bash

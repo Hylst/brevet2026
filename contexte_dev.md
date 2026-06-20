@@ -2,29 +2,22 @@
 
 Ce fichier a pour but de préserver le contexte de l'état actuel de **Brevet PWA 2026** pour aider les assistants IA et les développeurs à s'y retrouver instantanément dans le cycle de vie du projet.
 
-## État Actuel (version 1.11.0)
-L'application est fonctionnelle et prête pour la production. Nous venons de terminer une passe de robustesse, accessibilité et nettoyage de code :
-- **L'intégration du Feedback utilisateur** : Utilisation de Web3Forms pour l'envoi de rapports de bug et de suggestions depuis le frontend sans serveur Node.js. Une note à propos de l'injection statique de `VITE_WEB3FORMS_ACCESS_KEY` a été ajoutée.
-- **L'interactivité des cours Markdown** : Plus de 120 fiches markdown ont été retravaillées pour inclure des `fill-in-the-blanks`, `concept-card`, `mini-quiz`.
-- **L'interopérabilité navigateurs** (Spécifiquement autour des politiques d'autoplay bloquant `AudioContext`). L'audio n'est à présent relâché qu'après le premier geste (click/touch).
-- **Le système de gamification / streaks** qui accusait des défauts de calcul de temps liés aux décalages horaires UTC vs Local. L'historique d'activité journalité se compare aujourd'hui correctement en `YYYY-MM-DD`.
-- **L'ergonomie des parcours** : La mascotte gère de manière précise la moindre sous-matière (SVT, Physique, Tech, Histoire, Géo, EMC, Maths, Français) plutôt qu'un englobant. Le levelling restaure tous les coeurs.
-- **La sémantique des données** : Renommage de la partie "La planète Terre" en "Sciences et Vie de la Terre" pour coller au véritable diplôme.
-
-## Architecture & Conventions (Rappels rapides)
-- **Local-first** : Toute donnée est gérée en local (`localStorage` via Zustand). Les services exposent souvent des promesses (`async/await`) pour anticiper une migration vers le cloud (Firebase ou API custom).
-- **Composants d'UI** : On garde des composants épurés avec `TailwindCSS` et `Framer-Motion`. Ne **jamais** utiliser inline `style={}` si on peut utiliser une utility class Tailwind.
-- **Design Pédagogique** : Tout le contenu source est géré en Markdown. Des injecteurs permettent de parser les balises HTML spécifiques (ex: `<concept-card>`) pour rendre des composants React complets par dessus l'AST.
-
-## Prochaines Étapes
-- Surveiller la présence persistante d'erreurs éventuelles dans les logs côté iframe (liées à `iframe/worker` restrictions ou CSP dans l'environnement AI Studio).
-- Permettre à terme d'exporter sa progression XP via un fichier JSON (déjà implémenté dans Settings via exportService.ts).
-- Enrichir les 134 fiches sans "# Le saviez-vous ?" signalées par `check-missing-blocks.js`.
+## État Actuel (version 1.16.0)
+L'application est fonctionnelle et prête pour la production. Dernière session : enrichissement SVT couvrant 100% du programme SchoolMouv + amélioration du Profil utilisateur.
+- **SVT** : Couverture à 100% du programme SchoolMouv (14 chapitres) — nouvelles fiches Exploitation ressources naturelles (35) et Nutrition plantes (36), fiche 17 enrichie Effort physique + Sport/santé.
+- **Maths** : Toutes les lacunes SchoolMouv comblées — Triangles Semblables, quartiles/ECC, grandeurs composées, polygone régulier + angles inscrits, systèmes d'équations 2 inconnues.
+- **Technologie** : Couverture à 100% du programme SchoolMouv — nouvelle fiche Mécanismes (34), nouveaux contenus dans 6 fiches existantes (OST, critères de choix, JSON/NAS, Python, procédés fabrication, EPI sécurité).
+- **Français** (v1.14.0) : 4 nouvelles fiches (Poésie, Conjonctive, Étymologie, Types de textes) + enrichissement de 8 fiches.
+- **Profil amélioré** : Affichage des badges débloqués en grille, barre de progression XP animée, personnalisation d'avatar (7 styles DiceBear), formulaire repliable, statistiques en 4 cartes.
+- **Interopérabilité navigateurs** : Audio débloqué après premier geste utilisateur.
+- **Gamification / streaks** : Calcul correct en YYYY-MM-DD local.
+- **Mascotte** : Gestion fine de chaque sous-matière (SVT, Physique, Tech, Histoire, Géo, EMC, Maths, Français).
 
 ## Stack Technique
-- React 18, Vite.js
-- Zustand
-- Tailwind CSS
-- framer-motion
-- react-markdown
-- lucide-react
+- React 19, Vite 6, TypeScript 5
+- Zustand (persist)
+- Tailwind CSS v4 (variables CSS)
+- `framer-motion` (import via `motion/react`)
+- `react-markdown` + `rehype-raw` + `rehype-katex`
+- `lucide-react` pour les icônes
+- `vite-plugin-pwa` (Service Worker)
