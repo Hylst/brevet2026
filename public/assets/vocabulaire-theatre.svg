@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Le Vocabulaire du Théâtre</text>
+
+  <!-- Stage -->
+  <path d="M 100 350 L 700 350 L 650 250 L 150 250 Z" fill="#b45309" stroke="#78350f" stroke-width="4" />
+  
+  <rect x="180" y="100" width="40" height="150" fill="#991b1b" />
+  <rect x="580" y="100" width="40" height="150" fill="#991b1b" />
+  <rect x="180" y="60" width="440" height="40" fill="#991b1b" />
+
+  <!-- Didascalies -->
+  <rect x="250" y="120" width="300" height="60" fill="#1e293b" opacity="0.9" rx="8" stroke="#3b82f6" stroke-width="2" />
+  <text x="400" y="145" font-family="sans-serif" font-size="16" fill="#3b82f6" font-weight="bold" text-anchor="middle">Les Didascalies</text>
+  <text x="400" y="165" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">Indications scéniques (en italique). Non prononcées.</text>
+
+  <!-- Characters speaking -->
+  <!-- Monologue -->
+  <circle cx="280" cy="280" r="15" fill="#f59e0b" />
+  <path d="M 265 320 Q 280 280 295 320 Z" fill="#f59e0b" />
+  
+  <rect x="50" y="180" width="150" height="50" fill="#334155" rx="8" />
+  <text x="125" y="200" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold" text-anchor="middle">Monologue</text>
+  <text x="125" y="215" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Seul en scène</text>
+  <path d="M 125 230 L 260 270" stroke="#f8fafc" stroke-width="2" stroke-dasharray="4 4" fill="none" />
+
+  <!-- Tirade vs Réplique -->
+  <circle cx="450" cy="300" r="15" fill="#10b981" />
+  <path d="M 435 350 Q 450 300 465 350 Z" fill="#10b981" />
+
+  <circle cx="550" cy="300" r="15" fill="#ef4444" />
+  <path d="M 535 350 Q 550 300 565 350 Z" fill="#ef4444" />
+  
+  <rect x="350" y="190" width="160" height="50" fill="#334155" rx="8" />
+  <text x="430" y="210" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold" text-anchor="middle">Tirade</text>
+  <text x="430" y="225" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Longue prise de parole</text>
+  <path d="M 430 240 L 450 280" stroke="#f8fafc" stroke-width="2" stroke-dasharray="4 4" fill="none" />
+
+  <!-- Aparté -->
+  <rect x="620" y="180" width="150" height="50" fill="#334155" rx="8" />
+  <text x="695" y="200" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold" text-anchor="middle">Aparté</text>
+  <text x="695" y="215" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Pense à voix haute (public)</text>
+  <path d="M 695 230 L 560 280" stroke="#f8fafc" stroke-width="2" stroke-dasharray="4 4" fill="none" />
+
+  <!-- Acte / Scène -->
+  <rect x="50" y="60" width="120" height="60" fill="#1e293b" stroke="#cbd5e1" stroke-width="2" rx="4" />
+  <text x="110" y="80" font-family="sans-serif" font-size="12" fill="#f8fafc" font-weight="bold" text-anchor="middle">Structure</text>
+  <text x="110" y="95" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Pièce = Actes</text>
+  <text x="110" y="110" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Acte = Scènes</text>
+
+</svg>

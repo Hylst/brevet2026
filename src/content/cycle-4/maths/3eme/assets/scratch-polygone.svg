@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#2d3748" rx="20"/>
+  <text x="400" y="200" font-family="-apple-system, sans-serif" font-size="32" font-weight="bold" fill="#e2e8f0" text-anchor="middle" dominant-baseline="middle">
+    Tracer un Polygone avec Scratch
+  </text>
+</svg>

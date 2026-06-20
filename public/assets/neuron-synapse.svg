@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      @keyframes transmitpulse {
+        0% { transform: translateX(0) scale(1); opacity: 0; }
+        20% { opacity: 1; }
+        100% { transform: translateX(200px) scale(1.5); opacity: 0; }
+      }
+      @keyframes neurotransmitter {
+        0% { transform: translateY(0); opacity: 0; }
+        20% { opacity: 1; }
+        80% { opacity: 1; }
+        100% { transform: translateY(60px); opacity: 0; }
+      }
+      @keyframes message {
+        0%, 100% { stroke-dashoffset: 200; }
+        50% { stroke-dashoffset: 0; }
+      }
+      .neuron { fill: #818cf8; stroke: #4f46e5; stroke-width: 4; }
+      .axon { fill: none; stroke: #818cf8; stroke-width: 12; stroke-linecap: round; }
+      .myelin { fill: #fef08a; stroke: #ca8a04; stroke-width: 2; rx: 10; }
+      .signal { fill: #fbbf24; opacity: 0; animation: transmitpulse 2s infinite; }
+      .vesicle { fill: #6366f1; stroke: #4338ca; stroke-width: 2; }
+      .molecule { fill: #ec4899; animation: neurotransmitter 2s infinite; }
+      .receptor { fill: #10b981; stroke: #059669; stroke-width: 2; }
+      
+      .arrow-flow { stroke: #fbbf24; stroke-width: 4; stroke-dasharray: 10,10; animation: message 1s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="800" height="400" fill="#0f172a" rx="20" />
+  <text x="400" y="40" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="24" text-anchor="middle">Le Message Nerveux et la Synapse</text>
+
+  <!-- Neuron 1 (Pre-synaptic) -->
+  <g transform="translate(100, 200)">
+    <!-- Dendrites -->
+    <path d="M -20 -40 L -50 -70 M -30 0 L -70 0 M -20 40 L -50 70 M 0 -30 L -20 -80 M 0 30 L -20 80" stroke="#818cf8" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Soma / Cell body -->
+    <circle cx="0" cy="0" r="40" class="neuron"/>
+    <!-- Nucleus -->
+    <circle cx="0" cy="0" r="15" fill="#312e81"/>
+    
+    <!-- Axon -->
+    <path d="M 40 0 L 250 0" class="axon" />
+    
+    <!-- Myelin Sheaths -->
+    <rect x="60" y="-12" width="40" height="24" class="myelin"/>
+    <rect x="120" y="-12" width="40" height="24" class="myelin"/>
+    <rect x="180" y="-12" width="40" height="24" class="myelin"/>
+    
+    <!-- Electrical Signal -->
+    <circle cx="60" cy="0" r="8" class="signal" style="animation-delay: 0s" />
+    <circle cx="60" cy="0" r="8" class="signal" style="animation-delay: 0.5s" />
+    <circle cx="60" cy="0" r="8" class="signal" style="animation-delay: 1.0s" />
+    
+    <text x="0" y="70" fill="#cbd5e1" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Corps Cellulaire</text>
+    <text x="140" y="40" fill="#cbd5e1" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Axone</text>
+    <text x="140" y="-30" fill="#facc15" font-family="sans-serif" font-size="12" text-anchor="middle">Message Électrique ⚡</text>
+  </g>
+
+  <!-- Zoom Box on Synapse -->
+  <rect x="420" y="80" width="340" height="280" fill="#1e293b" stroke="#334155" stroke-width="4" rx="15"/>
+  <text x="590" y="110" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="18" text-anchor="middle">Zoom sur la Synapse (Message Chimique)</text>
+
+  <!-- Synapse detail -->
+  <g transform="translate(590, 160)">
+    <!-- Pre-synaptic terminal -->
+    <path d="M -80 -40 C -80 0, -40 40, 0 40 C 40 40, 80 0, 80 -40" fill="#818cf8" stroke="#4f46e5" stroke-width="4"/>
+    
+    <!-- Vesicles -->
+    <circle cx="-30" cy="-10" r="10" class="vesicle"/>
+    <circle cx="30" cy="-10" r="10" class="vesicle"/>
+    <circle cx="0" cy="10" r="10" class="vesicle"/>
+    
+    <!-- Neurotransmitters (animated) -->
+    <circle cx="-15" cy="45" r="4" class="molecule" style="animation-delay: 0s"/>
+    <circle cx="15" cy="45" r="4" class="molecule" style="animation-delay: 0.3s"/>
+    <circle cx="0" cy="45" r="4" class="molecule" style="animation-delay: 0.6s"/>
+    <circle cx="-30" cy="45" r="4" class="molecule" style="animation-delay: 0.9s"/>
+    <circle cx="30" cy="45" r="4" class="molecule" style="animation-delay: 1.2s"/>
+
+    <!-- Post-synaptic membrane -->
+    <path d="M -120 130 C -60 110, 60 110, 120 130 L 120 180 L -120 180 Z" fill="#60a5fa" stroke="#3b82f6" stroke-width="4"/>
+    
+    <!-- Receptors -->
+    <path d="M -40 120 L -30 120 L -30 110 L -40 110 Z M -35 110 L -35 125" class="receptor"/>
+    <path d="M -5 120 L 5 120 L 5 110 L -5 110 Z M 0 110 L 0 125" class="receptor"/>
+    <path d="M 30 120 L 40 120 L 40 110 L 30 110 Z M 35 110 L 35 125" class="receptor"/>
+
+    <!-- Arrow indicating translation into action or next electrical signal -->
+    <path d="M 0 140 L 0 170" class="arrow-flow" marker-end="url(#arrow)"/>
+    
+    <text x="0" y="-20" fill="#f8fafc" font-family="sans-serif" font-size="12" text-anchor="middle">Neurone 1</text>
+    <text x="-90" y="85" fill="#f472b6" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Neurotransmetteurs</text>
+    <text x="0" y="195" fill="#f8fafc" font-family="sans-serif" font-size="12" text-anchor="middle">Neurone 2 (ou Muscle)</text>
+  </g>
+  
+  <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#fbbf24" />
+  </marker>
+
+  <!-- Connective Lines -->
+  <path d="M 350 200 L 420 160" stroke="#f8fafc" stroke-width="2" stroke-dasharray="4,4" fill="none"/>
+  <path d="M 350 200 L 420 280" stroke="#f8fafc" stroke-width="2" stroke-dasharray="4,4" fill="none"/>
+
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Analyser une Image</text>
+
+  <!-- Frame / Composition -->
+  <rect x="250" y="80" width="300" height="200" fill="#0f172a" stroke="#cbd5e1" stroke-width="6" />
+
+  <!-- Cadre / Lignes de force -->
+  <line x1="250" y1="146" x2="550" y2="146" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4 4" />
+  <line x1="250" y1="213" x2="550" y2="213" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4 4" />
+  
+  <line x1="350" y1="80" x2="350" y2="280" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4 4" />
+  <line x1="450" y1="80" x2="450" y2="280" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4 4" />
+
+  <text x="400" y="70" font-family="sans-serif" font-size="14" fill="#3b82f6" font-weight="bold" text-anchor="middle">Règle des Tiers & Lignes de Force</text>
+
+  <!-- Element 1: Premier plan -->
+  <circle cx="350" cy="240" r="30" fill="#ef4444" />
+  <path d="M 350 240 L 200 320" stroke="#ef4444" stroke-width="2" fill="none" />
+  <text x="150" y="340" font-family="sans-serif" font-size="14" fill="#ef4444" font-weight="bold" text-anchor="middle">1er Plan</text>
+
+  <!-- Element 2: Arrière plan -->
+  <circle cx="450" cy="120" r="15" fill="#10b981" />
+  <path d="M 450 120 L 600 80" stroke="#10b981" stroke-width="2" fill="none" />
+  <text x="650" y="75" font-family="sans-serif" font-size="14" fill="#10b981" font-weight="bold" text-anchor="middle">Arrière-plan</text>
+
+  <!-- Light / Angle -->
+  <path d="M 210 50 L 280 100" stroke="#eab308" stroke-width="4" stroke-dasharray="6 6" fill="none" />
+  <polygon points="280,100 270,85 265,95" fill="#eab308" />
+  <text x="180" y="45" font-family="sans-serif" font-size="12" fill="#eab308" font-weight="bold">Source de Lumière</text>
+
+  <rect x="50" y="100" width="160" height="150" fill="#334155" rx="8" />
+  <text x="130" y="125" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold" text-anchor="middle">Angle de Prise</text>
+  <text x="130" y="150" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">• Plongée</text>
+  <text x="130" y="165" font-family="sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">(Vu de haut = domination)</text>
+  <text x="130" y="195" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">• Contre-plongée</text>
+  <text x="130" y="210" font-family="sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">(Vu de bas = puissance)</text>
+
+  <rect x="580" y="150" width="180" height="150" fill="#334155" rx="8" />
+  <text x="670" y="175" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold" text-anchor="middle">L'Interprétation</text>
+  <text x="590" y="200" font-family="sans-serif" font-size="12" fill="#cbd5e1">1. DÉCRIRE (Ce que je vois)</text>
+  <text x="590" y="215" font-family="sans-serif" font-size="10" fill="#94a3b8">Bords, plans, couleurs...</text>
+  <text x="590" y="245" font-family="sans-serif" font-size="12" fill="#cbd5e1">2. ANALYSER (Ce que ça veut dire)</text>
+  <text x="590" y="260" font-family="sans-serif" font-size="10" fill="#94a3b8">Intentions de l'artiste</text>
+
+</svg>

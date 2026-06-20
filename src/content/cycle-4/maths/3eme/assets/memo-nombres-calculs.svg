@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: 'Inter', sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .text { font-family: 'Inter', sans-serif; font-size: 16px; fill: #334155; }
+      .math { font-family: 'JetBrains Mono', monospace; font-size: 18px; fill: #0f172a; font-weight: bold; }
+      .box { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 2; rx: 8; }
+      .highlight { fill: #eff6ff; stroke: #3b82f6; stroke-width: 2; rx: 8; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="12" />
+
+  <!-- Title -->
+  <text x="400" y="40" class="title" text-anchor="middle">Fiche Mémo : Nombres et Calculs</text>
+
+  <!-- Puissances Box -->
+  <rect x="40" y="80" width="340" height="140" class="box" />
+  <text x="210" y="110" class="title" text-anchor="middle" font-size="20">Puissances</text>
+  <text x="60" y="140" class="math">aⁿ × aᵐ = aⁿ⁺ᵐ</text>
+  <text x="60" y="170" class="math">aⁿ / aᵐ = aⁿ⁻ᵐ</text>
+  <text x="60" y="200" class="math">(aⁿ)ᵐ = aⁿ×ᵐ</text>
+
+  <!-- Fractions Box -->
+  <rect x="420" y="80" width="340" height="140" class="box" />
+  <text x="590" y="110" class="title" text-anchor="middle" font-size="20">Fractions</text>
+  <text x="440" y="140" class="math">a/c + b/c = (a+b)/c</text>
+  <text x="440" y="170" class="math">a/b × c/d = (a×c)/(b×d)</text>
+  <text x="440" y="200" class="math">a/b ÷ c/d = a/b × d/c</text>
+
+  <!-- Identités Remarquables Box -->
+  <rect x="40" y="240" width="720" height="120" class="highlight" />
+  <text x="400" y="270" class="title" text-anchor="middle" font-size="20" fill="#1d4ed8">Identités Remarquables</text>
+  <text x="80" y="310" class="math" fill="#1e3a8a">(a + b)² = a² + 2ab + b²</text>
+  <text x="320" y="310" class="math" fill="#1e3a8a">(a - b)² = a² - 2ab + b²</text>
+  <text x="560" y="310" class="math" fill="#1e3a8a">(a + b)(a - b) = a² - b²</text>
+</svg>

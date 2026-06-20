@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: 'Inter', sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .subtitle { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: bold; fill: #334155; }
+      .text { font-family: 'Inter', sans-serif; font-size: 14px; fill: #475569; }
+      .box { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 2; rx: 8; }
+      .arrow { stroke: #94a3b8; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff" rx="12" />
+  
+  <text x="400" y="40" class="title" text-anchor="middle">Les Institutions de la Ve République</text>
+
+  <!-- Le Peuple -->
+  <g transform="translate(300, 320)">
+    <rect width="200" height="60" class="box" fill="#e2e8f0" />
+    <text x="100" y="35" class="subtitle" text-anchor="middle">Le Peuple Français</text>
+    <text x="100" y="50" class="text" text-anchor="middle" font-size="12px">(Électeurs)</text>
+  </g>
+
+  <!-- Président -->
+  <g transform="translate(300, 80)">
+    <rect width="200" height="70" class="box" fill="#bfdbfe" />
+    <text x="100" y="30" class="subtitle" text-anchor="middle">Président de la République</text>
+    <text x="100" y="50" class="text" text-anchor="middle" font-size="12px">Pouvoir Exécutif</text>
+  </g>
+
+  <!-- Gouvernement -->
+  <g transform="translate(50, 180)">
+    <rect width="200" height="70" class="box" fill="#bfdbfe" />
+    <text x="100" y="30" class="subtitle" text-anchor="middle">Gouvernement</text>
+    <text x="100" y="50" class="text" text-anchor="middle" font-size="12px">(Premier Ministre &amp; Ministres)</text>
+  </g>
+
+  <!-- Parlement -->
+  <g transform="translate(550, 180)">
+    <rect width="200" height="70" class="box" fill="#fca5a5" />
+    <text x="100" y="30" class="subtitle" text-anchor="middle">Parlement</text>
+    <text x="100" y="50" class="text" text-anchor="middle" font-size="12px">Pouvoir Législatif</text>
+  </g>
+
+  <!-- Assemblée Nationale -->
+  <g transform="translate(480, 260)">
+    <rect width="160" height="40" class="box" fill="#fecaca" />
+    <text x="80" y="25" class="text" text-anchor="middle">Assemblée Nationale</text>
+  </g>
+
+  <!-- Sénat -->
+  <g transform="translate(660, 260)">
+    <rect width="120" height="40" class="box" fill="#fecaca" />
+    <text x="60" y="25" class="text" text-anchor="middle">Sénat</text>
+  </g>
+
+  <!-- Flèches -->
+  <!-- Peuple -> Président -->
+  <line x1="400" y1="320" x2="400" y2="150" class="arrow" />
+  <text x="410" y="230" class="text" font-size="12px">Élit (Suffrage Universel Direct)</text>
+
+  <!-- Peuple -> Assemblée -->
+  <line x1="450" y1="320" x2="520" y2="300" class="arrow" />
+  <text x="490" y="340" class="text" font-size="12px">Élit</text>
+
+  <!-- Président -> Gouvernement -->
+  <line x1="300" y1="115" x2="150" y2="180" class="arrow" />
+  <text x="180" y="140" class="text" font-size="12px">Nomme</text>
+
+  <!-- Gouvernement <-> Parlement -->
+  <line x1="250" y1="215" x2="550" y2="215" class="arrow" />
+  <text x="400" y="205" class="text" text-anchor="middle" font-size="12px">Contrôle / Censure</text>
+
+</svg>

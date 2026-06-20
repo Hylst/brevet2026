@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="50" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Guerres Mondiales (XXe siècle)</text>
+
+  <!-- Main Timeline Axis -->
+  <line x1="50" y1="200" x2="750" y2="200" stroke="#cbd5e1" stroke-width="4" />
+
+  <!-- WWI: 1914-1918 -->
+  <rect x="100" y="180" width="150" height="40" fill="#ef4444" rx="4" />
+  <text x="175" y="205" font-family="sans-serif" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">1ère GM</text>
+  <line x1="100" y1="170" x2="100" y2="230" stroke="#cbd5e1" stroke-width="2" />
+  <text x="100" y="255" font-family="sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle">1914</text>
+  <text x="100" y="275" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">Attentat de Sarajevo</text>
+  
+  <line x1="250" y1="170" x2="250" y2="230" stroke="#cbd5e1" stroke-width="2" />
+  <text x="250" y="255" font-family="sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle">1918</text>
+  <text x="250" y="275" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">Armistice (11 Nov)</text>
+
+  <!-- Interwar -->
+  <text x="400" y="160" font-family="sans-serif" font-size="16" fill="#94a3b8" font-style="italic" text-anchor="middle">Entre-deux-guerres (Années folles / Crise des années 30)</text>
+
+  <!-- WWII: 1939-1945 -->
+  <rect x="550" y="180" width="150" height="40" fill="#f97316" rx="4" />
+  <text x="625" y="205" font-family="sans-serif" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">2ème GM</text>
+  <line x1="550" y1="170" x2="550" y2="230" stroke="#cbd5e1" stroke-width="2" />
+  <text x="550" y="255" font-family="sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle">1939</text>
+  <text x="550" y="275" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">Invasion Pologne</text>
+
+  <line x1="700" y1="170" x2="700" y2="230" stroke="#cbd5e1" stroke-width="2" />
+  <text x="700" y="255" font-family="sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle">1945</text>
+  <text x="700" y="275" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">Capitulations</text>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      @keyframes digestion {
+        0% { transform: translateY(0) scale(1); opacity: 1; fill: #4ade80; }
+        50% { transform: translateY(80px) scale(0.6); fill: #facc15; }
+        100% { transform: translateY(160px) scale(0.3); opacity: 0; fill: #fb923c; }
+      }
+      @keyframes absorb {
+        0% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(-40px); opacity: 0; }
+      }
+      .organ { fill: #334155; stroke: #475569; stroke-width: 3; stroke-linejoin: round; }
+      .stomach { fill: #f43f5e; stroke: #e11d48; }
+      .intestine { fill: #fca5a5; stroke: #ef4444; }
+      .large-intestine { fill: #8b5cf6; stroke: #7c3aed; }
+      .food { animation: digestion 4s infinite linear; }
+      
+      .villi { fill: #fca5a5; stroke: #ef4444; stroke-width: 3; }
+      .blood-vessel { fill: none; stroke: #ef4444; stroke-width: 4; }
+      .nutrient { fill: #facc15; animation: absorb 2s infinite ease-out; }
+    </style>
+  </defs>
+
+  <rect width="800" height="400" fill="#0f172a" rx="20" />
+  <text x="400" y="40" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="24" text-anchor="middle">La Digestion et l'Absorption Intestinale</text>
+
+  <!-- Left Side: Digestive Tract -->
+  <g transform="translate(150, 80)">
+    <!-- Oesophagus -->
+    <path d="M 40 0 L 40 60 L 60 60 L 60 0 Z" class="organ"/>
+    <text x="80" y="30" fill="#94a3b8" font-family="sans-serif" font-size="14">Oesophage</text>
+    
+    <!-- Stomach -->
+    <path d="M 40 60 C 0 60, -20 120, 20 140 C 60 160, 100 120, 60 60 Z" class="stomach"/>
+    <text x="-40" y="100" fill="#f43f5e" font-family="sans-serif" font-weight="bold" font-size="14">Estomac</text>
+    
+    <!-- Small Intestine (coiled) -->
+    <path d="M 45 135 C 20 160, 80 170, 30 190 C -20 210, 80 230, 40 250 C 20 260, 60 270, 45 280" fill="none" stroke="#fca5a5" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="-60" y="210" fill="#fca5a5" font-family="sans-serif" font-weight="bold" font-size="14">Intestin grêle</text>
+    
+    <!-- Food particles animating through -->
+    <circle cx="50" cy="20" r="8" class="food" style="animation-delay: 0s" />
+    <circle cx="50" cy="20" r="8" class="food" style="animation-delay: 1.3s" />
+    <circle cx="50" cy="20" r="8" class="food" style="animation-delay: 2.6s" />
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="400" y1="80" x2="400" y2="350" stroke="#334155" stroke-width="2" stroke-dasharray="8,8" />
+
+  <!-- Right Side: Zoom on Villi (Absorption) -->
+  <g transform="translate(580, 250)">
+    <!-- Intestine wall (Villosités) -->
+    <path d="M -150 0 C -130 -100, -110 -100, -90 0 C -70 -100, -50 -100, -30 0 C -10 -100, 10 -100, 30 0 C 50 -100, 70 -100, 90 0 C 110 -100, 130 -100, 150 0" class="villi"/>
+    
+    <!-- Blood vessel underneath -->
+    <path d="M -150 30 L 150 30" class="blood-vessel" />
+    <path d="M -150 40 L 150 40" stroke="#3b82f6" stroke-width="4" fill="none" />
+    
+    <!-- Nutrients moving into blood -->
+    <circle cx="-120" cy="-20" r="5" class="nutrient" style="animation-delay: 0s"/>
+    <circle cx="-60" cy="-30" r="5" class="nutrient" style="animation-delay: 0.5s"/>
+    <circle cx="0" cy="-10" r="5" class="nutrient" style="animation-delay: 1.0s"/>
+    <circle cx="60" cy="-40" r="5" class="nutrient" style="animation-delay: 1.5s"/>
+    <circle cx="120" cy="-20" r="5" class="nutrient" style="animation-delay: 0.2s"/>
+    
+    <text x="0" y="-120" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="18" text-anchor="middle">Zoom sur une villosité intestinale</text>
+    <text x="0" y="70" fill="#ef4444" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Circulation Sanguine</text>
+    
+    <!-- Legend -->
+    <circle cx="-100" cy="110" r="5" fill="#facc15" />
+    <text x="-80" y="115" fill="#cbd5e1" font-family="sans-serif" font-size="14">Nutriments (Glucose...)</text>
+  </g>
+
+  <path d="M 230 210 L 450 180" stroke="#f8fafc" stroke-width="2" stroke-dasharray="4,4" fill="none"/>
+
+</svg>

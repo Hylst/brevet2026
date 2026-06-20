@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Le Caryotype Humain</text>
+  <text x="400" y="65" font-family="sans-serif" font-size="14" fill="#cbd5e1" text-anchor="middle">Carte photographique de l'ensemble des 46 chromosomes d'une cellule humaine.</text>
+
+  <rect x="150" y="100" width="500" height="240" fill="#0f172a" rx="8" stroke="#334155" stroke-width="4" />
+
+  <!-- Autosomes (22 paires) -->
+  <text x="400" y="130" font-family="sans-serif" font-size="14" fill="#3b82f6" font-weight="bold" text-anchor="middle">Chromosomes Autosomes (22 paires)</text>
+  
+  <g fill="#94a3b8" stroke="#f8fafc" stroke-width="1">
+    <!-- Pair 1 -->
+    <path d="M 200 160 Q 205 140 210 160 Q 205 180 200 160" />
+    <path d="M 210 160 Q 215 140 220 160 Q 215 180 210 160" />
+    <text x="210" y="195" font-family="sans-serif" font-size="10" fill="#f8fafc" stroke="none" text-anchor="middle">1</text>
+
+    <!-- Pair 2 -->
+    <path d="M 250 162 Q 255 143 260 162 Q 255 181 250 162" />
+    <path d="M 260 162 Q 265 143 270 162 Q 265 181 260 162" />
+    <text x="260" y="195" font-family="sans-serif" font-size="10" fill="#f8fafc" stroke="none" text-anchor="middle">2</text>
+
+    <!-- Pair 3 -->
+    <path d="M 300 165 Q 305 150 310 165 Q 305 180 300 165" />
+    <path d="M 310 165 Q 315 150 320 165 Q 315 180 310 165" />
+    <text x="310" y="195" font-family="sans-serif" font-size="10" fill="#f8fafc" stroke="none" text-anchor="middle">3</text>
+
+    <!-- Dots -->
+    <text x="400" y="170" font-family="sans-serif" font-size="16" fill="#f8fafc" stroke="none" text-anchor="middle">.......................</text>
+
+    <!-- Pair 22 -->
+    <path d="M 500 170 Q 502 160 505 170 Q 502 180 500 170" />
+    <path d="M 505 170 Q 507 160 510 170 Q 507 180 505 170" />
+    <text x="505" y="195" font-family="sans-serif" font-size="10" fill="#f8fafc" stroke="none" text-anchor="middle">22</text>
+  </g>
+
+  <!-- Chromosomes sexuels (23ème paire) -->
+  <rect x="300" y="240" width="200" height="80" fill="#1e293b" opacity="0.8" rx="8" />
+  <text x="400" y="260" font-family="sans-serif" font-size="14" fill="#eab308" font-weight="bold" text-anchor="middle">Chromosomes Sexuels (Paire 23)</text>
+  
+  <rect x="230" y="210" width="10" height="10" fill="none" /> <!-- Just a placeholder -->
+
+  <!-- XX (Fille) -->
+  <g transform="translate(340, 270)" fill="#f472b6" stroke="#fbcfe8" stroke-width="1">
+    <path d="M 0 15 Q 5 -5 10 15 Q 5 35 0 15" />
+    <path d="M 10 15 Q 15 -5 20 15 Q 15 35 10 15" />
+    <text x="10" y="45" font-family="sans-serif" font-size="12" fill="#fbcfe8" stroke="none" text-anchor="middle" font-weight="bold">XX = Fille</text>
+  </g>
+
+  <text x="400" y="295" font-family="sans-serif" font-size="14" fill="#f8fafc" text-anchor="middle">ou</text>
+
+  <!-- XY (Garçon) -->
+  <g transform="translate(440, 270)" fill="#60a5fa" stroke="#bfdbfe" stroke-width="1">
+    <path d="M 0 15 Q 5 -5 10 15 Q 5 35 0 15" />
+    <path d="M 10 15 Q 12 5 15 15 Q 12 25 10 15" /> <!-- Y is smaller -->
+    <text x="10" y="45" font-family="sans-serif" font-size="12" fill="#bfdbfe" stroke="none" text-anchor="middle" font-weight="bold">XY = Garçon</text>
+  </g>
+
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .text-title { fill: #f8fafc; font-family: 'Inter', sans-serif; font-size: 24px; font-weight: bold; text-anchor: middle; }
+      .text-box-title { fill: #f8fafc; font-family: 'Inter', sans-serif; font-size: 18px; font-weight: bold; text-anchor: middle; }
+      .text-box-desc { fill: #cbd5e1; font-family: 'Inter', sans-serif; font-size: 13px; text-anchor: middle; }
+      .box-politique { fill: #1e3a8a; stroke: #3b82f6; stroke-width: 2; rx: 8; }
+      .box-associatif { fill: #064e3b; stroke: #10b981; stroke-width: 2; rx: 8; }
+      .box-syndical { fill: #7f1d1d; stroke: #ef4444; stroke-width: 2; rx: 8; }
+      .icon-circle { fill: #0f172a; stroke-width: 2; }
+      .icon-politique { stroke: #3b82f6; }
+      .icon-associatif { stroke: #10b981; }
+      .icon-syndical { stroke: #ef4444; }
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" class="bg" />
+
+  <text x="400" y="50" class="text-title">Les Différentes Formes d'Engagement</text>
+
+  <!-- Engagement Politique -->
+  <g transform="translate(50, 120)">
+    <rect width="220" height="200" class="box-politique" />
+    <circle cx="110" cy="0" r="30" class="icon-circle icon-politique" />
+    <!-- Vote Icon -->
+    <path d="M 95,-10 L 125,-10 L 125,10 L 95,10 Z" fill="none" stroke="#3b82f6" stroke-width="2" />
+    <path d="M 110,-20 L 110,-10" fill="none" stroke="#3b82f6" stroke-width="2" />
+    
+    <text x="110" y="50" class="text-box-title">Politique</text>
+    <text x="110" y="80" class="text-box-desc">Participer au pouvoir</text>
+    <text x="110" y="100" class="text-box-desc">et aux décisions</text>
+    
+    <text x="110" y="140" class="text-box-desc" font-weight="bold" fill="#60a5fa">• Le Vote</text>
+    <text x="110" y="160" class="text-box-desc" font-weight="bold" fill="#60a5fa">• Partis politiques</text>
+    <text x="110" y="180" class="text-box-desc" font-weight="bold" fill="#60a5fa">• Être élu</text>
+  </g>
+
+  <!-- Engagement Associatif -->
+  <g transform="translate(290, 120)">
+    <rect width="220" height="200" class="box-associatif" />
+    <circle cx="110" cy="0" r="30" class="icon-circle icon-associatif" />
+    <!-- Heart/Hands Icon -->
+    <path d="M 110,-10 C 110,-20 90,-20 90,-10 C 90,0 110,10 110,10 C 110,10 130,0 130,-10 C 130,-20 110,-20 110,-10 Z" fill="none" stroke="#10b981" stroke-width="2" />
+    
+    <text x="110" y="50" class="text-box-title">Associatif</text>
+    <text x="110" y="80" class="text-box-desc">Défendre une cause,</text>
+    <text x="110" y="100" class="text-box-desc">aider les autres</text>
+    
+    <text x="110" y="140" class="text-box-desc" font-weight="bold" fill="#34d399">• Bénévolat</text>
+    <text x="110" y="160" class="text-box-desc" font-weight="bold" fill="#34d399">• Humanitaire</text>
+    <text x="110" y="180" class="text-box-desc" font-weight="bold" fill="#34d399">• Sport / Culture</text>
+  </g>
+
+  <!-- Engagement Syndical -->
+  <g transform="translate(530, 120)">
+    <rect width="220" height="200" class="box-syndical" />
+    <circle cx="110" cy="0" r="30" class="icon-circle icon-syndical" />
+    <!-- Megaphone / Fist Icon -->
+    <path d="M 95,-15 L 115,-5 L 115,5 L 95,15 Z" fill="none" stroke="#ef4444" stroke-width="2" />
+    <path d="M 115,-5 L 125,-10 L 125,10 L 115,5" fill="none" stroke="#ef4444" stroke-width="2" />
+    
+    <text x="110" y="50" class="text-box-title">Syndical</text>
+    <text x="110" y="80" class="text-box-desc">Défendre les droits</text>
+    <text x="110" y="100" class="text-box-desc">des travailleurs</text>
+    
+    <text x="110" y="140" class="text-box-desc" font-weight="bold" fill="#f87171">• Négociations</text>
+    <text x="110" y="160" class="text-box-desc" font-weight="bold" fill="#f87171">• Manifestations</text>
+    <text x="110" y="180" class="text-box-desc" font-weight="bold" fill="#f87171">• Droit de grève</text>
+  </g>
+
+</svg>

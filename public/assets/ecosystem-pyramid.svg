@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .pyramid { stroke: #334155; stroke-width: 4; stroke-linejoin: round; }
+      .lvl1 { fill: #22c55e; }
+      .lvl2 { fill: #3b82f6; }
+      .lvl3 { fill: #eab308; }
+      .lvl4 { fill: #ef4444; }
+      .arrow { fill: none; stroke: #f8fafc; stroke-width: 3; stroke-dasharray: 6,6; }
+      
+      @keyframes float-up {
+        0% { transform: translateY(0); opacity: 0; }
+        50% { opacity: 1; }
+        100% { transform: translateY(-40px); opacity: 0; }
+      }
+      .energy { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #fbbf24; animation: float-up 3s infinite linear; }
+    </style>
+  </defs>
+
+  <rect width="800" height="400" class="bg" rx="20" />
+  <text x="400" y="40" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="24" text-anchor="middle">La Pyramide Écologique et le Réseau Trophique</text>
+
+  <!-- Pyramid -->
+  <g transform="translate(150, 320)">
+    <!-- Base: Producers -->
+    <polygon points="-120,0 120,0 90,-60 -90,-60" class="pyramid lvl1" />
+    <text x="0" y="-25" fill="#064e3b" font-family="sans-serif" font-weight="bold" font-size="16" text-anchor="middle">Producteurs primaires</text>
+    <text x="0" y="-10" fill="#064e3b" font-family="sans-serif" font-size="12" text-anchor="middle">(Végétaux, Phytoplancton)</text>
+
+    <!-- Consumers 1 -->
+    <polygon points="-90,-60 90,-60 60,-120 -60,-120" class="pyramid lvl2" />
+    <text x="0" y="-85" fill="#eff6ff" font-family="sans-serif" font-weight="bold" font-size="16" text-anchor="middle">Consommateurs I</text>
+    <text x="0" y="-70" fill="#bfdbfe" font-family="sans-serif" font-size="12" text-anchor="middle">(Herbivores, Insectes)</text>
+
+    <!-- Consumers 2 -->
+    <polygon points="-60,-120 60,-120 30,-180 -30,-180" class="pyramid lvl3" />
+    <text x="0" y="-145" fill="#713f12" font-family="sans-serif" font-weight="bold" font-size="16" text-anchor="middle">Consommateurs II</text>
+    <text x="0" y="-130" fill="#713f12" font-family="sans-serif" font-size="12" text-anchor="middle">(Carnivores)</text>
+
+    <!-- Super predators -->
+    <polygon points="-30,-180 30,-180 0,-240" class="pyramid lvl4" />
+    <text x="0" y="-190" fill="#fef2f2" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Super</text>
+    <text x="0" y="-175" fill="#fef2f2" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Prédateurs</text>
+    
+    <!-- Energy loss animation next to pyramid -->
+    <text x="140" y="-80" class="energy" style="animation-delay: 0s;">- Perte d'énergie ⚡</text>
+    <text x="110" y="-140" class="energy" style="animation-delay: 1.5s;">- Perte d'énergie ⚡</text>
+  </g>
+
+  <!-- Network Diagram -->
+  <g transform="translate(550, 180)">
+    <rect x="-80" y="-100" width="160" height="220" fill="#1e293b" stroke="#475569" stroke-width="2" rx="10"/>
+    <text x="0" y="-120" fill="#cbd5e1" font-family="sans-serif" font-size="16" font-style="italic" text-anchor="middle">Réseau trophique (simplifié)</text>
+
+    <!-- Nodes -->
+    <circle cx="0" cy="80" r="15" fill="#22c55e" /> <!-- Plant -->
+    <circle cx="-40" cy="0" r="15" fill="#3b82f6" /> <!-- Cricket -->
+    <circle cx="40" cy="0" r="15" fill="#3b82f6" /> <!-- Mouse -->
+    <circle cx="0" cy="-60" r="15" fill="#ef4444" /> <!-- Hawk -->
+
+    <text x="0" y="115" fill="#4ade80" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Herbe</text>
+    <text x="-40" y="-25" fill="#60a5fa" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Criquet</text>
+    <text x="40" y="-25" fill="#60a5fa" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Souris</text>
+    <text x="0" y="-85" fill="#f87171" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Faucon</text>
+
+    <path d="M -5 65 L -35 15" class="arrow" marker-end="url(#arrow)"/>
+    <path d="M 5 65 L 35 15" class="arrow" marker-end="url(#arrow)"/>
+    
+    <path d="M -30 -15 L -10 -50" class="arrow" marker-end="url(#arrow)"/>
+    <path d="M 30 -15 L 10 -50" class="arrow" marker-end="url(#arrow)"/>
+  </g>
+  
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#f8fafc" />
+  </marker>
+
+</svg>

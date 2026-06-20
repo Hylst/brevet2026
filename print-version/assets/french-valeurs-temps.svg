@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: 'Inter', sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .label { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: bold; fill: #ffffff; }
+      .desc { font-family: 'Inter', sans-serif; font-size: 14px; fill: #334155; }
+      .imparfait-line { stroke: #3b82f6; stroke-width: 8; fill: none; stroke-linecap: round; }
+      .ps-line { stroke: #ef4444; stroke-width: 6; fill: none; stroke-linecap: round; }
+      .imparfait-box { fill: #3b82f6; rx: 8; }
+      .ps-box { fill: #ef4444; rx: 8; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="12" />
+
+  <!-- Title -->
+  <text x="400" y="40" class="title" text-anchor="middle">Les Valeurs des Temps du Récit</text>
+
+  <!-- Imparfait Representation (Wavy continuous line) -->
+  <path d="M 50 200 Q 150 150 250 200 T 450 200 T 650 200 T 750 200" class="imparfait-line" opacity="0.5" />
+  
+  <!-- Passé Simple Representation (Lightning/Spike) -->
+  <path d="M 350 200 L 380 100 L 400 250 L 420 150 L 450 200" class="ps-line" />
+  <circle cx="400" cy="200" r="8" fill="#ef4444" />
+
+  <!-- Imparfait Info Box -->
+  <rect x="80" y="260" width="280" height="110" class="imparfait-box" />
+  <text x="220" y="290" class="label" text-anchor="middle">L'IMPARFAIT</text>
+  <text x="220" y="315" class="desc" text-anchor="middle" fill="#ffffff">L'arrière-plan (le décor)</text>
+  <text x="220" y="335" class="desc" text-anchor="middle" fill="#e0f2fe">- Description</text>
+  <text x="220" y="355" class="desc" text-anchor="middle" fill="#e0f2fe">- Action longue ou habitude</text>
+
+  <!-- Passé Simple Info Box -->
+  <rect x="440" y="260" width="280" height="110" class="ps-box" />
+  <text x="580" y="290" class="label" text-anchor="middle">LE PASSÉ SIMPLE</text>
+  <text x="580" y="315" class="desc" text-anchor="middle" fill="#ffffff">Le premier plan (l'action)</text>
+  <text x="580" y="335" class="desc" text-anchor="middle" fill="#fee2e2">- Action soudaine</text>
+  <text x="580" y="355" class="desc" text-anchor="middle" fill="#fee2e2">- Action brève et délimitée</text>
+
+  <!-- Example Text -->
+  <rect x="150" y="80" width="500" height="60" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" rx="8" />
+  <text x="400" y="105" class="desc" text-anchor="middle" font-style="italic">"Il <tspan fill="#3b82f6" font-weight="bold">marchait</tspan> tranquillement dans la forêt (Imparfait),</text>
+  <text x="400" y="125" class="desc" text-anchor="middle" font-style="italic">quand soudain, un loup <tspan fill="#ef4444" font-weight="bold">surgit</tspan> des buissons (Passé Simple)."</text>
+
+</svg>

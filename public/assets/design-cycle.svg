@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .circle { fill: none; stroke-width: 6; }
+      .c1 { stroke: #3b82f6; }
+      .c2 { stroke: #a855f7; }
+      .c3 { stroke: #ec4899; }
+      .c4 { stroke: #f59e0b; }
+      .c5 { stroke: #10b981; }
+      
+      .icon-bg { fill: #1e293b; stroke-width: 3; }
+      .text-title { fill: #f8fafc; font-family: sans-serif; font-weight: bold; font-size: 14px; text-anchor: middle; }
+      .text-sub { fill: #94a3b8; font-family: sans-serif; font-size: 12px; text-anchor: middle; }
+      
+      @keyframes spin-slow {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .ring { transform-origin: 400px 200px; animation: spin-slow 20s linear infinite; }
+      
+      @keyframes pop {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+      }
+      .node-anim1 { animation: pop 3s infinite ease-in-out; animation-delay: 0s; }
+      .node-anim2 { animation: pop 3s infinite ease-in-out; animation-delay: 0.6s; }
+      .node-anim3 { animation: pop 3s infinite ease-in-out; animation-delay: 1.2s; }
+      .node-anim4 { animation: pop 3s infinite ease-in-out; animation-delay: 1.8s; }
+      .node-anim5 { animation: pop 3s infinite ease-in-out; animation-delay: 2.4s; }
+    </style>
+  </defs>
+
+  <rect width="800" height="400" class="bg" rx="20" />
+  <text x="400" y="40" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="24" text-anchor="middle">La Démarche de Projet</text>
+
+  <!-- Connecting animated ring -->
+  <g class="ring">
+    <circle cx="400" cy="220" r="140" fill="none" stroke="#334155" stroke-width="4" stroke-dasharray="15,10" />
+  </g>
+
+  <!-- Center Hub -->
+  <circle cx="400" cy="220" r="40" fill="#0f172a" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="400" y="215" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="16" text-anchor="middle">Le</text>
+  <text x="400" y="235" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="16" text-anchor="middle">Projet</text>
+
+  <!-- 1. Besoin -->
+  <g transform="translate(400, 80)" class="node-anim1">
+    <circle cx="0" cy="0" r="45" class="icon-bg c1"/>
+    <text x="0" y="-5" class="text-title">1. Idée /</text>
+    <text x="0" y="15" class="text-title">Besoin</text>
+  </g>
+
+  <!-- 2. Conception -->
+  <g transform="translate(533, 175)" class="node-anim2">
+    <circle cx="0" cy="0" r="45" class="icon-bg c2"/>
+    <text x="0" y="-5" class="text-title">2. Conception</text>
+    <text x="0" y="15" class="text-sub">(Solutions)</text>
+  </g>
+
+  <!-- 3. Prototype -->
+  <g transform="translate(480, 310)" class="node-anim3">
+    <circle cx="0" cy="0" r="45" class="icon-bg c3"/>
+    <text x="0" y="-5" class="text-title">3. Prototype</text>
+    <text x="0" y="15" class="text-sub">(Fabrication)</text>
+  </g>
+
+  <!-- 4. Tests -->
+  <g transform="translate(320, 310)" class="node-anim4">
+    <circle cx="0" cy="0" r="45" class="icon-bg c4"/>
+    <text x="0" y="-5" class="text-title">4. Tests</text>
+    <text x="0" y="15" class="text-sub">(Validation)</text>
+  </g>
+
+  <!-- 5. Indus -->
+  <g transform="translate(267, 175)" class="node-anim5">
+    <circle cx="0" cy="0" r="45" class="icon-bg c5"/>
+    <text x="0" y="-5" class="text-title">5. Indus-</text>
+    <text x="0" y="15" class="text-title">-trialisation</text>
+  </g>
+</svg>

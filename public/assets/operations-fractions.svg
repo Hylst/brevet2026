@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Opérations sur les Fractions</text>
+
+  <!-- Addition / Soustraction -->
+  <rect x="50" y="80" width="330" height="280" fill="#334155" rx="8" />
+  <rect x="50" y="80" width="330" height="40" fill="#3b82f6" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+  <text x="215" y="105" font-family="sans-serif" font-size="18" fill="#fff" font-weight="bold" text-anchor="middle">Addition / Soustraction</text>
+  
+  <text x="215" y="150" font-family="sans-serif" font-size="14" fill="#eab308" font-weight="bold" text-anchor="middle">⚠️ Il faut le même dénominateur (en bas) !</text>
+  
+  <g transform="translate(130, 200)" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold">
+    <text x="10" y="0">1</text>
+    <line x1="0" y1="10" x2="30" y2="10" stroke="#f8fafc" stroke-width="3" />
+    <text x="10" y="35" fill="#eab308">3</text>
+    
+    <text x="50" y="20">+</text>
+    
+    <text x="80" y="0">2</text>
+    <line x1="70" y1="10" x2="100" y2="10" stroke="#f8fafc" stroke-width="3" />
+    <text x="80" y="35" fill="#eab308">3</text>
+
+    <text x="120" y="20">=</text>
+
+    <text x="150" y="0">3</text>
+    <line x1="140" y1="10" x2="170" y2="10" stroke="#f8fafc" stroke-width="3" />
+    <text x="150" y="35" fill="#eab308">3</text>
+  </g>
+  <text x="215" y="280" font-family="sans-serif" font-size="14" fill="#cbd5e1" text-anchor="middle">On n'ajoute que les numérateurs.</text>
+  <text x="215" y="300" font-family="sans-serif" font-size="14" fill="#cbd5e1" text-anchor="middle">Le dénominateur ne change pas.</text>
+
+
+  <!-- Multiplication -->
+  <rect x="420" y="80" width="330" height="130" fill="#334155" rx="8" />
+  <rect x="420" y="80" width="330" height="30" fill="#10b981" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+  <text x="585" y="100" font-family="sans-serif" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">Multiplication</text>
+
+  <text x="585" y="130" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">Directement "en ligne"</text>
+  
+  <g transform="translate(500, 150)" font-family="sans-serif" font-size="18" fill="#f8fafc" font-weight="bold">
+    <text x="10" y="0">2</text>
+    <line x1="0" y1="10" x2="30" y2="10" stroke="#f8fafc" stroke-width="3" />
+    <text x="10" y="30">3</text>
+    
+    <text x="50" y="20">×</text>
+    
+    <text x="80" y="0">4</text>
+    <line x1="70" y1="10" x2="100" y2="10" stroke="#f8fafc" stroke-width="3" />
+    <text x="80" y="30">5</text>
+
+    <text x="120" y="20">=</text>
+
+    <text x="150" y="0">8</text>
+    <line x1="140" y1="10" x2="170" y2="10" stroke="#f8fafc" stroke-width="3" />
+    <text x="145" y="30">15</text>
+  </g>
+
+
+  <!-- Division -->
+  <rect x="420" y="230" width="330" height="130" fill="#334155" rx="8" />
+  <rect x="420" y="230" width="330" height="30" fill="#ef4444" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+  <text x="585" y="250" font-family="sans-serif" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">Division</text>
+  
+  <text x="585" y="280" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">Multiplier par l'inverse de la 2ème fraction</text>
+
+  <g transform="translate(480, 310)" font-family="sans-serif" font-size="16" fill="#f8fafc" font-weight="bold">
+    <text x="10" y="0">2</text>
+    <line x1="0" y1="8" x2="30" y2="8" stroke="#f8fafc" stroke-width="2" />
+    <text x="10" y="25">3</text>
+    
+    <text x="45" y="15">÷</text>
+    
+    <text x="75" y="0" fill="#ef4444">4</text>
+    <line x1="65" y1="8" x2="95" y2="8" stroke="#f8fafc" stroke-width="2" />
+    <text x="75" y="25" fill="#ef4444">5</text>
+
+    <text x="110" y="15">=</text>
+
+    <!-- Inverse -->
+    <text x="140" y="0">2</text>
+    <line x1="130" y1="8" x2="160" y2="8" stroke="#f8fafc" stroke-width="2" />
+    <text x="140" y="25">3</text>
+
+    <text x="175" y="15">×</text>
+
+    <text x="205" y="0" fill="#ef4444">5</text>
+    <line x1="195" y1="8" x2="225" y2="8" stroke="#f8fafc" stroke-width="2" />
+    <text x="205" y="25" fill="#ef4444">4</text>
+  </g>
+
+</svg>

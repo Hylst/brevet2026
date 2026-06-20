@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: 'Inter', sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .tense { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: bold; fill: #ffffff; }
+      .desc { font-family: 'Inter', sans-serif; font-size: 12px; fill: #334155; }
+      .line { stroke: #94a3b8; stroke-width: 4; }
+      .past-box { fill: #ef4444; rx: 8; }
+      .present-box { fill: #22c55e; rx: 8; }
+      .future-box { fill: #3b82f6; rx: 8; }
+      .perfect-box { fill: #f59e0b; rx: 8; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="12" />
+
+  <!-- Title -->
+  <text x="400" y="40" class="title" text-anchor="middle">Ligne du Temps : Les Temps Anglais</text>
+
+  <!-- Main Timeline -->
+  <line x1="50" y1="200" x2="750" y2="200" class="line" />
+  
+  <!-- Past Marker -->
+  <circle cx="200" cy="200" r="6" fill="#ef4444" />
+  <text x="200" y="225" font-family="Inter" font-weight="bold" fill="#ef4444" text-anchor="middle">PAST</text>
+
+  <!-- Present Marker -->
+  <circle cx="400" cy="200" r="8" fill="#22c55e" />
+  <text x="400" y="225" font-family="Inter" font-weight="bold" fill="#22c55e" text-anchor="middle">NOW</text>
+
+  <!-- Future Marker -->
+  <circle cx="600" cy="200" r="6" fill="#3b82f6" />
+  <text x="600" y="225" font-family="Inter" font-weight="bold" fill="#3b82f6" text-anchor="middle">FUTURE</text>
+
+  <!-- Prétérit -->
+  <rect x="130" y="100" width="140" height="40" class="past-box" />
+  <text x="200" y="125" class="tense" text-anchor="middle">PRÉTÉRIT</text>
+  <text x="200" y="155" class="desc" text-anchor="middle">Action terminée et datée</text>
+  <text x="200" y="170" class="desc" text-anchor="middle" font-style="italic">"I played yesterday"</text>
+
+  <!-- Present Simple -->
+  <rect x="330" y="80" width="140" height="40" class="present-box" />
+  <text x="400" y="105" class="tense" text-anchor="middle">PRÉSENT SIMPLE</text>
+  <text x="400" y="135" class="desc" text-anchor="middle">Habitudes, vérités</text>
+  <text x="400" y="150" class="desc" text-anchor="middle" font-style="italic">"I play every day"</text>
+
+  <!-- Present Continuous -->
+  <rect x="330" y="260" width="140" height="40" class="present-box" />
+  <text x="400" y="285" class="tense" text-anchor="middle">PRÉSENT CONTINU</text>
+  <text x="400" y="315" class="desc" text-anchor="middle">Action en cours (now)</text>
+  <text x="400" y="330" class="desc" text-anchor="middle" font-style="italic">"I am playing now"</text>
+
+  <!-- Future -->
+  <rect x="530" y="100" width="140" height="40" class="future-box" />
+  <text x="600" y="125" class="tense" text-anchor="middle">FUTUR (Will)</text>
+  <text x="600" y="155" class="desc" text-anchor="middle">Prédiction, décision</text>
+  <text x="600" y="170" class="desc" text-anchor="middle" font-style="italic">"I will play tomorrow"</text>
+
+  <!-- Present Perfect -->
+  <path d="M 200 200 Q 300 100 400 200" fill="none" stroke="#f59e0b" stroke-width="3" stroke-dasharray="5,5" />
+  <rect x="230" y="260" width="140" height="40" class="perfect-box" />
+  <text x="300" y="285" class="tense" text-anchor="middle">PRESENT PERFECT</text>
+  <text x="300" y="315" class="desc" text-anchor="middle">Lien Passé -> Présent</text>
+  <text x="300" y="330" class="desc" text-anchor="middle" font-style="italic">"I have played"</text>
+
+</svg>

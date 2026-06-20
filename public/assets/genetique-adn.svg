@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      @keyframes spin {
+        0% { transform: rotateY(0deg); }
+        100% { transform: rotateY(360deg); }
+      }
+      @keyframes zoomIn {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+      }
+      .helix-strand { fill: none; stroke-width: 6; stroke-linecap: round; }
+      .strand1 { stroke: #3b82f6; }
+      .strand2 { stroke: #ef4444; }
+      .base { stroke: #94a3b8; stroke-width: 4; stroke-linecap: round; }
+      
+      .chromosome { fill: #6366f1; stroke: #4f46e5; stroke-width: 2; }
+      .centromere { fill: #facc15; }
+      
+      .cell { fill: #1e293b; stroke: #475569; stroke-width: 4; }
+      .nucleus { fill: #2dd4bf; opacity: 0.2; }
+    </style>
+  </defs>
+
+  <rect width="800" height="400" fill="#0f172a" rx="20" />
+  
+  <text x="400" y="40" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="24" text-anchor="middle">L'information Génétique : de la Cellule à l'ADN</text>
+
+  <!-- Cell and Nucleus -->
+  <g transform="translate(150, 200)" style="animation: zoomIn 4s infinite">
+    <circle cx="0" cy="0" r="80" class="cell"/>
+    <circle cx="0" cy="0" r="40" class="nucleus"/>
+    <text x="0" y="-95" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="16" text-anchor="middle">Cellule</text>
+    <text x="0" y="55" fill="#2dd4bf" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Noyau</text>
+    
+    <!-- Mini Chromosomes in Nucleus -->
+    <path d="M -10 -20 Q 0 -10 -10 0 Q 0 -10 10 -20 Q 0 -10 -10 -20 Z" fill="#6366f1"/>
+    <path d="M -15 10 Q -5 20 -15 30 Q -5 20 5 10 Q -5 20 -15 10 Z" fill="#6366f1"/>
+    <path d="M 5 5 Q 15 15 5 25 Q 15 15 25 5 Q 15 15 5 5 Z" fill="#6366f1"/>
+  </g>
+
+  <!-- Zoom arrow 1 -->
+  <path d="M 250 200 L 320 200" stroke="#facc15" stroke-width="4" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow)"/>
+  
+  <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#facc15" />
+  </marker>
+
+  <!-- Chromosome -->
+  <g transform="translate(400, 200)">
+    <!-- Chromatid 1 -->
+    <path d="M -10 -60 C -30 -30, -5 -10, -10 0 C -5 10, -30 30, -10 60 C 5 30, -15 10, -10 0 C -15 -10, 5 -30, -10 -60" class="chromosome"/>
+    <!-- Chromatid 2 -->
+    <path d="M 10 -60 C 30 -30, 5 -10, 10 0 C 5 10, 30 30, 10 60 C -5 30, 15 10, 10 0 C 15 -10, -5 -30, 10 -60" class="chromosome"/>
+    <!-- Centromere -->
+    <circle cx="0" cy="0" r="10" class="centromere"/>
+    
+    <text x="0" y="90" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="16" text-anchor="middle">Chromosome</text>
+    <text x="0" y="110" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">(Support des Gènes)</text>
+  </g>
+
+  <!-- Zoom arrow 2 -->
+  <path d="M 480 200 L 550 200" stroke="#facc15" stroke-width="4" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- DNA Helix -->
+  <g transform="translate(680, 200)">
+    <!-- 3D spin container -->
+    <g style="transform-style: preserve-3d; animation: spin 8s linear infinite;">
+      <!-- Bases (Rungs) -->
+      <line x1="-30" y1="-80" x2="30" y2="-80" class="base"/>
+      <line x1="-20" y1="-60" x2="20" y2="-60" class="base"/>
+      <line x1="-10" y1="-40" x2="10" y2="-40" class="base"/>
+      <line x1="-20" y1="-20" x2="20" y2="-20" class="base"/>
+      <line x1="-30" y1="0" x2="30" y2="0" class="base"/>
+      <line x1="-20" y1="20" x2="20" y2="20" class="base"/>
+      <line x1="-10" y1="40" x2="10" y2="40" class="base"/>
+      <line x1="-20" y1="60" x2="20" y2="60" class="base"/>
+      <line x1="-30" y1="80" x2="30" y2="80" class="base"/>
+
+      <!-- Backbone 1 (Blue) -->
+      <path d="M -30 -80 Q -10 -60 -10 -40 T -30 0 T -10 40 T -30 80" class="helix-strand strand1"/>
+      
+      <!-- Backbone 2 (Red) -->
+      <path d="M 30 -80 Q 10 -60 10 -40 T 30 0 T 10 40 T 30 80" class="helix-strand strand2"/>
+    </g>
+    
+    <text x="0" y="120" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="16" text-anchor="middle">Molécule d'ADN</text>
+  </g>
+
+</svg>

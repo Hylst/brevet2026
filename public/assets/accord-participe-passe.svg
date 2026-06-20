@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Accord du Participe Passé</text>
+
+  <!-- Start -->
+  <rect x="300" y="70" width="200" height="40" fill="#475569" rx="8" />
+  <text x="400" y="95" font-family="sans-serif" font-size="16" fill="#f8fafc" font-weight="bold" text-anchor="middle">Employé avec...</text>
+
+  <path d="M 400 110 L 400 140" stroke="#cbd5e1" stroke-width="2" />
+  <path d="M 200 140 L 600 140" stroke="#cbd5e1" stroke-width="2" />
+  <path d="M 200 140 L 200 160" stroke="#cbd5e1" stroke-width="2" />
+  <path d="M 400 140 L 400 160" stroke="#cbd5e1" stroke-width="2" />
+  <path d="M 600 140 L 600 160" stroke="#cbd5e1" stroke-width="2" />
+
+  <!-- Sans auxiliaire -->
+  <rect x="100" y="160" width="200" height="40" fill="#8b5cf6" rx="8" />
+  <text x="200" y="186" font-family="sans-serif" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">Sans Auxiliaire</text>
+  <path d="M 200 200 L 200 230" stroke="#cbd5e1" stroke-width="2" />
+  <rect x="75" y="230" width="250" height="80" fill="#1e293b" stroke="#8b5cf6" stroke-width="3" rx="8" />
+  <text x="200" y="260" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold" text-anchor="middle">Comme un adjectif</text>
+  <text x="200" y="280" font-family="sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">S'accorde avec le nom.</text>
+  <text x="200" y="300" font-family="sans-serif" font-size="14" fill="#8b5cf6" font-style="italic" text-anchor="middle">Ex: Des fleurs coupées</text>
+
+  <!-- Être -->
+  <rect x="320" y="160" width="160" height="40" fill="#3b82f6" rx="8" />
+  <text x="400" y="186" font-family="sans-serif" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">Auxiliaire ÊTRE</text>
+  <path d="M 400 200 L 400 230" stroke="#cbd5e1" stroke-width="2" />
+  <rect x="340" y="230" width="120" height="80" fill="#1e293b" stroke="#3b82f6" stroke-width="3" rx="8" />
+  <text x="400" y="260" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold" text-anchor="middle">Avec le Sujet</text>
+  <text x="400" y="280" font-family="sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">Toujours.</text>
+  <text x="400" y="300" font-family="sans-serif" font-size="14" fill="#3b82f6" font-style="italic" text-anchor="middle">Ex: Elle est partie</text>
+
+  <!-- Avoir -->
+  <rect x="500" y="160" width="200" height="40" fill="#ef4444" rx="8" />
+  <text x="600" y="186" font-family="sans-serif" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">Auxiliaire AVOIR</text>
+  <path d="M 600 200 L 600 215" stroke="#cbd5e1" stroke-width="2" />
+  
+  <text x="600" y="230" font-family="sans-serif" font-size="14" fill="#f8fafc" text-anchor="middle">COD placé avant ?</text>
+  
+  <path d="M 600 240 L 600 260" stroke="#cbd5e1" stroke-width="2" />
+  <path d="M 520 250 L 680 250" stroke="#cbd5e1" stroke-width="2" />
+  <path d="M 520 250 L 520 270" stroke="#cbd5e1" stroke-width="2" />
+  <path d="M 680 250 L 680 270" stroke="#cbd5e1" stroke-width="2" />
+  <text x="520" y="245" font-family="sans-serif" font-size="12" fill="#22c55e" text-anchor="middle">OUI</text>
+  <text x="680" y="245" font-family="sans-serif" font-size="12" fill="#ef4444" text-anchor="middle">NON</text>
+
+  <rect x="460" y="270" width="120" height="100" fill="#1e293b" stroke="#22c55e" stroke-width="3" rx="8" />
+  <text x="520" y="300" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold" text-anchor="middle">Avec le COD</text>
+  <text x="520" y="320" font-family="sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Il s'accorde.</text>
+  <text x="520" y="340" font-family="sans-serif" font-size="12" fill="#22c55e" font-style="italic" text-anchor="middle">Les fleurs qu'il</text>
+  <text x="520" y="355" font-family="sans-serif" font-size="12" fill="#22c55e" font-style="italic" text-anchor="middle">a coupées</text>
+
+  <rect x="620" y="270" width="120" height="100" fill="#1e293b" stroke="#ef4444" stroke-width="3" rx="8" />
+  <text x="680" y="300" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold" text-anchor="middle">Jamais</text>
+  <text x="680" y="320" font-family="sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Pas d'accord.</text>
+  <text x="680" y="340" font-family="sans-serif" font-size="12" fill="#ef4444" font-style="italic" text-anchor="middle">Il a coupé</text>
+  <text x="680" y="355" font-family="sans-serif" font-size="12" fill="#ef4444" font-style="italic" text-anchor="middle">des fleurs</text>
+</svg>

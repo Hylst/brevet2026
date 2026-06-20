@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">La Guerre Froide (1947 - 1991)</text>
+
+  <!-- World Abstraction -->
+  <rect x="50" y="70" width="700" height="250" fill="#0f172a" rx="10" />
+
+  <!-- USA Bloc (Capitalist/West) -->
+  <path d="M 50 70 L 395 70 L 395 320 L 50 320 Z" fill="#1e3a8a" opacity="0.8" rx="10" clip-path="inset(0 0 0 0 round 10px 0 0 10px)" />
+  <circle cx="200" cy="195" r="80" fill="#3b82f6" opacity="0.5" />
+  <text x="200" y="160" font-family="sans-serif" font-size="24" fill="#fff" font-weight="bold" text-anchor="middle">BLOC DE L'OUEST</text>
+  <text x="200" y="180" font-family="sans-serif" font-size="16" fill="#cbd5e1" text-anchor="middle">États-Unis</text>
+  <text x="200" y="210" font-family="sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">Modèle Capitaliste & Libéral</text>
+  <text x="200" y="230" font-family="sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">OTAN (Alliance Militaire)</text>
+
+  <!-- Iron Curtain -->
+  <path d="M 400 70 L 400 320" stroke="#f8fafc" stroke-width="6" stroke-dasharray="10 10" />
+  <rect x="350" y="280" width="100" height="24" fill="#f8fafc" rx="4" />
+  <text x="400" y="296" font-family="sans-serif" font-size="12" fill="#1e293b" font-weight="bold" text-anchor="middle">Rideau de Fer</text>
+
+  <!-- USSR Bloc (Communist/East) -->
+  <path d="M 405 70 L 750 70 L 750 320 L 405 320 Z" fill="#7f1d1d" opacity="0.8" clip-path="inset(0 0 0 0 round 0 10px 10px 0)" />
+  <circle cx="600" cy="195" r="80" fill="#ef4444" opacity="0.5" />
+  <text x="600" y="160" font-family="sans-serif" font-size="24" fill="#fff" font-weight="bold" text-anchor="middle">BLOC DE L'EST</text>
+  <text x="600" y="180" font-family="sans-serif" font-size="16" fill="#cbd5e1" text-anchor="middle">URSS</text>
+  <text x="600" y="210" font-family="sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">Modèle Communiste</text>
+  <text x="600" y="230" font-family="sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">Pacte de Varsovie</text>
+
+  <!-- Proxy wars & Space race -->
+  <path d="M 280 120 Q 400 40 520 120" stroke="#f59e0b" stroke-width="4" fill="none" stroke-dasharray="5 5" />
+  <text x="400" y="90" font-family="sans-serif" font-size="14" fill="#f59e0b" font-weight="bold" text-anchor="middle">Course aux Armements & Espace</text>
+
+  <rect x="250" y="100" width="15" height="15" fill="#f59e0b" transform="rotate(45, 250, 100)" />
+  <rect x="550" y="100" width="15" height="15" fill="#f59e0b" transform="rotate(45, 550, 100)" />
+
+  <text x="400" y="360" font-family="sans-serif" font-size="16" fill="#cbd5e1" text-anchor="middle" font-style="italic">Un monde bipolaire : deux superpuissances s'affrontent indirectement.</text>
+</svg>

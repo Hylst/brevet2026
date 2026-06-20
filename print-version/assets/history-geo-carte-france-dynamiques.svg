@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: 'Inter', sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .label { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: bold; fill: #1e293b; }
+      .desc { font-family: 'Inter', sans-serif; font-size: 12px; fill: #475569; }
+      .france-outline { fill: #f1f5f9; stroke: #94a3b8; stroke-width: 2; }
+      .low-density { fill: #fef08a; opacity: 0.7; }
+      .metropolis { fill: #ef4444; }
+      .flow-arrow { stroke: #3b82f6; stroke-width: 4; fill: none; stroke-linecap: round; }
+      .arrow-head { fill: #3b82f6; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" class="arrow-head" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="12" />
+
+  <!-- Title -->
+  <text x="400" y="40" class="title" text-anchor="middle">Dynamiques Territoriales de la France</text>
+
+  <!-- Stylized Map of France (Hexagon) -->
+  <g transform="translate(150, 70)">
+    <!-- Hexagon Base -->
+    <polygon points="150,20 280,80 260,240 150,300 40,240 20,80" class="france-outline" />
+    
+    <!-- Diagonale des faibles densités -->
+    <path d="M 220,60 L 100,260 L 60,240 L 180,40 Z" class="low-density" />
+    <text x="140" y="150" class="desc" transform="rotate(-55 140 150)" text-anchor="middle" font-weight="bold" fill="#854d0e">Diagonale des faibles densités</text>
+
+    <!-- Metropolises (Red dots) -->
+    <!-- Paris -->
+    <circle cx="150" cy="100" r="12" class="metropolis" />
+    <text x="170" y="105" class="label">Paris</text>
+    
+    <!-- Lyon -->
+    <circle cx="220" cy="180" r="8" class="metropolis" />
+    <text x="235" y="185" class="label">Lyon</text>
+    
+    <!-- Marseille -->
+    <circle cx="230" cy="260" r="8" class="metropolis" />
+    <text x="245" y="265" class="label">Marseille</text>
+    
+    <!-- Toulouse -->
+    <circle cx="120" cy="250" r="8" class="metropolis" />
+    <text x="120" y="270" class="label" text-anchor="middle">Toulouse</text>
+    
+    <!-- Bordeaux -->
+    <circle cx="70" cy="210" r="8" class="metropolis" />
+    <text x="40" y="215" class="label">Bordeaux</text>
+
+    <!-- Nantes -->
+    <circle cx="60" cy="130" r="8" class="metropolis" />
+    <text x="20" y="135" class="label">Nantes</text>
+
+    <!-- Lille -->
+    <circle cx="170" cy="40" r="8" class="metropolis" />
+    <text x="190" y="45" class="label">Lille</text>
+
+    <!-- Migration Flows (Héliotropisme & Littoralisation) -->
+    <path d="M 150 120 Q 100 160 80 190" class="flow-arrow" marker-end="url(#arrow)" />
+    <path d="M 160 120 Q 200 180 220 240" class="flow-arrow" marker-end="url(#arrow)" />
+    <path d="M 180 60 Q 240 100 260 160" class="flow-arrow" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- Legend Box -->
+  <rect x="500" y="100" width="260" height="220" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" rx="8" />
+  <text x="630" y="130" class="label" text-anchor="middle">LÉGENDE</text>
+  
+  <circle cx="530" cy="160" r="8" class="metropolis" />
+  <text x="550" y="165" class="desc">Métropoles attractives</text>
+  <text x="550" y="180" class="desc">(Concentration des pouvoirs)</text>
+
+  <rect x="520" y="200" width="20" height="20" class="low-density" />
+  <text x="550" y="215" class="desc">Espaces de faible densité</text>
+  <text x="550" y="230" class="desc">(&lt; 30 hab/km²)</text>
+
+  <line x1="520" y1="260" x2="540" y2="260" class="flow-arrow" marker-end="url(#arrow)" />
+  <text x="550" y="265" class="desc">Flux migratoires internes</text>
+  <text x="550" y="280" class="desc">(Héliotropisme, vers l'Ouest/Sud)</text>
+
+</svg>

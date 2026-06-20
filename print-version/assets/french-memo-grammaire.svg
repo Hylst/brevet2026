@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: 'Inter', sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .subtitle { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: bold; fill: #334155; }
+      .text { font-family: 'Inter', sans-serif; font-size: 14px; fill: #475569; }
+      .box { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 2; rx: 8; }
+      .highlight { fill: #f0fdf4; stroke: #22c55e; stroke-width: 2; rx: 8; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="12" />
+
+  <!-- Title -->
+  <text x="400" y="40" class="title" text-anchor="middle">Fiche Mémo : Nature vs Fonction</text>
+
+  <!-- Nature Box -->
+  <rect x="40" y="80" width="340" height="280" class="box" />
+  <text x="210" y="110" class="title" text-anchor="middle" font-size="20" fill="#2563eb">NATURE (Identité)</text>
+  <text x="210" y="135" class="text" text-anchor="middle" font-style="italic">Ce que le mot EST (ne change pas)</text>
+  
+  <text x="60" y="170" class="subtitle">Variables :</text>
+  <text x="60" y="195" class="text">- Nom (chien, liberté)</text>
+  <text x="60" y="220" class="text">- Déterminant (le, un, mon)</text>
+  <text x="60" y="245" class="text">- Adjectif (grand, beau)</text>
+  <text x="60" y="270" class="text">- Pronom (il, le mien)</text>
+  <text x="60" y="295" class="text">- Verbe (manger, être)</text>
+
+  <text x="230" y="170" class="subtitle">Invariables :</text>
+  <text x="230" y="195" class="text">- Adverbe (très, vite)</text>
+  <text x="230" y="220" class="text">- Préposition (à, de, pour)</text>
+  <text x="230" y="245" class="text">- Conjonction (mais, que)</text>
+
+  <!-- Fonction Box -->
+  <rect x="420" y="80" width="340" height="280" class="highlight" />
+  <text x="590" y="110" class="title" text-anchor="middle" font-size="20" fill="#16a34a">FONCTION (Rôle)</text>
+  <text x="590" y="135" class="text" text-anchor="middle" font-style="italic">Ce que le mot FAIT (change selon la phrase)</text>
+
+  <text x="440" y="170" class="subtitle">Autour du Verbe :</text>
+  <text x="440" y="195" class="text">- Sujet (Qui est-ce qui ?)</text>
+  <text x="440" y="220" class="text">- COD (Quoi / Qui ?)</text>
+  <text x="440" y="245" class="text">- COI (À qui / De quoi ?)</text>
+  <text x="440" y="270" class="text">- Complément Circonstanciel</text>
+  <text x="440" y="295" class="text">  (Où, Quand, Comment ?)</text>
+
+  <text x="620" y="170" class="subtitle">Autour du Nom :</text>
+  <text x="620" y="195" class="text">- Épithète</text>
+  <text x="620" y="220" class="text">- Complément du nom</text>
+</svg>

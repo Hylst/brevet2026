@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 0 900 600" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .text-title { fill: #f8fafc; font-family: 'Inter', sans-serif; font-size: 24px; font-weight: bold; text-anchor: middle; }
+      .text-node { fill: #f8fafc; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: bold; text-anchor: middle; }
+      .text-subnode { fill: #cbd5e1; font-family: 'Inter', sans-serif; font-size: 12px; text-anchor: middle; }
+      .center-node { fill: #3b82f6; stroke: #60a5fa; stroke-width: 3; rx: 50; ry: 50; }
+      .branch-node { fill: #1e293b; stroke: #475569; stroke-width: 2; rx: 10; ry: 10; }
+      .line { stroke: #475569; stroke-width: 2; fill: none; }
+      .valeurs-color { stroke: #ef4444; }
+      .symboles-color { stroke: #f59e0b; }
+      .principes-color { stroke: #10b981; }
+      .nationalite-color { stroke: #8b5cf6; }
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" class="bg" />
+
+  <!-- Center Node -->
+  <ellipse cx="400" cy="300" rx="80" ry="50" class="center-node" />
+  <text x="400" y="295" class="text-node">La République</text>
+  <text x="400" y="315" class="text-node">Française</text>
+
+  <!-- Branch: Valeurs (Top Left) -->
+  <path d="M 340,270 Q 200,150 200,120" class="line valeurs-color" />
+  <rect x="120" y="80" width="160" height="40" class="branch-node valeurs-color" />
+  <text x="200" y="105" class="text-node">Valeurs (La Devise)</text>
+  
+  <path d="M 200,80 L 100,50" class="line valeurs-color" />
+  <text x="100" y="40" class="text-subnode">Liberté</text>
+  <path d="M 200,80 L 200,40" class="line valeurs-color" />
+  <text x="200" y="30" class="text-subnode">Égalité</text>
+  <path d="M 200,80 L 300,50" class="line valeurs-color" />
+  <text x="300" y="40" class="text-subnode">Fraternité</text>
+
+  <!-- Branch: Symboles (Top Right) -->
+  <path d="M 460,270 Q 600,150 600,120" class="line symboles-color" />
+  <rect x="520" y="80" width="160" height="40" class="branch-node symboles-color" />
+  <text x="600" y="105" class="text-node">Symboles</text>
+
+  <path d="M 600,80 L 500,50" class="line symboles-color" />
+  <text x="500" y="40" class="text-subnode">Drapeau Tricolore</text>
+  <path d="M 600,80 L 600,40" class="line symboles-color" />
+  <text x="600" y="30" class="text-subnode">La Marseillaise</text>
+  <path d="M 600,80 L 700,50" class="line symboles-color" />
+  <text x="700" y="40" class="text-subnode">Marianne</text>
+  <path d="M 680,100 L 750,100" class="line symboles-color" />
+  <text x="750" y="90" class="text-subnode">14 Juillet</text>
+
+  <!-- Branch: Principes (Bottom Left) -->
+  <path d="M 340,330 Q 200,450 200,480" class="line principes-color" />
+  <rect x="120" y="480" width="160" height="40" class="branch-node principes-color" />
+  <text x="200" y="505" class="text-node">Principes (Art. 1)</text>
+
+  <path d="M 200,520 L 100,550" class="line principes-color" />
+  <text x="100" y="570" class="text-subnode">Indivisible</text>
+  <path d="M 200,520 L 200,560" class="line principes-color" />
+  <text x="200" y="580" class="text-subnode">Laïque (1905)</text>
+  <path d="M 200,520 L 300,550" class="line principes-color" />
+  <text x="300" y="570" class="text-subnode">Démocratique</text>
+  <path d="M 120,500 L 50,500" class="line principes-color" />
+  <text x="50" y="490" class="text-subnode">Sociale</text>
+
+  <!-- Branch: Nationalité (Bottom Right) -->
+  <path d="M 460,330 Q 600,450 600,480" class="line nationalite-color" />
+  <rect x="520" y="480" width="160" height="40" class="branch-node nationalite-color" />
+  <text x="600" y="505" class="text-node">Nationalité</text>
+
+  <path d="M 600,520 L 500,550" class="line nationalite-color" />
+  <text x="500" y="570" class="text-subnode">Droit du sang</text>
+  <path d="M 600,520 L 600,560" class="line nationalite-color" />
+  <text x="600" y="580" class="text-subnode">Droit du sol</text>
+  <path d="M 600,520 L 700,550" class="line nationalite-color" />
+  <text x="700" y="570" class="text-subnode">Mariage</text>
+  <path d="M 680,500 L 750,500" class="line nationalite-color" />
+  <text x="750" y="490" class="text-subnode">Naturalisation</text>
+
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="50" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Tableau de Conversion (Longueurs)</text>
+  
+  <!-- Table Headers -->
+  <g transform="translate(50, 150)" font-family="sans-serif" font-size="20" fill="#f8fafc" text-anchor="middle">
+    <!-- km -->
+    <rect x="0" y="0" width="100" height="50" fill="#334155" stroke="#1e293b" stroke-width="2"/>
+    <text x="50" y="32">km</text>
+    
+    <!-- hm -->
+    <rect x="100" y="0" width="100" height="50" fill="#334155" stroke="#1e293b" stroke-width="2"/>
+    <text x="150" y="32">hm</text>
+    
+    <!-- dam -->
+    <rect x="200" y="0" width="100" height="50" fill="#334155" stroke="#1e293b" stroke-width="2"/>
+    <text x="250" y="32">dam</text>
+    
+    <!-- m -->
+    <rect x="300" y="0" width="100" height="50" fill="#0284c7" stroke="#1e293b" stroke-width="2"/>
+    <text x="350" y="32" font-weight="bold">m</text>
+    
+    <!-- dm -->
+    <rect x="400" y="0" width="100" height="50" fill="#334155" stroke="#1e293b" stroke-width="2"/>
+    <text x="450" y="32">dm</text>
+    
+    <!-- cm -->
+    <rect x="500" y="0" width="100" height="50" fill="#334155" stroke="#1e293b" stroke-width="2"/>
+    <text x="550" y="32">cm</text>
+    
+    <!-- mm -->
+    <rect x="600" y="0" width="100" height="50" fill="#334155" stroke="#1e293b" stroke-width="2"/>
+    <text x="650" y="32">mm</text>
+  </g>
+  
+  <defs>
+    <marker id="arrow-right" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e" />
+    </marker>
+    <marker id="arrow-left" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ef4444" />
+    </marker>
+  </defs>
+
+  <!-- Example Arrow Right (*10) -->
+  <path d="M 370 120 Q 400 90 430 120" fill="none" stroke="#22c55e" stroke-width="3" marker-end="url(#arrow-right)"/>
+  <text x="400" y="100" font-family="sans-serif" font-size="16" fill="#22c55e" font-weight="bold" text-anchor="middle">x 10</text>
+  
+  <!-- Example Arrow Left (/10) -->
+  <path d="M 430 230 Q 400 260 370 230" fill="none" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow-left)"/>
+  <text x="400" y="270" font-family="sans-serif" font-size="16" fill="#ef4444" font-weight="bold" text-anchor="middle">÷ 10</text>
+
+  <!-- Explanation Texts -->
+  <text x="400" y="320" font-family="sans-serif" font-size="16" fill="#cbd5e1" text-anchor="middle">Pour passer à une unité plus petite, on multiplie par 10 (on décale la virgule vers la droite).</text>
+  <text x="400" y="350" font-family="sans-serif" font-size="16" fill="#cbd5e1" text-anchor="middle">Pour passer à une unité plus grande, on divise par 10 (on décale la virgule vers la gauche).</text>
+</svg>

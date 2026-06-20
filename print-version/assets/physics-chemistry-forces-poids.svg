@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: 'Inter', sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .label { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: bold; }
+      .desc { font-family: 'Inter', sans-serif; font-size: 14px; fill: #475569; }
+      .math { font-family: 'JetBrains Mono', monospace; font-size: 20px; font-weight: bold; fill: #0f172a; }
+      .box { fill: #e2e8f0; stroke: #94a3b8; stroke-width: 2; }
+      .surface { stroke: #64748b; stroke-width: 4; stroke-linecap: round; }
+      .force-p { stroke: #ef4444; stroke-width: 4; fill: none; }
+      .force-r { stroke: #3b82f6; stroke-width: 4; fill: none; }
+    </style>
+    <marker id="arrow-p" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" />
+    </marker>
+    <marker id="arrow-r" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="12" />
+
+  <!-- Title -->
+  <text x="400" y="40" class="title" text-anchor="middle">Modélisation des Forces : Poids et Réaction</text>
+
+  <!-- Diagram Area -->
+  <g transform="translate(150, 100)">
+    <!-- Surface (Table/Ground) -->
+    <line x1="0" y1="150" x2="200" y2="150" class="surface" />
+    <!-- Hatching for ground -->
+    <line x1="20" y1="150" x2="10" y2="160" stroke="#94a3b8" stroke-width="2" />
+    <line x1="60" y1="150" x2="50" y2="160" stroke="#94a3b8" stroke-width="2" />
+    <line x1="100" y1="150" x2="90" y2="160" stroke="#94a3b8" stroke-width="2" />
+    <line x1="140" y1="150" x2="130" y2="160" stroke="#94a3b8" stroke-width="2" />
+    <line x1="180" y1="150" x2="170" y2="160" stroke="#94a3b8" stroke-width="2" />
+
+    <!-- Object (Box) -->
+    <rect x="50" y="50" width="100" height="100" class="box" />
+    <text x="100" y="105" font-family="Inter" font-weight="bold" fill="#64748b" text-anchor="middle">Objet</text>
+
+    <!-- Center of Gravity (G) -->
+    <circle cx="100" cy="100" r="4" fill="#0f172a" />
+    <text x="115" y="95" font-family="Inter" font-weight="bold" font-size="14">G</text>
+
+    <!-- Point of Contact (C) -->
+    <circle cx="100" cy="150" r="4" fill="#0f172a" />
+
+    <!-- Force: Poids (P) -->
+    <!-- Starts at Center of Gravity, points down -->
+    <line x1="100" y1="100" x2="100" y2="220" class="force-p" marker-end="url(#arrow-p)" />
+    <text x="115" y="210" class="label" fill="#ef4444">P</text>
+
+    <!-- Force: Réaction du support (R) -->
+    <!-- Starts at Contact Point, points up -->
+    <line x1="100" y1="150" x2="100" y2="30" class="force-r" marker-end="url(#arrow-r)" />
+    <text x="115" y="40" class="label" fill="#3b82f6">R</text>
+  </g>
+
+  <!-- Explanations Box -->
+  <rect x="450" y="80" width="300" height="260" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" rx="8" />
+  
+  <text x="470" y="110" class="label" fill="#ef4444">Vecteur Poids (P)</text>
+  <text x="470" y="130" class="desc">- Point d'application : Centre de gravité (G)</text>
+  <text x="470" y="150" class="desc">- Direction : Verticale</text>
+  <text x="470" y="170" class="desc">- Sens : Vers le bas</text>
+  <text x="470" y="190" class="desc">- Valeur : P = m × g (en Newtons)</text>
+
+  <text x="470" y="230" class="label" fill="#3b82f6">Vecteur Réaction (R)</text>
+  <text x="470" y="250" class="desc">- Point d'application : Surface de contact</text>
+  <text x="470" y="270" class="desc">- Direction : Perpendiculaire au support</text>
+  <text x="470" y="290" class="desc">- Sens : Vers le haut</text>
+  <text x="470" y="310" class="desc">- Empêche l'objet de s'enfoncer.</text>
+
+</svg>

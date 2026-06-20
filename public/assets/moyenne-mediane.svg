@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#2d3748" rx="20"/>
+
+  <!-- Data points -->
+  <circle cx="200" cy="300" r="10" fill="#f6e05e" />
+  <circle cx="300" cy="280" r="10" fill="#f6e05e" />
+  <circle cx="400" cy="250" r="10" fill="#f6e05e" />
+  <circle cx="500" cy="300" r="10" fill="#f6e05e" />
+  <circle cx="600" cy="200" r="10" fill="#f6e05e" />
+
+  <!-- Mean -->
+  <line x1="400" y1="350" x2="400" y2="200" stroke="#f56565" stroke-width="4" stroke-dasharray="8 8" />
+  <text x="400" y="380" font-family="sans-serif" font-size="18" fill="#f56565" text-anchor="middle">Moyenne</text>
+
+  <!-- Median -->
+  <line x1="400" y1="350" x2="400" y2="200" stroke="#68d391" stroke-width="4" />
+  <text x="400" y="50" font-family="sans-serif" font-size="18" fill="#68d391" text-anchor="middle">Médiane</text>
+
+  <text x="400" y="30" font-family="sans-serif" font-size="24" fill="#e2e8f0" text-anchor="middle">Moyenne vs Médiane</text>
+</svg>

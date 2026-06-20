@@ -1,0 +1,441 @@
+src/data/svt.ts:    title: 'Le Système Solaire',
+src/data/svt.ts-    description: "Voyage dans l'espace pour découvrir nos planètes voisines.",
+--
+src/data/svt.ts:    title: 'Système solaire et planète Terre',
+src/data/svt.ts-    description: 'La Terre dans le système solaire et ses spécificités.',
+--
+src/data/svt.ts:    title: 'Climat et météo',
+src/data/svt.ts-    description: 'Différences entre météo et climat, risques naturels.',
+--
+src/data/svt.ts:    title: 'Activité sismique et volcanique',
+src/data/svt.ts-    description: 'Séismes, volcans et tectonique des plaques.',
+--
+src/data/svt.ts:    title: 'Le système immunitaire et la vaccination',
+src/data/svt.ts-    description: 'Phagocytose, anticorps, mémoire immunitaire et principe du vaccin.',
+--
+src/data/svt.ts:    title: 'Génétique et Hérédité',
+src/data/svt.ts-    description: 'Chromosomes, ADN, gènes, allèles, mitose et méiose.',
+--
+src/data/svt.ts:    title: 'Nutrition et digestion',
+src/data/svt.ts-    description: 'Appareil digestif, transformation des aliments, microbiote et hygiène alimentaire.',
+--
+src/data/svt.ts:    title: 'Respiration et circulation',
+src/data/svt.ts-    description: 'Échanges gazeux, appareil respiratoire, système circulatoire et cœur.',
+--
+src/data/svt.ts:    title: 'Reproduction sexuée et asexuée',
+src/data/svt.ts-    description: 'Fécondation, gamètes, développement embryonnaire et méthodes contraceptives.',
+--
+src/data/svt.ts:    title: 'Écosystèmes et dynamique de la biodiversité',
+src/data/svt.ts-    description: 'Chaîne alimentaire, réseaux trophiques, et impact des activités humaines.',
+--
+src/data/svt.ts:    title: "L'évolution du vivant",
+src/data/svt.ts-    description: 'Sélection naturelle, fossiles, parenté entre les espèces et arbre phylogénétique.',
+--
+src/data/svt.ts:    title: 'Système nerveux et comportement',
+src/data/svt.ts-    description: 'Cerveau, moelle épinière, neurones, synapses, drogues et addictions.',
+--
+src/data/svt.ts:    title: 'Quiz : Terre et Génétique',
+src/data/svt.ts-    description: 'Teste tes connaissances en biologie et géologie.',
+--
+src/data/svt.ts:    title: 'Quiz : Corps humain et santé',
+src/data/svt.ts-    description: "Teste tes connaissances sur l'immunité et le système nerveux.",
+--
+src/data/svt.ts:      title: 'Quiz : Entraînement Brevet Sciences (Avancé)',
+src/data/svt.ts-      description: '25 questions de niveau 3ème pour réviser la Physique-Chimie, la SVT et la Technologie.',
+--
+src/data/svt.ts:      title: 'Quiz : Entraînement Brevet Sciences (Très Avancé)',
+src/data/svt.ts-      description: '25 questions de niveau 3ème pour exceller en Physique, Chimie, SVT et Technologie.',
+--
+src/data/francais.ts:      title: 'Le groupe nominal',
+src/data/francais.ts-      description: 'Découvre comment fonctionne le groupe nominal (nom, déterminant, adjectif).',
+--
+src/data/francais.ts:      title: 'Classes et Fonctions',
+src/data/francais.ts-      description: 'Nature des mots, expansions du nom et compléments.',
+--
+src/data/francais.ts:      title: 'La phrase complexe',
+src/data/francais.ts-      description: 'Juxtaposition, coordination et subordination.',
+--
+src/data/francais.ts:      title: 'Le Verbe et les Temps',
+src/data/francais.ts-      description: 'Valeurs des temps de l\'indicatif, subjonctif et conditionnel.',
+--
+src/data/francais.ts:      title: 'Les discours rapportés',
+src/data/francais.ts-      description: 'Discours direct, indirect et indirect libre.',
+--
+src/data/francais.ts:      title: 'Accords et Formation des mots',
+src/data/francais.ts-      description: 'Participe passé, dérivation et composition des mots.',
+--
+src/data/francais.ts:      title: 'Se raconter, se représenter',
+src/data/francais.ts-      description: 'L\'autobiographie et l\'écriture de soi.',
+--
+src/data/francais.ts:      title: 'Dénoncer les travers de la société',
+src/data/francais.ts-      description: 'Satire, ironie, fable et argumentation.',
+--
+src/data/francais.ts:      title: 'Visions poétiques et Agir dans la cité',
+src/data/francais.ts-      description: 'Poésie lyrique/engagée et le Théâtre.',
+--
+src/data/francais.ts:      title: 'Progrès et rêves scientifiques',
+src/data/francais.ts-      description: 'Science-fiction, utopie et dystopie.',
+--
+src/data/francais.ts:      title: 'Méthodologie du Brevet (1/2)',
+src/data/francais.ts-      description: 'Compréhension de texte, grammaire et dictée.',
+--
+src/data/francais.ts:      title: 'Méthodologie du Brevet (2/2)',
+src/data/francais.ts-      description: 'La Rédaction (Sujet d\'imagination et de réflexion).',
+--
+src/data/francais.ts:      title: 'Le Sujet d\'Invention',
+src/data/francais.ts-      description: 'Méthodologie pour réussir la rédaction d\'invention au Brevet.',
+--
+src/data/francais.ts:      title: 'Méthodologie de la Dictée',
+src/data/francais.ts-      description: 'Techniques de relecture pour éviter les fautes courantes en dictée.',
+--
+src/data/francais.ts:      title: 'L\'Argumentation et l\'Essai',
+src/data/francais.ts-      description: 'Construire une argumentation solide pour le sujet de réflexion.',
+--
+src/data/francais.ts:      title: 'Les Figures de Style',
+src/data/francais.ts-      description: 'Comparaison, métaphore, personnification, antithèse, etc.',
+--
+src/data/francais.ts:      title: 'Vocabulaire et Champs lexicaux',
+src/data/francais.ts-      description: 'Synonymes, antonymes, paronymes et champs lexicaux.',
+--
+src/data/francais.ts:      title: 'L\'Analyse de l\'image',
+src/data/francais.ts-      description: 'Décrire, analyser et interpréter une image (méthode DAI).',
+--
+src/data/francais.ts:      title: 'Types et Formes de phrases',
+src/data/francais.ts-      description: 'Déclarative, interrogative, voix passive, forme emphatique.',
+--
+src/data/francais.ts:      title: 'Le Présent de l\'Indicatif',
+src/data/francais.ts-      description: 'Formation et emploi du présent pour tous les groupes.',
+--
+src/data/francais.ts:      title: 'Passé Simple et Imparfait',
+src/data/francais.ts-      description: 'Maîtriser la formation des deux temps majeurs du récit.',
+--
+src/data/francais.ts:      title: 'Les Homophones Grammaticaux',
+src/data/francais.ts-      description: 'Distinguer à/a, et/est, son/sont, leur/leurs, etc.',
+--
+src/data/francais.ts:      title: 'Le Genre Épistolaire',
+src/data/francais.ts-      description: 'L\'art de la correspondance et le roman par lettres.',
+--
+src/data/francais.ts:      title: 'Registres Littéraires',
+src/data/francais.ts-      description: 'Tragique, comique, lyrique, pathétique, ironique.',
+--
+src/data/francais.ts:      title: 'La Proposition Subordonnée Relative',
+src/data/francais.ts-      description: 'Le pronom relatif, l\'antécédent et la fonction de la proposition.',
+--
+src/data/francais.ts:      title: 'La Ponctuation',
+src/data/francais.ts-      description: 'Signes de ponctuation et leur rôle dans le sens de la phrase.',
+--
+src/data/francais.ts:      title: 'L\'Accord du Participe Passé',
+src/data/francais.ts-      description: 'Maîtriser les règles d\'accord avec être, avoir et les verbes pronominaux.',
+--
+src/data/francais.ts:      title: 'Le Futur et le Conditionnel',
+src/data/francais.ts-      description: 'Formation, emploi et valeurs de ces deux temps essentiels.',
+--
+src/data/francais.ts:      title: 'Le Théâtre : Vocabulaire et Procédés',
+src/data/francais.ts-      description: 'Didascalies, répliques, quiproquos et double énonciation.',
+--
+src/data/francais.ts:      title: 'Les Fonctions liées au Verbe',
+src/data/francais.ts-      description: 'Sujet, COD, COI, Attribut du sujet et compléments circonstanciels.',
+--
+src/data/francais.ts:      title: 'Le Subjonctif Présent',
+src/data/francais.ts-      description: 'Formation, verbes irréguliers et emplois (souhait, doute, obligation).',
+--
+src/data/francais.ts:      title: 'Les Expansions du Nom',
+src/data/francais.ts-      description: 'Épithète, complément du nom, apposition et proposition subordonnée relative.',
+--
+src/data/francais.ts:      title: 'L\'Accord dans le Groupe Nominal',
+src/data/francais.ts-      description: 'Féminin, pluriel des noms et adjectifs, et cas particuliers.',
+--
+src/data/francais.ts:      title: 'L\'Impératif Présent',
+src/data/francais.ts-      description: 'Formation, emplois (ordre, conseil) et particularités orthographiques.',
+--
+src/data/francais.ts:      title: 'La Voix Active et la Voix Passive',
+src/data/francais.ts-      description: 'Reconnaître et transformer les phrases à la voix passive.',
+--
+src/data/francais.ts:      title: 'L\'Accord du Verbe avec son Sujet',
+src/data/francais.ts-      description: 'Sujets éloignés, sujets inversés et sujets multiples.',
+--
+src/data/francais.ts:      title: 'Argumentation écologie et environnement',
+src/data/francais.ts-      description: 'Convaincre et persuader sur les enjeux climatiques.',
+--
+src/data/francais.ts:      title: 'Quiz : Grammaire et Conjugaison',
+src/data/francais.ts-      description: 'Teste tes connaissances sur les classes grammaticales et les temps.',
+--
+src/data/francais.ts:      title: 'Quiz : Analyse littéraire et Figures de style',
+src/data/francais.ts-      description: 'Teste tes connaissances sur les figures de style et les genres littéraires.',
+--
+src/data/francais.ts:      title: 'Quiz : Orthographe et Vocabulaire',
+src/data/francais.ts-      description: 'Teste tes connaissances sur les accords et la formation des mots.',
+--
+src/data/francais.ts:      title: 'Quiz : Entraînement Brevet Français (Avancé)',
+src/data/francais.ts-      description: '25 questions de niveau 3ème pour réviser tous les chapitres de français.',
+--
+src/data/francais.ts:      title: 'Quiz : Entraînement Brevet Français (Très Avancé)',
+src/data/francais.ts-      description: '25 questions de niveau 3ème pour exceller au Brevet de Français.',
+--
+src/data/histoire.ts:    { id: 'hg-1', category: 'Histoire', title: 'La Première Guerre mondiale (1914-1918)', description: 'Guerre totale, violence de masse.', type: 'sheet', difficulty: 2 },
+src/data/histoire.ts:    { id: 'hg-2', category: 'Histoire', title: 'Démocraties et Totalitarismes (1919-1939)', description: "L'URSS, l'Allemagne nazie.", type: 'sheet', difficulty: 3 },
+src/data/histoire.ts:    { id: 'hg-3', category: 'Histoire', title: 'La Seconde Guerre mondiale (1939-1945)', description: "Guerre d'anéantissement.", type: 'sheet', difficulty: 2 },
+src/data/histoire.ts:    { id: 'hg-4', category: 'Histoire', title: 'La France défaite et occupée (1940-1944)', description: 'Régime de Vichy, Résistance.', type: 'sheet', difficulty: 2 },
+src/data/histoire.ts:    { id: 'hg-5', category: 'Histoire', title: "Le monde depuis 1945 (Vue d'ensemble)", description: "L'essentiel sur la Guerre froide.", type: 'sheet', difficulty: 1 },
+src/data/histoire.ts:    { id: 'hg-6', category: 'Histoire', title: 'La France depuis 1945', description: 'Refondation, Ve République.', type: 'sheet', difficulty: 2 },
+src/data/histoire.ts:    { id: 'hg-29', category: 'Histoire', title: 'Femmes et hommes dans la société', description: 'Évolution de la société (1950-1980).', type: 'sheet', difficulty: 2 },
+src/data/histoire.ts:    { id: 'hg-30', category: 'Histoire', title: 'Refonder la République (1944-1947)', description: 'Le CNR et la sécurité sociale.', type: 'sheet', difficulty: 2 },
+src/data/histoire.ts:    { id: 'hg-31', category: 'Histoire', title: 'La Vème République (1958 à nos jours)', description: 'De Gaulle, Mitterrand et cohabitation.', type: 'sheet', difficulty: 2 },
+src/data/histoire.ts:    { id: 'hg-17', category: 'Histoire', title: 'Le monde depuis 1989', description: 'Chute du mur, monde multipolaire.', type: 'sheet', difficulty: 2 },
+src/data/histoire.ts:    { id: 'hg-22', category: 'Histoire', title: 'Indépendances et nouveaux États', description: 'Décolonisation.', type: 'sheet', difficulty: 2 },
+src/data/histoire.ts:    { id: 'hg-23', category: 'Histoire', title: 'La Guerre Froide (1947-1991)', description: 'Monde bipolaire.', type: 'sheet', difficulty: 2 },
+src/data/histoire.ts:    { id: 'hg-24', category: 'Histoire', title: 'Le projet européen (Histoire)', description: 'Étapes de la construction européenne.', type: 'sheet', difficulty: 2 },
+src/data/histoire.ts:    { id: 'hg-16', category: 'Méthodologie', title: "L'analyse de document", description: "Méthode DANSS, analyse.", type: 'sheet', difficulty: 2 },
+src/data/histoire.ts:    { id: 'hg-25-methodo', category: 'Méthodologie', title: 'Le Développement Construit', description: 'Méthodologie détaillée.', type: 'sheet', difficulty: 3 },
+src/data/histoire.ts:    { id: 'hg-26-h', category: 'Histoire', title: 'Les repères historiques pour le brevet', description: "Repères Historiques.", type: 'sheet', difficulty: 1 },
+src/data/histoire.ts-    {
+src/data/histoire.ts:      id: 'h-quiz-1', category: 'Histoire', title: 'Quiz Histoire - Niveau 1 (1914-1945)', description: '25 questions sur les Guerres Mondiales.', type: 'quiz', difficulty: 1,
+src/data/histoire.ts-      questions: [
+--
+src/data/histoire.ts:      id: 'h-quiz-2', category: 'Histoire', title: 'Quiz Histoire - Niveau 2 (Guerre Froide, Europe)', description: '25 questions sur la Guerre Froide et la décolonisation.', type: 'quiz', difficulty: 2,
+src/data/histoire.ts-      questions: [
+--
+src/data/histoire.ts:      id: 'h-quiz-3', category: 'Histoire', title: 'Quiz Histoire - Niveau 3 (Ve Rép et Monde post-1989)', description: '25 questions de géopolitique moderne.', type: 'quiz', difficulty: 3,
+src/data/histoire.ts-      questions: [
+--
+src/data/methodologie.ts:      title: 'Réussir son Brevet',
+src/data/methodologie.ts-      description: 'Organisation, gestion du stress et matériel pour le jour J.',
+--
+src/data/methodologie.ts:      title: 'Conseils pour les Maths',
+src/data/methodologie.ts-      description: 'Gérer son temps, utiliser le brouillon et bien rédiger.',
+--
+src/data/methodologie.ts:      title: 'Conseils pour le Français',
+src/data/methodologie.ts-      description: 'Compréhension, dictée et rédaction : les pièges à éviter.',
+--
+src/data/methodologie.ts:      title: 'Conseils pour l\'Histoire-Géo',
+src/data/methodologie.ts-      description: 'Le développement construit et l\'analyse de documents.',
+--
+src/data/methodologie.ts:      title: 'Conseils pour les Sciences',
+src/data/methodologie.ts-      description: 'La démarche scientifique, les unités et les formules.',
+--
+src/data/physique.ts:    title: 'Matière et transformations',
+src/data/physique.ts-    description: 'Atomes, ions, pH et organisation de la matière. Inclut un atome interactif <interactive-atom />.',
+--
+src/data/physique.ts:    title: 'Transformations chimiques',
+src/data/physique.ts-    description: 'Réactifs, produits et conservation de la masse.',
+--
+src/data/physique.ts:    title: 'Transformations nucléaires',
+src/data/physique.ts-    description: 'Fission, fusion et radioactivité.',
+--
+src/data/physique.ts:    title: 'Mouvements et interactions',
+src/data/physique.ts-    description: 'Vitesse, forces et interactions gravitionnelles.',
+--
+src/data/physique.ts:    title: "L'énergie",
+src/data/physique.ts-    description: "Sources, transferts et conservation de l'énergie.",
+--
+src/data/physique.ts:    title: "L'Univers et la Gravitation",
+src/data/physique.ts-    description: 'Système solaire, interaction gravitationnelle, différence entre poids et masse.',
+--
+src/data/physique.ts:    title: "L'énergie et la puissance électrique",
+src/data/physique.ts-    description: "Tension, intensité, loi d'Ohm et calcul d'énergie électrique.",
+--
+src/data/physique.ts:    title: 'Les signaux sonores',
+src/data/physique.ts-    description: 'Propagation du son, fréquence, période et niveau sonore.',
+--
+src/data/physique.ts:    title: 'Les signaux lumineux',
+src/data/physique.ts-    description: 'Vitesse de la lumière, lentilles minces et spectres lumineux.',
+--
+src/data/physique.ts:    title: 'Les ions et le pH',
+src/data/physique.ts-    description: 'Tests de reconnaissance des ions, acidité et basicité des solutions.',
+--
+src/data/physique.ts:    title: 'La tension alternative',
+src/data/physique.ts-    description: "Tension, période, fréquence et lecture d'oscillogramme.",
+--
+src/data/physique.ts:    title: 'L\'énergie et le développement durable',
+src/data/physique.ts-    description: 'Pour évaluer l\'impact écologique d\'un produit et le développement durable.',
+--
+src/data/physique.ts:    title: 'Quiz : Matière et transformations',
+src/data/physique.ts-    description: 'Teste tes connaissances sur les atomes et les réactions chimiques.',
+--
+src/data/physique.ts:    title: 'Quiz : Mouvements, énergie et signaux',
+src/data/physique.ts-    description: "Teste tes connaissances sur les forces, l'électricité et les ondes.",
+--
+src/data/physique.ts:    title: "Méthodologie Scientifique : La Démarche d'Investigation",
+src/data/physique.ts-    description: 'Formuler une hypothèse, concevoir une expérience et conclure.',
+--
+src/data/physique.ts:    title: 'Exploitation de Documents : Lire un graphique et justifier',
+src/data/physique.ts-    description: 'Apprendre à extraire des données et justifier rigoureusement.',
+--
+src/data/techno.ts:    title: 'Design, innovation et créativité',
+src/data/techno.ts-    description: "Découvre comment naissent les objets technologiques, de l'idée au prototype.",
+--
+src/data/techno.ts:    title: 'Analyse fonctionnelle et cahier des charges',
+src/data/techno.ts-    description: "Apprends à définir le besoin et les fonctions d'un objet technique.",
+--
+src/data/techno.ts:    title: "Chaînes d'information et d'action",
+src/data/techno.ts-    description: 'Comprendre comment un système automatisé réfléchit et agit.',
+--
+src/data/techno.ts:    title: 'Réseaux informatiques et Internet',
+src/data/techno.ts-    description: "L'architecture des réseaux, les adresses IP et le rôle des routeurs.",
+--
+src/data/techno.ts:    title: 'Programmation et algorithmique',
+src/data/techno.ts-    description: 'Les variables, boucles, conditions et le langage Scratch.',
+--
+src/data/techno.ts:    title: 'Matériaux et propriétés',
+src/data/techno.ts-    description: 'Familles de matériaux, caractéristiques et impact environnemental.',
+--
+src/data/techno.ts:    title: "L'énergie et le développement durable",
+src/data/techno.ts-    description: "Cycle de vie d'un produit, recyclage et énergies renouvelables.",
+--
+src/data/techno.ts:    title: 'Modélisation et simulation 3D',
+src/data/techno.ts-    description: 'CAO, prototypes virtuels et impression 3D.',
+--
+src/data/techno.ts:    title: 'Objets connectés et domotique',
+src/data/techno.ts-    description: 'IoT, domotique environnementale et capteurs algorithmiques.',
+--
+src/data/techno.ts:    title: 'Quiz : Systèmes et réseaux',
+src/data/techno.ts-    description: 'Teste tes connaissances en technologie.',
+--
+src/data/emc.ts:    title: 'La République et la Citoyenneté',
+src/data/emc.ts-    description: 'Valeurs, principes, symboles et nationalité.',
+--
+src/data/emc.ts:    title: 'Démocratie, Justice et Défense',
+src/data/emc.ts-    description: 'Institutions, parcours citoyen et organisation de la justice.',
+--
+src/data/emc.ts:    title: 'La Justice en France et mineurs',
+src/data/emc.ts-    description: 'Principes de la justice, juge pour enfants et débat.',
+--
+src/data/emc.ts:    title: "La Défense et l'action internationale",
+src/data/emc.ts-    description: "L'armée, le parcours citoyen, l'ONU et missions mondiales.",
+--
+src/data/emc.ts:    title: 'La Laïcité dans la République',
+src/data/emc.ts-    description: 'Histoire, principes et application de la laïcité en France.',
+--
+src/data/emc.ts:    title: 'Médias et Opinion publique',
+src/data/emc.ts-    description: 'Liberté de la presse, information et esprit critique.',
+--
+src/data/emc.ts:    title: 'IA et éducation aux médias',
+src/data/emc.ts-    description: "Deepfakes, infox et impact de l\'IA sur l\'opinion.",
+--
+src/data/emc.ts:    title: 'Solidarité et Enjeux mondiaux',
+src/data/emc.ts-    description: 'Solidarité nationale (impôts) et coopération internationale.',
+--
+src/data/emc.ts:    title: "L'engagement civique et social",
+src/data/emc.ts-    description: "Le vote, les associations, les syndicats, l'engagement politique.",
+--
+src/data/emc.ts:    title: 'Quiz : République et Citoyenneté',
+src/data/emc.ts-    description: 'Teste tes connaissances sur les valeurs et principes de la République.',
+--
+src/data/geo.ts:    { id: 'hg-28', category: 'Géographie', title: 'Les aires urbaines', description: 'Une France mondialisée.', type: 'sheet', difficulty: 2 },
+src/data/geo.ts:    { id: 'hg-7', category: 'Géographie', title: 'Dynamiques territoriales de la France', description: 'Aires urbaines, espaces productifs.', type: 'sheet', difficulty: 2 },
+src/data/geo.ts:    { id: 'hg-8', category: 'Géographie', title: 'Aménagement et la France dans le monde', description: 'Inégalités, DROM-COM.', type: 'sheet', difficulty: 2 },
+src/data/geo.ts:    { id: 'hg-11', category: 'Géographie', title: "L'Union Européenne", description: "Territoire d'appartenance.", type: 'sheet', difficulty: 2 },
+src/data/geo.ts:    { id: 'hg-18', category: 'Géographie', title: 'Espaces productifs', description: 'Agriculture, industrie, services.', type: 'sheet', difficulty: 2 },
+src/data/geo.ts:    { id: 'hg-19', category: 'Géographie', title: 'Espaces de faible densité', description: 'Atouts, contraintes.', type: 'sheet', difficulty: 2 },
+src/data/geo.ts:    { id: 'hg-20', category: 'Géographie', title: 'Les territoires ultra-marins français', description: 'Aménagement des Outre-Mers.', type: 'sheet', difficulty: 2 },
+src/data/geo.ts:    { id: 'hg-21', category: 'Géographie', title: 'La France, une puissance mondiale', description: 'Rayonnement.', type: 'sheet', difficulty: 2 },
+src/data/geo.ts:    { id: 'hg-34', category: 'Géographie', title: 'Adaptation au changement climatique', description: 'Les territoires français face au défi climatique.', type: 'sheet', difficulty: 3 },
+src/data/geo.ts:    { id: 'hg-27-g', category: 'Géographie', title: 'Repères Géographiques', description: "Repères spatiaux du Brevet.", type: 'sheet', difficulty: 1 },
+src/data/geo.ts-    {
+src/data/geo.ts:      id: 'g-quiz-1', category: 'Géographie', title: 'Quiz Géo - Niveau 1 (France et Repères)', description: '25 questions sur la géographie physique et démographique de la France.', type: 'quiz', difficulty: 1,
+src/data/geo.ts-      questions: [
+--
+src/data/geo.ts:      id: 'g-quiz-2', category: 'Géographie', title: 'Quiz Géo - Niveau 2 (Espaces productifs)', description: '25 questions sur l\'économie, aménagement et agriculture.', type: 'quiz', difficulty: 2,
+src/data/geo.ts-      questions: [
+--
+src/data/geo.ts:      id: 'g-quiz-3', category: 'Géographie', title: 'Quiz Géo - Niveau 3 (UE et Mondialisation)', description: '25 questions de géographie mondiale.', type: 'quiz', difficulty: 3,
+src/data/geo.ts-      questions: [
+--
+src/data/maths.ts:      title: 'Arithmétique',
+src/data/maths.ts-      description: 'Nombres premiers, diviseurs, PGCD et décomposition.',
+--
+src/data/maths.ts:      title: 'Les grands nombres',
+src/data/maths.ts-      description: 'Lire, écrire et décomposer les nombres jusqu\'au million.',
+--
+src/data/maths.ts:      title: 'Introduction aux Fractions',
+src/data/maths.ts-      description: 'Additionner, soustraire et multiplier des fractions simples.',
+--
+src/data/maths.ts:      title: 'Fractions et Nombres relatifs',
+src/data/maths.ts-      description: 'Opérations sur les fractions et règles des signes.',
+--
+src/data/maths.ts:      title: 'Puissances et Racines carrées',
+src/data/maths.ts-      description: 'Règles de calcul, écriture scientifique.',
+--
+src/data/maths.ts:      title: 'Calcul littéral',
+src/data/maths.ts-      description: 'Développement, factorisation et identités remarquables.',
+--
+src/data/maths.ts:      title: 'Équations et Inéquations',
+src/data/maths.ts-      description: 'Résolution du 1er degré et équations produit nul.',
+--
+src/data/maths.ts:      title: 'Notion de Fonction',
+src/data/maths.ts-      description: 'Généralités, fonctions affines et linéaires.',
+--
+src/data/maths.ts:      title: 'Proportionnalité et Ratios',
+src/data/maths.ts-      description: 'Pourcentages, ratios, vitesse et masse volumique.',
+--
+src/data/maths.ts:      title: 'Statistiques',
+src/data/maths.ts-      description: 'Moyenne, médiane, et étendue.',
+--
+src/data/maths.ts:      title: 'Pythagore et Thalès',
+src/data/maths.ts-      description: 'Théorèmes, réciproques et contraposées. Inclut des figures interactives <pythagoras-svg /> et <thales-svg />.',
+--
+src/data/maths.ts:      title: 'Trigonométrie',
+src/data/maths.ts-      description: 'SOH CAH TOA et calculs d\'angles.',
+--
+src/data/maths.ts:      title: 'Espace : Volumes et Repérage',
+src/data/maths.ts-      description: 'Calculs de volumes, sections et coordonnées.',
+--
+src/data/maths.ts:      title: 'Algorithmique et Programmation',
+src/data/maths.ts-      description: 'Scratch, variables, boucles et conditions.',
+--
+src/data/maths.ts:      title: 'Le Tableur au Brevet',
+src/data/maths.ts-      description: 'Comprendre et utiliser les formules de tableur (Excel, Calc).',
+--
+src/data/maths.ts:      title: 'Le logiciel Scratch au Brevet',
+src/data/maths.ts-      description: 'Programmer avec des blocs pour résoudre des problèmes.',
+--
+src/data/maths.ts:      title: 'Les Transformations du plan',
+src/data/maths.ts-      description: 'Symétrie, translation, rotation et homothétie.',
+--
+src/data/maths.ts:      title: 'Grandeurs et Mesures',
+src/data/maths.ts-      description: 'Aires, périmètres, volumes et conversions.',
+--
+src/data/maths.ts:      title: 'Probabilités',
+src/data/maths.ts-      description: 'Arbres de probabilités et événements.',
+--
+src/data/maths.ts:      title: 'Agrandissement et Réduction',
+src/data/maths.ts-      description: 'Impact du rapport k sur les longueurs, aires et volumes.',
+--
+src/data/maths.ts:      title: 'Quiz : Nombres et calculs',
+src/data/maths.ts-      description: 'Teste tes connaissances sur les fractions, puissances et arithmétique.',
+--
+src/data/maths.ts:      title: 'Quiz : Géométrie (Pythagore, Thalès, Trigo)',
+src/data/maths.ts-      description: 'Teste tes connaissances sur les théorèmes fondamentaux de la géométrie.',
+--
+src/data/maths.ts:      title: 'Quiz : Algorithmique et Programmation',
+src/data/maths.ts-      description: 'Teste tes connaissances sur Scratch et la logique de programmation.',
+--
+src/data/maths.ts:      title: 'Quiz : Algèbre (Calcul littéral, Équations, Fonctions)',
+src/data/maths.ts-      description: 'Teste tes connaissances sur les expressions littérales, les équations et les fonctions.',
+--
+src/data/maths.ts:      title: 'Quiz : Organisation de données (Stats, Probas, Grandeurs)',
+src/data/maths.ts-      description: 'Teste tes connaissances sur les statistiques, probabilités et grandeurs.',
+--
+src/data/maths.ts:      title: 'Quiz : Entraînement Brevet (Avancé)',
+src/data/maths.ts-      description: '25 questions de niveau 3ème pour réviser tous les chapitres.',
+--
+src/data/maths.ts:      title: 'Quiz : Entraînement Brevet (Très Avancé)',
+src/data/maths.ts-      description: '25 questions de niveau 3ème pour exceller au Brevet.',
+--
+src/data/oral.ts:      title: "Comprendre l'épreuve",
+src/data/oral.ts-      description: "Déroulement, durée, et attentes du jury.",
+--
+src/data/oral.ts:      title: 'Choisir et structurer son sujet',
+src/data/oral.ts-      description: 'EPI, Parcours, Histoire des Arts : comment faire le bon choix.',
+--
+src/data/oral.ts:      title: 'Réussir son diaporama',
+src/data/oral.ts-      description: 'Les règles d\'or pour un support visuel efficace.',
+--
+src/data/oral.ts:      title: 'Gérer son stress et sa posture',
+src/data/oral.ts-      description: 'Voix, regard, gestuelle : convaincre le jury.',
+--
+src/data/oral.ts:      title: 'Maîtriser l\'entretien',
+src/data/oral.ts-      description: 'Comment répondre aux questions et rebondir.',
+--
+src/data/oral.ts:      title: 'Quiz : Es-tu prêt pour l\'oral ?',
+src/data/oral.ts-      description: 'Teste tes connaissances sur le déroulement de l\'épreuve.',

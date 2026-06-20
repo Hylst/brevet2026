@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Dynamiques Territoriales de la France</text>
+
+  <!-- Hexagon (France) -->
+  <g transform="translate(150, 80) scale(0.9)">
+    <polygon points="150,20 280,70 280,210 150,280 20,210 20,70" fill="#334155" stroke="#94a3b8" stroke-width="4"/>
+    
+    <!-- IDF Region -->
+    <circle cx="150" cy="100" r="30" fill="#ef4444" opacity="0.8" />
+    <text x="150" y="105" font-family="sans-serif" font-size="14" fill="#ffffff" font-weight="bold" text-anchor="middle">Paris</text>
+
+    <!-- Metropoles -->
+    <circle cx="230" cy="150" r="15" fill="#f97316" /> <!-- Lyon -->
+    <circle cx="210" cy="240" r="15" fill="#f97316" /> <!-- Marseille -->
+    <circle cx="50" cy="120" r="15" fill="#f97316" /> <!-- Nantes/Rennes -->
+    <circle cx="80" cy="220" r="15" fill="#f97316" /> <!-- Bordeaux / Toulouse -->
+
+    <!-- Sun belt / Attractivity -->
+    <path d="M 20 210 Q 150 320 280 210" fill="none" stroke="#eab308" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(450, 100)" font-family="sans-serif" font-size="16" fill="#cbd5e1">
+    <circle cx="0" cy="0" r="12" fill="#ef4444" />
+    <text x="25" y="5" font-weight="bold" fill="#f8fafc">Région capitale (Île-de-France)</text>
+    <text x="25" y="25" font-size="13">Forte attractivité, commandement</text>
+
+    <circle cx="0" cy="60" r="12" fill="#f97316" />
+    <text x="25" y="65" font-weight="bold" fill="#f8fafc">Métropoles régionales</text>
+    <text x="25" y="85" font-size="13">Relais de l'influence parisienne</text>
+
+    <line x1="-15" y1="120" x2="15" y2="120" stroke="#eab308" stroke-width="8" stroke-linecap="round" />
+    <text x="25" y="125" font-weight="bold" fill="#f8fafc">Espaces attractifs (Héliotropisme)</text>
+    <text x="25" y="145" font-size="13">Littoraux, Sud, Ouest</text>
+    
+    <rect x="-12" y="175" width="24" height="24" fill="#334155" stroke="#94a3b8" />
+    <text x="25" y="185" font-weight="bold" fill="#f8fafc">Espaces ruraux en mutation</text>
+    <text x="25" y="205" font-size="13">Déclin démographique pour certains, tourisme pour d'autres</text>
+  </g>
+</svg>

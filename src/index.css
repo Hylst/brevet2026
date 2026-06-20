@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  color-scheme: dark;
+  /* Design System Variables - Single Dark Theme */
+  --background: #020617; /* slate-950 */
+  --surface: #0f172a; /* slate-900 */
+  --surface-hover: #1e293b; /* slate-800 */
+  --border: #1e293b; /* slate-800 */
+  --border-hover: #334155; /* slate-700 */
+  --foreground: #f8fafc; /* slate-50 */
+  --muted: #94a3b8; /* slate-400 */
+  --subtle: #64748b; /* slate-500 */
+  --primary: #3b82f6; /* blue-500 */
+  --primary-hover: #2563eb; /* blue-600 */
+  --success: #10b981; /* emerald-500 */
+  --warning: #f59e0b; /* amber-500 */
+  --danger: #ef4444; /* red-500 */
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  
+  /* Map CSS variables to Tailwind colors */
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border);
+  --color-border-hover: var(--border-hover);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+}
+
+@utility perspective-1000 {
+  perspective: 1000px;
+}
+
+@utility preserve-3d {
+  transform-style: preserve-3d;
+}
+
+@utility backface-hidden {
+  backface-visibility: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar for TOC */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #334155;
+  border-radius: 20px;
+}
+
+/* Safe area for mobile devices (iPhone X+) */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 20px);
+}
+
+@media print {
+  /* Hide UI elements */
+  .no-print, nav, header, button, .sticky {
+    display: none !important;
+  }
+
+  /* Reset background and text color for printing */
+  body, .min-h-screen, .bg-\[\#0a0f1a\], .bg-slate-950, .bg-slate-900\/40, .bg-slate-900\/80, .bg-slate-800\/80, .bg-slate-900\/50, .bg-slate-950\/50, .bg-slate-800\/40, .bg-\[\#0d1117\] {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Ensure text is black */
+  .text-white, .text-slate-100, .text-slate-200, .text-slate-300, .text-slate-400, .text-slate-500 {
+    color: black !important;
+  }
+
+  /* Remove borders and shadows */
+  .border, .border-slate-800, .border-slate-800\/60, .border-slate-700, .border-slate-700\/50, .shadow-2xl, .shadow-lg, .shadow-md, .shadow-sm {
+    border-color: #e2e8f0 !important;
+    box-shadow: none !important;
+  }
+
+  /* Full width for printing */
+  .max-w-4xl, .max-w-lg, .container, .mx-auto, .px-5, .py-8, .p-6, .sm\:p-10 {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Page breaks */
+  h1, h2 {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  /* Avoid breaking inside important blocks */
+  .prose blockquote, .prose table, .prose pre, .prose img, .prose figure, .prose .callout, .prose .definition-box, .prose .formula-box, .prose .method-box {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Reset prose colors for print */
+  .prose-invert {
+    --tw-prose-body: black;
+    --tw-prose-headings: black;
+    --tw-prose-lead: black;
+    --tw-prose-links: black;
+    --tw-prose-bold: black;
+    --tw-prose-counters: black;
+    --tw-prose-bullets: black;
+    --tw-prose-hr: black;
+    --tw-prose-quotes: black;
+    --tw-prose-quote-borders: black;
+    --tw-prose-captions: black;
+    --tw-prose-code: black;
+    --tw-prose-pre-code: black;
+    --tw-prose-pre-bg: white;
+    --tw-prose-th-borders: black;
+    --tw-prose-td-borders: black;
+  }
+}

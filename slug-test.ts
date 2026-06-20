@@ -1,0 +1,1 @@
+function slugify(text: string) { return text.toString().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-').replace(/^-+/, '').replace(/-+$/, ''); } console.log(slugify("L'Univers et la Gravitation")); console.log(slugify("06-lunivers-et-la-gravitation"));

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Notion de Fonction</text>
+  <text x="400" y="65" font-family="sans-serif" font-size="14" fill="#cbd5e1" text-anchor="middle">Une fonction est comme une "machine" mathématique qui transforme un nombre en un autre.</text>
+
+  <!-- Machine -->
+  <rect x="250" y="120" width="300" height="160" fill="#334155" stroke="#3b82f6" stroke-width="6" rx="16" />
+  <text x="400" y="160" font-family="sans-serif" font-size="24" fill="#3b82f6" font-weight="bold" text-anchor="middle">Fonction f</text>
+  <text x="400" y="195" font-family="sans-serif" font-size="18" fill="#f8fafc" opacity="0.8" text-anchor="middle">ex: multiplier par 2</text>
+  <text x="400" y="215" font-family="sans-serif" font-size="18" fill="#f8fafc" opacity="0.8" text-anchor="middle">et ajouter 1</text>
+  
+  <rect x="300" y="235" width="200" height="30" fill="#1e293b" rx="4" />
+  <text x="400" y="255" font-family="sans-serif" font-size="16" fill="#10b981" font-weight="bold" text-anchor="middle">f(x) = 2x + 1</text>
+
+
+  <!-- Input -->
+  <path d="M 100 200 L 230 200" stroke="#f59e0b" stroke-width="6" marker-end="url(#arrow-in)" fill="none" />
+  <rect x="50" y="160" width="120" height="80" fill="#f59e0b" opacity="0.2" rx="8" />
+  <text x="110" y="190" font-family="sans-serif" font-size="18" fill="#f59e0b" font-weight="bold" text-anchor="middle">Antécédent</text>
+  <text x="110" y="215" font-family="sans-serif" font-size="14" fill="#fcd34d" font-weight="bold" text-anchor="middle">Ex: x = 3</text>
+
+
+  <!-- Output -->
+  <path d="M 560 200 L 690 200" stroke="#ef4444" stroke-width="6" marker-end="url(#arrow-out)" fill="none" />
+  <rect x="630" y="160" width="120" height="80" fill="#ef4444" opacity="0.2" rx="8" />
+  <text x="690" y="190" font-family="sans-serif" font-size="18" fill="#ef4444" font-weight="bold" text-anchor="middle">Image</text>
+  <text x="690" y="215" font-family="sans-serif" font-size="14" fill="#fca5a5" font-weight="bold" text-anchor="middle">f(3) = 7</text>
+
+  <!-- Process -->
+  <text x="110" y="280" font-family="sans-serif" font-size="14" fill="#cbd5e1" text-anchor="middle">On "entre" un nombre</text>
+  <text x="690" y="280" font-family="sans-serif" font-size="14" fill="#cbd5e1" text-anchor="middle">Il "sort" un résultat</text>
+  <text x="400" y="320" font-family="sans-serif" font-size="14" fill="#94a3b8" font-style="italic" text-anchor="middle">L'antécédent (x) est unique, mais l'image (f(x)) est le résultat de ce calcul.</text>
+
+
+  <defs>
+    <marker id="arrow-in" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b" />
+    </marker>
+    <marker id="arrow-out" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ef4444" />
+    </marker>
+  </defs>
+
+</svg>

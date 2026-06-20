@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: 'Inter', sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .label { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: bold; fill: #1e293b; }
+      .math { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: bold; fill: #2563eb; }
+      .branch { stroke: #94a3b8; stroke-width: 3; fill: none; }
+      .node { fill: #ffffff; stroke: #0f172a; stroke-width: 2; }
+      .red-node { fill: #ef4444; }
+      .blue-node { fill: #3b82f6; }
+      .rule-box { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 2; rx: 8; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="12" />
+
+  <!-- Title -->
+  <text x="400" y="40" class="title" text-anchor="middle">L'Arbre de Probabilités</text>
+  <text x="400" y="65" font-family="Inter" font-size="14" fill="#64748b" text-anchor="middle" font-style="italic">Exemple : On tire une boule (Rouge ou Bleue), puis on lance une pièce (Pile ou Face).</text>
+
+  <!-- TREE STRUCTURE -->
+  <g transform="translate(150, 220)">
+    <!-- Root -->
+    <circle cx="0" cy="0" r="6" class="node" />
+
+    <!-- 1st Draw (Tirage Boule) -->
+    <!-- Branch to Red -->
+    <path d="M 0 0 L 150 -80" class="branch" />
+    <text x="60" y="-55" class="math">3/5</text>
+    <circle cx="150" cy="-80" r="20" class="red-node" />
+    <text x="150" y="-75" class="label" fill="#ffffff" text-anchor="middle">R</text>
+
+    <!-- Branch to Blue -->
+    <path d="M 0 0 L 150 80" class="branch" />
+    <text x="60" y="65" class="math">2/5</text>
+    <circle cx="150" cy="80" r="20" class="blue-node" />
+    <text x="150" y="85" class="label" fill="#ffffff" text-anchor="middle">B</text>
+
+    <!-- 2nd Draw (Pièce) from Red -->
+    <!-- To Pile -->
+    <path d="M 170 -80 L 300 -120" class="branch" />
+    <text x="230" y="-110" class="math">1/2</text>
+    <circle cx="300" cy="-120" r="15" class="node" />
+    <text x="300" y="-115" class="label" text-anchor="middle">P</text>
+    
+    <!-- To Face -->
+    <path d="M 170 -80 L 300 -40" class="branch" />
+    <text x="230" y="-45" class="math">1/2</text>
+    <circle cx="300" cy="-40" r="15" class="node" />
+    <text x="300" y="-35" class="label" text-anchor="middle">F</text>
+
+    <!-- 2nd Draw (Pièce) from Blue -->
+    <!-- To Pile -->
+    <path d="M 170 80 L 300 40" class="branch" />
+    <text x="230" y="50" class="math">1/2</text>
+    <circle cx="300" cy="40" r="15" class="node" />
+    <text x="300" y="45" class="label" text-anchor="middle">P</text>
+    
+    <!-- To Face -->
+    <path d="M 170 80 L 300 120" class="branch" />
+    <text x="230" y="115" class="math">1/2</text>
+    <circle cx="300" cy="120" r="15" class="node" />
+    <text x="300" y="125" class="label" text-anchor="middle">F</text>
+
+    <!-- Results (Chemins) -->
+    <text x="340" y="-115" class="math" fill="#0f172a">P(R, P) = 3/5 × 1/2 = 3/10</text>
+    <text x="340" y="-35" class="math" fill="#0f172a">P(R, F) = 3/5 × 1/2 = 3/10</text>
+    <text x="340" y="45" class="math" fill="#0f172a">P(B, P) = 2/5 × 1/2 = 2/10</text>
+    <text x="340" y="125" class="math" fill="#0f172a">P(B, F) = 2/5 × 1/2 = 2/10</text>
+  </g>
+
+  <!-- Rules Box -->
+  <rect x="50" y="320" width="700" height="60" class="rule-box" />
+  <text x="400" y="345" class="label" text-anchor="middle" fill="#dc2626">RÈGLE : On MULTIPLIE les probabilités le long d'un chemin.</text>
+  <text x="400" y="365" font-family="Inter" font-size="14" fill="#475569" text-anchor="middle">La somme des probabilités issues d'un même nœud fait toujours 1 (ex: 3/5 + 2/5 = 1).</text>
+
+</svg>

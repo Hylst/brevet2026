@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">La France dans le Monde (DROM-COM)</text>
+
+  <!-- World Map Abstraction -->
+  <rect x="50" y="80" width="700" height="260" fill="#0f172a" rx="10" />
+  
+  <!-- Equator & Tropics -->
+  <line x1="50" y1="210" x2="750" y2="210" stroke="#334155" stroke-dasharray="8 8" stroke-width="2"/>
+  <text x="70" y="205" font-family="sans-serif" font-size="10" fill="#64748b">Équateur</text>
+  
+  <!-- France Métropolitaine -->
+  <circle cx="400" cy="140" r="15" fill="#3b82f6" />
+  <text x="400" y="120" font-family="sans-serif" font-size="12" fill="#fff" font-weight="bold" text-anchor="middle">Métropole</text>
+  
+  <!-- DROM (Départements et Régions d'Outre-Mer) -->
+  <g fill="#ef4444">
+    <!-- Antilles -->
+    <circle cx="280" cy="180" r="6" />
+    <text x="280" y="170" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">Guadeloupe</text>
+    <circle cx="290" cy="195" r="6" />
+    <text x="300" y="210" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="start">Martinique</text>
+    
+    <!-- Guyane -->
+    <circle cx="310" cy="220" r="8" />
+    <text x="310" y="235" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">Guyane</text>
+
+    <!-- La Réunion / Mayotte -->
+    <circle cx="500" cy="240" r="6" />
+    <text x="500" y="255" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">La Réunion</text>
+    
+    <circle cx="480" cy="225" r="5" />
+    <text x="480" y="215" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">Mayotte</text>
+  </g>
+
+  <!-- COM (Collectivités d'Outre-Mer) -->
+  <g fill="#10b981">
+    <!-- Polynésie -->
+    <circle cx="150" cy="240" r="6" />
+    <circle cx="160" cy="245" r="4" />
+    <circle cx="155" cy="235" r="3" />
+    <text x="150" y="260" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">Polynésie fr.</text>
+
+    <!-- Nouvelle-Calédonie (sui generis but closely related in mapped concept) -->
+    <circle cx="650" cy="250" r="7" />
+    <text x="650" y="265" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">Nouvelle-Calédonie</text>
+  </g>
+
+  <!-- Legend -->
+  <rect x="250" y="300" width="300" height="60" fill="#1e293b" rx="8" opacity="0.9" />
+  <circle cx="280" cy="320" r="6" fill="#ef4444" />
+  <text x="295" y="324" font-family="sans-serif" font-size="12" fill="#f8fafc">DROM (Départements)</text>
+  
+  <circle cx="280" cy="340" r="6" fill="#10b981" />
+  <text x="295" y="344" font-family="sans-serif" font-size="12" fill="#f8fafc">COM (Collectivités)</text>
+
+  <text x="530" y="330" font-family="sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Présence sur tous les océans,</text>
+  <text x="530" y="345" font-family="sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">2ème ZEE mondiale.</text>
+</svg>

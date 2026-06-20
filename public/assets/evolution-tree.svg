@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .branch { fill: none; stroke: #475569; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .node { fill: #38bdf8; stroke: #0284c7; stroke-width: 3; }
+      .leaf { fill: #10b981; stroke: #059669; stroke-width: 3; }
+      . extinct { fill: #ef4444; stroke: #b91c1c; }
+      .label { fill: #cbd5e1; font-family: sans-serif; font-size: 14px; font-weight: bold; }
+      .trait { fill: #fbbf24; font-family: sans-serif; font-size: 12px; font-style: italic; }
+      
+      @keyframes pulse-node {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.3); }
+      }
+      .node-anim { transform-origin: center; animation: pulse-node 3s infinite; }
+    </style>
+  </defs>
+
+  <rect width="800" height="400" class="bg" rx="20" />
+  <text x="400" y="40" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="24" text-anchor="middle">Arbre Phylogénétique : L'évolution du vivant</text>
+
+  <!-- Timeline Axis -->
+  <line x1="50" y1="350" x2="750" y2="350" stroke="#334155" stroke-width="2" />
+  <text x="50" y="370" fill="#64748b" font-family="sans-serif" font-size="12">- Des millions d'années</text>
+  <text x="750" y="370" fill="#64748b" font-family="sans-serif" font-size="12" text-anchor="end">Aujourd'hui</text>
+  <polygon points="755,350 745,345 745,355" fill="#334155" />
+
+  <!-- Tree structure -->
+  <g transform="translate(100, 300)">
+    
+    <!-- LUCA (Last Universal Common Ancestor) -->
+    <path d="M 0 0 L 100 0" class="branch" />
+    <circle cx="0" cy="0" r="10" class="node node-anim"/>
+    <text x="-20" y="-15" class="label text-xs">LUCA</text>
+    
+    <!-- First Split -->
+    <path d="M 100 0 L 100 -120 L 250 -120" class="branch" /> <!-- Bacteria side (simplified) -->
+    <path d="M 100 0 L 200 0" class="branch" /> <!-- Vertebrates line -->
+    <circle cx="100" cy="0" r="8" class="node"/>
+    <text x="120" y="-15" class="trait">Cellule avec Noyau</text>
+
+    <text x="260" y="-115" class="label">Bactéries</text>
+    <circle cx="250" cy="-120" r="8" class="leaf"/>
+
+    <!-- Vertebrates Split -->
+    <path d="M 200 0 L 200 -60 L 350 -60" class="branch" /> <!-- Fish -->
+    <path d="M 200 0 L 350 0" class="branch" /> <!-- Tetrapods -->
+    <circle cx="200" cy="0" r="8" class="node"/>
+    <text x="220" y="-6" class="trait">Squelette osseux</text>
+
+    <text x="360" y="-55" class="label">Poissons</text>
+    <circle cx="350" cy="-60" r="8" class="leaf"/>
+
+    <!-- Tetrapods Split -->
+    <path d="M 350 0 L 350 -140 L 450 -140" class="branch" /> <!-- Amphibians -->
+    <path d="M 350 0 L 450 0" class="branch" /> <!-- Amniotes -->
+    <circle cx="350" cy="0" r="8" class="node"/>
+    <text x="370" y="-6" class="trait">4 Membres</text>
+
+    <text x="460" y="-135" class="label">Amphibiens</text>
+    <circle cx="450" cy="-140" r="8" class="leaf"/>
+
+    <!-- Amniotes Split (Mammals / Reptiles) -->
+    <path d="M 450 0 L 450 60 L 550 60" class="branch" /> <!-- Mammals -->
+    <path d="M 450 0 L 550 0" class="branch" /> <!-- Sauropsids (Reptiles/Birds) -->
+    <circle cx="450" cy="0" r="8" class="node node-anim"/>
+    <text x="440" y="25" class="trait">Poils / Mamelles</text>
+    
+    <text x="560" y="65" class="label">Mammifères (Humain)</text>
+    <circle cx="550" cy="60" r="8" class="leaf"/>
+
+    <!-- Birds vs Dinos (Extinct) -->
+    <path d="M 550 0 L 550 -40 L 600 -40" class="branch" /> <!-- Dinosaurs -->
+    <path d="M 550 0 L 650 0" class="branch" /> <!-- Birds -->
+    <circle cx="550" cy="0" r="8" class="node"/>
+    <text x="560" y="-10" class="trait">Plumes</text>
+
+    <text x="610" y="-35" class="label" fill="#ef4444">Dinosaures (Archosaure)</text>
+    <circle cx="600" cy="-40" r="8" class="leaf extinct"/>
+    
+    <text x="660" y="5" class="label">Oiseaux</text>
+    <circle cx="650" cy="0" r="8" class="leaf"/>
+  </g>
+
+</svg>

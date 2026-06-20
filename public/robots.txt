@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /showcase
+Disallow: /login
+
+Sitemap: https://hylst.fr/brevet2026/sitemap.xml

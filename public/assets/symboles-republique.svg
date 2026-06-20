@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="50" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Les Symboles de la République Française</text>
+
+  <!-- Drapeau -->
+  <g transform="translate(150, 100)">
+    <rect x="0" y="0" width="40" height="80" fill="#002395" />
+    <rect x="40" y="0" width="40" height="80" fill="#ffffff" />
+    <rect x="80" y="0" width="40" height="80" fill="#ed2939" />
+    <text x="60" y="110" font-family="sans-serif" font-size="16" fill="#cbd5e1" text-anchor="middle">Drapeau Tricolore</text>
+  </g>
+
+  <!-- Devise -->
+  <g transform="translate(420, 140)">
+    <rect x="-150" y="-30" width="300" height="50" fill="#334155" rx="8" />
+    <text x="0" y="0" font-family="sans-serif" font-size="20" fill="#f8fafc" font-weight="bold" font-style="italic" text-anchor="middle">"Liberté, Égalité, Fraternité"</text>
+    <text x="0" y="40" font-family="sans-serif" font-size="16" fill="#cbd5e1" text-anchor="middle">La Devise</text>
+  </g>
+
+  <!-- Bonnet Phrygien (simplified) -->
+  <g transform="translate(600, 200)">
+    <path d="M 30 60 Q 50 60 60 50 Q 40 40 50 10 Q 25 25 10 50 Q 10 60 30 60 Z" fill="#ed2939" />
+    <circle cx="35" cy="50" r="8" fill="#002395" />
+    <circle cx="35" cy="50" r="5" fill="#ffffff" />
+    <circle cx="35" cy="50" r="2" fill="#ed2939" />
+    <text x="40" y="90" font-family="sans-serif" font-size="16" fill="#cbd5e1" text-anchor="middle">Bonnet Phrygien</text>
+  </g>
+  
+  <g transform="translate(200, 260)">
+    <circle cx="0" cy="0" r="30" fill="#eab308" opacity="0.2" />
+    <text x="0" y="5" font-family="sans-serif" font-size="30" fill="#eab308" text-anchor="middle">♪</text>
+    <text x="0" y="50" font-family="sans-serif" font-size="18" fill="#f8fafc" text-anchor="middle">La Marseillaise</text>
+    <text x="0" y="70" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">Hymne National (Rouget de Lisle)</text>
+  </g>
+  
+  <g transform="translate(450, 260)">
+    <circle cx="0" cy="0" r="30" fill="#a855f7" opacity="0.2" />
+    <text x="0" y="10" font-family="sans-serif" font-size="30" fill="#a855f7" text-anchor="middle">♀</text>
+    <text x="0" y="50" font-family="sans-serif" font-size="18" fill="#f8fafc" text-anchor="middle">Marianne</text>
+    <text x="0" y="70" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">Figure allégorique (Mairies, Timbres)</text>
+  </g>
+  
+  <g transform="translate(650, 80)">
+    <rect x="-40" y="-40" width="80" height="60" fill="#cbd5e1" rx="4" />
+    <text x="0" y="-15" font-family="sans-serif" font-size="10" fill="#1e293b" text-anchor="middle">RÉPUBLIQUE</text>
+    <text x="0" y="-5" font-family="sans-serif" font-size="10" fill="#1e293b" text-anchor="middle">FRANÇAISE</text>
+    <path d="M-30 0 L 30 0 L 30 10 L -30 10 Z" fill="#94a3b8" />
+    <text x="0" y="40" font-family="sans-serif" font-size="16" fill="#cbd5e1" text-anchor="middle">Sceau / Logo</text>
+  </g>
+</svg>

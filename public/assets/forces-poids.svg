@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Force de Pesanteur (Le Poids P)</text>
+
+  <!-- Planet / Ground -->
+  <path d="M 50 350 Q 400 320 750 350 L 750 400 L 50 400 Z" fill="#334155" />
+  <circle cx="400" cy="800" r="450" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="10 10"/>
+
+  <!-- Object -->
+  <rect x="350" y="200" width="100" height="80" fill="#3b82f6" rx="8" />
+  <circle cx="400" cy="240" r="5" fill="#f8fafc" /> <!-- Centre de gravité (G) -->
+  <text x="380" y="235" font-family="sans-serif" font-size="14" fill="#fff" font-weight="bold">G</text>
+
+  <!-- Weight Vector (P) -->
+  <path d="M 400 240 L 400 380" stroke="#ef4444" stroke-width="6" fill="none" />
+  <polygon points="400,390 390,370 410,370" fill="#ef4444" />
+  <text x="420" y="310" font-family="sans-serif" font-size="24" fill="#ef4444" font-weight="bold">P</text>
+
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="220" height="140" fill="#1e293b" stroke="#cbd5e1" stroke-width="2" rx="8" />
+    <text x="110" y="25" font-family="sans-serif" font-size="16" fill="#f8fafc" font-weight="bold" text-anchor="middle">Caractéristiques de P</text>
+    
+    <text x="15" y="55" font-family="sans-serif" font-size="14" fill="#94a3b8">• Point d'applica. : <tspan fill="#eab308" font-weight="bold">Centre G</tspan></text>
+    <text x="15" y="80" font-family="sans-serif" font-size="14" fill="#94a3b8">• Direction : <tspan fill="#3b82f6" font-weight="bold">Verticale</tspan></text>
+    <text x="15" y="105" font-family="sans-serif" font-size="14" fill="#94a3b8">• Sens : <tspan fill="#ef4444" font-weight="bold">Vers le centre Terre</tspan></text>
+    <text x="15" y="130" font-family="sans-serif" font-size="14" fill="#94a3b8">• Intensité : <tspan fill="#10b981" font-weight="bold">en Newton (N)</tspan></text>
+  </g>
+
+  <g transform="translate(500, 100)">
+    <rect x="0" y="0" width="220" height="100" fill="#1e293b" stroke="#eab308" stroke-width="2" rx="8" />
+    <text x="110" y="30" font-family="sans-serif" font-size="20" fill="#eab308" font-weight="bold" text-anchor="middle">P = m × g</text>
+    
+    <text x="15" y="60" font-family="sans-serif" font-size="12" fill="#cbd5e1">P : Poids en <tspan font-weight="bold">Newton (N)</tspan></text>
+    <text x="15" y="75" font-family="sans-serif" font-size="12" fill="#cbd5e1">m : Masse en <tspan font-weight="bold">kg</tspan></text>
+    <text x="15" y="90" font-family="sans-serif" font-size="12" fill="#cbd5e1">g : Intensité pesanteur <tspan font-weight="bold">(N/kg)</tspan></text>
+  </g>
+</svg>

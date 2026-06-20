@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .bubble { fill: #1e293b; stroke: #3b82f6; stroke-width: 3; rx: 20; }
+      .center-bubble { fill: #2563eb; stroke: #60a5fa; stroke-width: 4; rx: 30; }
+      .text-light { fill: #f8fafc; font-family: sans-serif; font-weight: bold; font-size: 16px; text-anchor: middle; }
+      .text-sub { fill: #94a3b8; font-family: sans-serif; font-size: 12px; text-anchor: middle; }
+      .link-main { stroke: #10b981; stroke-width: 5; fill: none; stroke-linecap: round; }
+      .link-constraint { stroke: #ef4444; stroke-width: 3; stroke-dasharray: 8,8; fill: none; stroke-linecap: round; }
+      
+      @keyframes float-gentle {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+      }
+      .anim { animation: float-gentle 4s infinite ease-in-out; }
+    </style>
+  </defs>
+
+  <rect width="800" height="400" class="bg" rx="20" />
+  <text x="400" y="40" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="24" text-anchor="middle">Le Diagramme d'Interactions (La Pieuvre)</text>
+  <text x="400" y="65" fill="#94a3b8" font-family="sans-serif" font-size="14" text-anchor="middle">Exemple pour un aspirateur robot</text>
+
+  <!-- Links -->
+  <g transform="translate(400, 220)">
+    <!-- FP1 Link (Main Function links 2 elements THROUGH the product) -->
+    <path d="M -180 -100 Q 0 -130 180 -100" class="link-main" />
+    <text x="0" y="-120" fill="#10b981" font-family="sans-serif" font-weight="bold" font-size="16" text-anchor="middle">FP1</text>
+    
+    <!-- FC Links (Constraints) -->
+    <path d="M 0 0 L -180 100" class="link-constraint"/>
+    <text x="-100" y="60" fill="#ef4444" font-family="sans-serif" font-weight="bold" font-size="14">FC1</text>
+    
+    <path d="M 0 0 L 180 100" class="link-constraint"/>
+    <text x="100" y="60" fill="#ef4444" font-family="sans-serif" font-weight="bold" font-size="14">FC2</text>
+    
+    <path d="M 0 0 L 0 120" class="link-constraint"/>
+    <text x="20" y="80" fill="#ef4444" font-family="sans-serif" font-weight="bold" font-size="14">FC3</text>
+  </g>
+
+  <!-- Nodes -->
+  <g transform="translate(400, 220)">
+    <!-- Center Product -->
+    <g class="anim" style="animation-delay: 0s;">
+      <rect x="-80" y="-40" width="160" height="80" class="center-bubble"/>
+      <text x="0" y="5" class="text-light">Aspirateur</text>
+      <text x="0" y="25" class="text-light">Robot</text>
+    </g>
+
+    <!-- Top Left (User) -->
+    <g transform="translate(-180, -100)" class="anim" style="animation-delay: 1s;">
+      <rect x="-60" y="-30" width="120" height="60" class="bubble"/>
+      <text x="0" y="5" class="text-light">Utilisateur</text>
+    </g>
+
+    <!-- Top Right (Dust) -->
+    <g transform="translate(180, -100)" class="anim" style="animation-delay: 0.5s;">
+      <rect x="-60" y="-30" width="120" height="60" class="bubble"/>
+      <text x="0" y="5" class="text-light">Poussière</text>
+    </g>
+
+    <!-- Bottom Left (Energy) -->
+    <g transform="translate(-180, 100)" class="anim" style="animation-delay: 0.2s;">
+      <rect x="-60" y="-30" width="120" height="60" class="bubble"/>
+      <text x="0" y="5" class="text-light">Électricité</text>
+    </g>
+
+    <!-- Bottom Right (Aesthetics) -->
+    <g transform="translate(180, 100)" class="anim" style="animation-delay: 1.5s;">
+      <rect x="-60" y="-30" width="120" height="60" class="bubble"/>
+      <text x="0" y="5" class="text-light">Décoration</text>
+    </g>
+
+    <!-- Bottom Center (Budget) -->
+    <g transform="translate(0, 120)" class="anim" style="animation-delay: 0.8s;">
+      <rect x="-60" y="-30" width="120" height="60" class="bubble"/>
+      <text x="0" y="5" class="text-light">Budget</text>
+    </g>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(60, 320)">
+    <line x1="0" y1="0" x2="30" y2="0" class="link-main" />
+    <text x="40" y="5" fill="#cbd5e1" font-family="sans-serif" font-size="12">FP (Fonction Principale)</text>
+    
+    <line x1="0" y1="20" x2="30" y2="20" class="link-constraint" />
+    <text x="40" y="25" fill="#cbd5e1" font-family="sans-serif" font-size="12">FC (Fonction Contrainte)</text>
+  </g>
+
+</svg>

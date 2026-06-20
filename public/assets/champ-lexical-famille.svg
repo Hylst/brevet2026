@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Champ Lexical & Famille de Mots</text>
+
+  <!-- Famille de Mots -->
+  <rect x="50" y="100" width="330" height="250" fill="#334155" rx="8" />
+  <rect x="50" y="100" width="330" height="40" fill="#3b82f6" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+  <text x="215" y="125" font-family="sans-serif" font-size="18" fill="#fff" font-weight="bold" text-anchor="middle">Famille de Mots</text>
+
+  <text x="215" y="165" font-family="sans-serif" font-size="14" fill="#cbd5e1" text-anchor="middle">Mots construits sur le MÊME RADICAL</text>
+  <text x="215" y="185" font-family="sans-serif" font-size="14" fill="#cbd5e1" text-anchor="middle">Appartiennent à des classes grammaticales diff.</text>
+
+  <rect x="140" y="200" width="150" height="30" fill="#1e293b" rx="4" />
+  <text x="215" y="220" font-family="sans-serif" font-size="16" fill="#60a5fa" font-weight="bold" text-anchor="middle">TERRE</text>
+
+  <path d="M 140 215 L 100 240" stroke="#3b82f6" stroke-width="2" />
+  <text x="100" y="255" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold" text-anchor="middle">Terrain (N)</text>
+
+  <path d="M 215 230 L 215 280" stroke="#3b82f6" stroke-width="2" />
+  <text x="215" y="300" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold" text-anchor="middle">Territoire (N)</text>
+
+  <path d="M 290 215 L 330 240" stroke="#3b82f6" stroke-width="2" />
+  <text x="330" y="255" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold" text-anchor="middle">Enterrer (V)</text>
+
+
+  <!-- Champ Lexical -->
+  <rect x="420" y="100" width="330" height="250" fill="#334155" rx="8" />
+  <rect x="420" y="100" width="330" height="40" fill="#10b981" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+  <text x="585" y="125" font-family="sans-serif" font-size="18" fill="#fff" font-weight="bold" text-anchor="middle">Champ Lexical</text>
+
+  <text x="585" y="165" font-family="sans-serif" font-size="14" fill="#cbd5e1" text-anchor="middle">Mots se rapportant au MÊME THÈME</text>
+  <text x="585" y="185" font-family="sans-serif" font-size="14" fill="#cbd5e1" text-anchor="middle">Aucun lien de radical nécessaire</text>
+
+  <circle cx="585" cy="250" r="70" fill="#1e293b" stroke="#10b981" stroke-width="2" stroke-dasharray="4 4" />
+  <text x="585" y="230" font-family="sans-serif" font-size="16" fill="#34d399" font-weight="bold" text-anchor="middle">LA MER</text>
+
+  <text x="540" y="260" font-family="sans-serif" font-size="12" fill="#f8fafc">Bateau</text>
+  <text x="620" y="250" font-family="sans-serif" font-size="12" fill="#f8fafc">Bleu</text>
+  <text x="580" y="280" font-family="sans-serif" font-size="12" fill="#f8fafc">Nager</text>
+  <text x="630" y="280" font-family="sans-serif" font-size="12" fill="#f8fafc">Salé</text>
+  <text x="530" y="220" font-family="sans-serif" font-size="12" fill="#f8fafc">Vagues</text>
+
+</svg>

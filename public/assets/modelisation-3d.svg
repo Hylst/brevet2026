@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .screen { fill: #1e293b; stroke: #475569; stroke-width: 4; rx: 10; }
+      .wireframe { fill: none; stroke: #3b82f6; stroke-width: 2; stroke-dasharray: 4,2; }
+      .solid { fill: #60a5fa; stroke: #2563eb; stroke-width: 2; }
+      .laser { stroke: #fb7185; stroke-width: 3; fill: none; opacity: 0.8; }
+      .beam { stroke: #ef4444; stroke-width: 2; stroke-dasharray: 10,20; fill: none; }
+      
+      @keyframes build-up {
+        0% { height: 0; y: 60; }
+        100% { height: 50px; y: 10; }
+      }
+      @keyframes beam-anim {
+        0% { stroke-dashoffset: 30; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .print-solid { animation: build-up 3s linear infinite alternate; }
+      .print-beam { animation: beam-anim 0.5s linear infinite; }
+      
+      .arrow { fill: none; stroke: #fcd34d; stroke-width: 4; stroke-dasharray: 10,10; animation: beam-anim 1s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="800" height="400" class="bg" rx="20" />
+  <text x="400" y="40" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="24" text-anchor="middle">Modélisation et Impression 3D (C.A.O)</text>
+
+  <!-- Left: Computer (Modélisation) -->
+  <g transform="translate(150, 150)">
+    <rect x="-100" y="-80" width="200" height="140" class="screen" />
+    <rect x="-20" y="60" width="40" height="20" fill="#475569" />
+    <rect x="-50" y="80" width="100" height="10" fill="#475569" rx="3" />
+    
+    <text x="0" y="110" fill="#cbd5e1" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Logiciel C.A.O</text>
+    <text x="0" y="130" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">(Modèle Virtuel)</text>
+
+    <!-- Wireframe Cube -->
+    <g transform="translate(-30, -30)">
+      <polygon points="0,0 40,-20 80,0 40,20" class="wireframe" />
+      <polygon points="0,0 40,20 40,60 0,40" class="wireframe" />
+      <polygon points="40,20 80,0 80,40 40,60" class="wireframe" />
+    </g>
+  </g>
+
+  <!-- Right: 3D Printer (Concrétisation) -->
+  <g transform="translate(600, 150)">
+    <rect x="-80" y="-80" width="160" height="160" fill="none" stroke="#64748b" stroke-width="4" rx="5" />
+    
+    <!-- Printer Head -->
+    <rect x="-20" y="-60" width="40" height="20" fill="#334155" />
+    <polygon points="-5,-40 5,-40 0,-30" fill="#ef4444" />
+    <line x1="0" y1="-30" x2="0" y2="10" class="print-beam beam" />
+    
+    <!-- Platform -->
+    <rect x="-60" y="60" width="120" height="10" fill="#475569" />
+
+    <!-- Solid printed object (animated) -->
+    <g transform="translate(-25, 0)">
+      <rect x="0" y="10" width="50" height="50" class="solid print-solid" />
+    </g>
+    
+    <text x="0" y="110" fill="#cbd5e1" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Imprimante 3D</text>
+    <text x="0" y="130" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">(Objet Réel)</text>
+  </g>
+
+  <!-- Flow arrow -->
+  <path d="M 300 150 L 480 150" class="arrow" marker-end="url(#arrow-head)" />
+  <text x="390" y="130" fill="#fbbf24" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Envoi du modèle numérique</text>
+  
+  <marker id="arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#fcd34d" />
+  </marker>
+
+</svg>

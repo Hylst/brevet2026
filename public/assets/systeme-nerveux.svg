@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Le Système Nerveux</text>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cbd5e1" />
+    </marker>
+  </defs>
+
+  <!-- Stimulus -->
+  <text x="100" y="120" font-family="sans-serif" font-size="18" fill="#eab308" font-weight="bold" text-anchor="middle">Stimulus</text>
+  <text x="100" y="140" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">(ex: Bruit, Lumière)</text>
+
+  <!-- Récepteur -->
+  <rect x="50" y="180" width="100" height="60" fill="#3b82f6" rx="8" />
+  <text x="100" y="210" font-family="sans-serif" font-size="14" fill="#fff" font-weight="bold" text-anchor="middle">Organe</text>
+  <text x="100" y="225" font-family="sans-serif" font-size="14" fill="#fff" font-weight="bold" text-anchor="middle">Récepteur</text>
+  <text x="100" y="255" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">(Œil, Oreille)</text>
+
+  <path d="M 100 150 L 100 170" stroke="#eab308" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Message Nerveux Sensitif (Nerf) -->
+  <path d="M 150 210 L 290 210" stroke="#3b82f6" stroke-width="4" stroke-dasharray="5 5" fill="none" marker-end="url(#arrow)"/>
+  <text x="220" y="195" font-family="sans-serif" font-size="12" fill="#3b82f6" text-anchor="middle" font-weight="bold">Message Nerveux</text>
+  <text x="220" y="225" font-family="sans-serif" font-size="12" fill="#3b82f6" text-anchor="middle" font-weight="bold">Sensitif (Nerfs)</text>
+
+
+  <!-- SNC (Centre Nerveux) -->
+  <rect x="300" y="110" width="200" height="150" fill="#8b5cf6" rx="20" />
+  <text x="400" y="140" font-family="sans-serif" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">CENTRES NERVEUX</text>
+  
+  <rect x="320" y="160" width="160" height="30" fill="#a855f7" rx="4" />
+  <text x="400" y="180" font-family="sans-serif" font-size="14" fill="#fff" text-anchor="middle">Cerveau</text>
+
+  <rect x="320" y="210" width="160" height="30" fill="#a855f7" rx="4" />
+  <text x="400" y="230" font-family="sans-serif" font-size="14" fill="#fff" text-anchor="middle">Moelle Épinière</text>
+  
+  <text x="400" y="280" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">Intégration & Traitement</text>
+
+
+  <!-- Message Nerveux Moteur (Nerf) -->
+  <path d="M 510 210 L 640 210" stroke="#ef4444" stroke-width="4" stroke-dasharray="5 5" fill="none" marker-end="url(#arrow)"/>
+  <text x="575" y="195" font-family="sans-serif" font-size="12" fill="#ef4444" text-anchor="middle" font-weight="bold">Message Nerveux</text>
+  <text x="575" y="225" font-family="sans-serif" font-size="12" fill="#ef4444" text-anchor="middle" font-weight="bold">Moteur (Nerfs)</text>
+
+  <!-- Effecteur -->
+  <rect x="650" y="180" width="100" height="60" fill="#ef4444" rx="8" />
+  <text x="700" y="210" font-family="sans-serif" font-size="14" fill="#fff" font-weight="bold" text-anchor="middle">Organe</text>
+  <text x="700" y="225" font-family="sans-serif" font-size="14" fill="#fff" font-weight="bold" text-anchor="middle">Effecteur</text>
+  <text x="700" y="255" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">(Muscles)</text>
+
+  <!-- Réponse -->
+  <path d="M 700 260 L 700 280" stroke="#10b981" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <text x="700" y="300" font-family="sans-serif" font-size="18" fill="#10b981" font-weight="bold" text-anchor="middle">Réponse / Action</text>
+  <text x="700" y="320" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">(Mouvement)</text>
+</svg>

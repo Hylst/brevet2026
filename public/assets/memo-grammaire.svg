@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Mémo Nature et Fonction</text>
+
+  <text x="400" y="70" font-family="sans-serif" font-size="14" fill="#cbd5e1" text-anchor="middle">Un mot a toujours une NATURE (ce qu'il est, ne change pas) et une FONCTION (son rôle, change selon la phrase).</text>
+
+  <rect x="50" y="100" width="330" height="260" fill="#334155" rx="8" />
+  <rect x="50" y="100" width="330" height="40" fill="#8b5cf6" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+  <text x="215" y="125" font-family="sans-serif" font-size="18" fill="#fff" font-weight="bold" text-anchor="middle">LA NATURE (Identité)</text>
+
+  <text x="215" y="160" font-family="sans-serif" font-size="14" fill="#cbd5e1" text-anchor="middle">Comme le métier (ex: Menuisier)</text>
+
+  <text x="70" y="200" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold">Variables :</text>
+  <text x="70" y="220" font-family="sans-serif" font-size="12" fill="#cbd5e1">- Nom</text>
+  <text x="70" y="240" font-family="sans-serif" font-size="12" fill="#cbd5e1">- Déterminant</text>
+  <text x="70" y="260" font-family="sans-serif" font-size="12" fill="#cbd5e1">- Adjectif</text>
+  <text x="70" y="280" font-family="sans-serif" font-size="12" fill="#cbd5e1">- Pronom</text>
+  <text x="70" y="300" font-family="sans-serif" font-size="12" fill="#cbd5e1">- Verbe</text>
+
+  <text x="240" y="200" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold">Invariables :</text>
+  <text x="240" y="220" font-family="sans-serif" font-size="12" fill="#cbd5e1">- Adverbe</text>
+  <text x="240" y="240" font-family="sans-serif" font-size="12" fill="#cbd5e1">- Préposition</text>
+  <text x="240" y="260" font-family="sans-serif" font-size="12" fill="#cbd5e1">- Conjonction</text>
+  <text x="240" y="280" font-family="sans-serif" font-size="12" fill="#cbd5e1">- Interjection</text>
+
+
+  <rect x="420" y="100" width="330" height="260" fill="#334155" rx="8" />
+  <rect x="420" y="100" width="330" height="40" fill="#f59e0b" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+  <text x="585" y="125" font-family="sans-serif" font-size="18" fill="#fff" font-weight="bold" text-anchor="middle">LA FONCTION (Rôle)</text>
+
+  <text x="585" y="160" font-family="sans-serif" font-size="14" fill="#cbd5e1" text-anchor="middle">Comme l'action effectuée (ex: scier, poncer)</text>
+
+  <text x="440" y="200" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold">Liées au Verbe :</text>
+  <text x="440" y="220" font-family="sans-serif" font-size="12" fill="#cbd5e1">- Sujet</text>
+  <text x="440" y="240" font-family="sans-serif" font-size="12" fill="#cbd5e1">- COD / COI (Compléments d'Objet)</text>
+  <text x="440" y="260" font-family="sans-serif" font-size="12" fill="#cbd5e1">- Complément Circonstanciel (CC)</text>
+  <text x="440" y="280" font-family="sans-serif" font-size="12" fill="#cbd5e1">- Attribut du Sujet</text>
+
+  <text x="440" y="310" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold">Liées au Nom :</text>
+  <text x="440" y="330" font-family="sans-serif" font-size="12" fill="#cbd5e1">- Épithète / Complément du Nom (CdN)</text>
+
+</svg>

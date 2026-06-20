@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Méthodologie : L'Analyse Littéraire</text>
+
+  <text x="400" y="70" font-family="sans-serif" font-size="14" fill="#cbd5e1" text-anchor="middle">Moyen mnémotechnique : CITATION + PROCÉDÉ = INTERPRÉTATION</text>
+
+  <g transform="translate(100, 120)">
+    <!-- Citation -->
+    <rect x="0" y="0" width="180" height="150" fill="#334155" rx="8" />
+    <rect x="0" y="0" width="180" height="40" fill="#ef4444" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+    <text x="90" y="25" font-family="sans-serif" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">1. Le Repérage</text>
+    
+    <text x="90" y="70" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold" text-anchor="middle">La Citation</text>
+    <text x="90" y="100" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">Je prends un texte ou</text>
+    <text x="90" y="120" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">une phrase entre "".</text>
+    <text x="90" y="140" font-family="sans-serif" font-size="12" fill="#cbd5e1" font-style="italic" text-anchor="middle">Ex : "il hurla à la mort"</text>
+  </g>
+
+  <path d="M 290 195 L 310 195" stroke="#f8fafc" stroke-width="4" fill="none" />
+  <path d="M 300 185 L 300 205" stroke="#f8fafc" stroke-width="4" fill="none" />
+
+  <g transform="translate(330, 120)">
+    <!-- Procédé -->
+    <rect x="0" y="0" width="180" height="150" fill="#334155" rx="8" />
+    <rect x="0" y="0" width="180" height="40" fill="#3b82f6" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+    <text x="90" y="25" font-family="sans-serif" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">2. L'Analyse</text>
+    
+    <text x="90" y="70" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold" text-anchor="middle">Le Procédé Livresque</text>
+    <text x="90" y="100" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">Figure de style, temps,</text>
+    <text x="90" y="120" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">ponctuation, grammaire.</text>
+    <text x="90" y="140" font-family="sans-serif" font-size="12" fill="#cbd5e1" font-style="italic" text-anchor="middle">Ex : Hyperbole</text>
+  </g>
+
+
+  <path d="M 520 190 L 540 190" stroke="#f8fafc" stroke-width="4" fill="none" />
+  <path d="M 520 200 L 540 200" stroke="#f8fafc" stroke-width="4" fill="none" />
+  <polygon points="545,195 535,185 535,205" fill="#f8fafc" />
+
+  <g transform="translate(560, 120)">
+    <!-- Interprétation -->
+    <rect x="0" y="0" width="180" height="150" fill="#334155" rx="8" />
+    <rect x="0" y="0" width="180" height="40" fill="#10b981" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+    <text x="90" y="25" font-family="sans-serif" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">3. Le Sens</text>
+    
+    <text x="90" y="70" font-family="sans-serif" font-size="14" fill="#f8fafc" font-weight="bold" text-anchor="middle">L'Interprétation</text>
+    <text x="90" y="100" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">Qu'est ce que ça montre ?</text>
+    <text x="90" y="120" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">Quel effet produit l'auteur ?</text>
+    <text x="90" y="140" font-family="sans-serif" font-size="12" fill="#cbd5e1" font-style="italic" text-anchor="middle">Ex : Souligne son désespoir absolu.</text>
+  </g>
+
+  <rect x="200" y="310" width="400" height="60" fill="#1e293b" stroke="#eab308" stroke-width="2" rx="8" />
+  <text x="400" y="345" font-family="sans-serif" font-size="14" fill="#eab308" font-weight="bold" text-anchor="middle">Dans vos réponses, il ne faut jamais séparer les 3 étapes !</text>
+
+</svg>

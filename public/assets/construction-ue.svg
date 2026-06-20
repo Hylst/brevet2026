@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .text-title { fill: #f8fafc; font-family: 'Inter', sans-serif; font-size: 20px; font-weight: bold; text-anchor: middle; }
+      .text-date { fill: #3b82f6; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .text-event { fill: #f8fafc; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: bold; text-anchor: middle; }
+      .text-desc { fill: #94a3b8; font-family: 'Inter', sans-serif; font-size: 12px; text-anchor: middle; }
+      .timeline-line { stroke: #475569; stroke-width: 4; }
+      .timeline-point { fill: #1e293b; stroke: #3b82f6; stroke-width: 4; }
+      .flag-blue { fill: #1d4ed8; }
+      .flag-star { fill: #fbbf24; }
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" class="bg" />
+
+  <text x="400" y="40" class="text-title">Les Grandes Étapes de la Construction Européenne</text>
+
+  <!-- EU Flag Motif -->
+  <g transform="translate(720, 20) scale(0.5)">
+    <rect width="120" height="80" class="flag-blue" rx="4" />
+    <g transform="translate(60, 40)">
+      <!-- 12 stars simplified as small circles for SVG simplicity -->
+      <circle cx="0" cy="-25" r="3" class="flag-star"/>
+      <circle cx="12.5" cy="-21.6" r="3" class="flag-star"/>
+      <circle cx="21.6" cy="-12.5" r="3" class="flag-star"/>
+      <circle cx="25" cy="0" r="3" class="flag-star"/>
+      <circle cx="21.6" cy="12.5" r="3" class="flag-star"/>
+      <circle cx="12.5" cy="21.6" r="3" class="flag-star"/>
+      <circle cx="0" cy="25" r="3" class="flag-star"/>
+      <circle cx="-12.5" cy="21.6" r="3" class="flag-star"/>
+      <circle cx="-21.6" cy="12.5" r="3" class="flag-star"/>
+      <circle cx="-25" cy="0" r="3" class="flag-star"/>
+      <circle cx="-21.6" cy="-12.5" r="3" class="flag-star"/>
+      <circle cx="-12.5" cy="-21.6" r="3" class="flag-star"/>
+    </g>
+  </g>
+
+  <!-- Main Timeline Line -->
+  <line x1="50" y1="150" x2="750" y2="150" class="timeline-line" />
+
+  <!-- 1951 -->
+  <circle cx="150" cy="150" r="10" class="timeline-point" />
+  <text x="150" y="120" class="text-date">1951</text>
+  <text x="150" y="185" class="text-event">CECA</text>
+  <text x="150" y="205" class="text-desc">Communauté Européenne</text>
+  <text x="150" y="220" class="text-desc">du Charbon et de l'Acier</text>
+  <text x="150" y="235" class="text-desc">(6 pays fondateurs)</text>
+
+  <!-- 1957 -->
+  <circle cx="316" cy="150" r="10" class="timeline-point" />
+  <text x="316" y="120" class="text-date">1957</text>
+  <text x="316" y="185" class="text-event">Traité de Rome</text>
+  <text x="316" y="205" class="text-desc">Création de la CEE</text>
+  <text x="316" y="220" class="text-desc">(Marché commun)</text>
+
+  <!-- 1992 -->
+  <circle cx="483" cy="150" r="10" class="timeline-point" />
+  <text x="483" y="120" class="text-date">1992</text>
+  <text x="483" y="185" class="text-event">Traité de Maastricht</text>
+  <text x="483" y="205" class="text-desc">Naissance de l'UE</text>
+  <text x="483" y="220" class="text-desc">Citoyenneté européenne</text>
+
+  <!-- 2002 -->
+  <circle cx="650" cy="150" r="10" class="timeline-point" />
+  <text x="650" y="120" class="text-date">2002</text>
+  <text x="650" y="185" class="text-event">L'Euro (€)</text>
+  <text x="650" y="205" class="text-desc">Mise en circulation</text>
+  <text x="650" y="220" class="text-desc">de la monnaie unique</text>
+
+</svg>

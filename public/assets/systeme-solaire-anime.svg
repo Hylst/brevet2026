@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      @keyframes orbit {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .planet-orbit { fill: none; stroke: #334155; stroke-width: 1; stroke-dasharray: 4,4; }
+      .sun { fill: #facc15; filter: drop-shadow(0 0 10px #eab308); }
+      .mercury-group { animation: orbit 4s linear infinite; }
+      .venus-group { animation: orbit 6s linear infinite; }
+      .earth-group { animation: orbit 10s linear infinite; }
+      .mars-group { animation: orbit 15s linear infinite; }
+      .jupiter-group { animation: orbit 30s linear infinite; }
+      .saturn-group { animation: orbit 45s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="800" height="400" fill="#0f172a" rx="20"/>
+
+  <g transform="translate(400, 200)">
+    <!-- Orbits -->
+    <circle r="40" class="planet-orbit"/>
+    <circle r="60" class="planet-orbit"/>
+    <circle r="90" class="planet-orbit"/>
+    <circle r="120" class="planet-orbit"/>
+    <circle r="160" class="planet-orbit"/>
+    <circle r="220" class="planet-orbit"/>
+
+    <!-- Sun -->
+    <circle r="20" class="sun"/>
+
+    <!-- Planets -->
+    <g class="mercury-group">
+      <circle cx="40" cy="0" r="3" fill="#a8a29e"/>
+    </g>
+    <g class="venus-group">
+      <circle cx="60" cy="0" r="5" fill="#fcd34d"/>
+    </g>
+    <g class="earth-group">
+      <circle cx="90" cy="0" r="6" fill="#3b82f6"/>
+      <!-- Moon -->
+      <g transform="translate(90, 0)">
+        <g style="animation: orbit 2s linear infinite;">
+          <circle cx="10" cy="0" r="1.5" fill="#e5e7eb"/>
+        </g>
+      </g>
+    </g>
+    <g class="mars-group">
+      <circle cx="120" cy="0" r="4" fill="#ef4444"/>
+    </g>
+    <g class="jupiter-group">
+      <circle cx="160" cy="0" r="12" fill="#fdba74"/>
+    </g>
+    <g class="saturn-group">
+      <circle cx="220" cy="0" r="10" fill="#fde68a"/>
+      <!-- Saturn ring -->
+      <ellipse cx="220" cy="0" rx="16" ry="4" fill="none" stroke="#fef3c7" stroke-width="2" transform="rotate(20 220 0)"/>
+    </g>
+  </g>
+</svg>

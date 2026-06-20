@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: 'Inter', sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .label { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: bold; fill: #1e293b; }
+      .math { font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: bold; fill: #dc2626; }
+      .desc { font-family: 'Inter', sans-serif; font-size: 12px; fill: #475569; }
+      .shape { fill: #bfdbfe; stroke: #2563eb; stroke-width: 2; opacity: 0.8; }
+      .shape-line { stroke: #2563eb; stroke-width: 2; fill: none; }
+      .shape-dashed { stroke: #2563eb; stroke-width: 2; stroke-dasharray: 4,4; fill: none; }
+      .measure { stroke: #0f172a; stroke-width: 1; stroke-dasharray: 2,2; fill: none; }
+      .measure-text { font-family: 'Inter', sans-serif; font-size: 14px; fill: #0f172a; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="12" />
+
+  <!-- Title -->
+  <text x="400" y="40" class="title" text-anchor="middle">Volumes des Solides Usuels</text>
+
+  <!-- CYLINDER (Solide Droit) -->
+  <g transform="translate(100, 100)">
+    <text x="50" y="-20" class="label" text-anchor="middle">Cylindre</text>
+    <text x="50" y="-5" class="desc" text-anchor="middle">(Solide Droit)</text>
+    
+    <!-- Top ellipse -->
+    <ellipse cx="50" cy="20" rx="40" ry="15" class="shape" />
+    <!-- Body -->
+    <path d="M 10 20 L 10 120 A 40 15 0 0 0 90 120 L 90 20 Z" class="shape" />
+    <!-- Bottom dashed ellipse back -->
+    <path d="M 10 120 A 40 15 0 0 1 90 120" class="shape-dashed" />
+    
+    <!-- Radius r -->
+    <line x1="50" y1="20" x2="90" y2="20" class="measure" />
+    <text x="70" y="15" class="measure-text">r</text>
+    <!-- Height h -->
+    <line x1="-10" y1="20" x2="-10" y2="120" class="measure" />
+    <text x="-25" y="75" class="measure-text">h</text>
+
+    <!-- Formula -->
+    <text x="50" y="170" class="math" text-anchor="middle">V = π × r² × h</text>
+  </g>
+
+  <!-- CONE (Solide Pointu) -->
+  <g transform="translate(350, 100)">
+    <text x="50" y="-20" class="label" text-anchor="middle">Cône</text>
+    <text x="50" y="-5" class="desc" text-anchor="middle">(Solide Pointu)</text>
+    
+    <!-- Cone body -->
+    <path d="M 50 20 L 10 120 A 40 15 0 0 0 90 120 Z" class="shape" />
+    <!-- Bottom dashed ellipse back -->
+    <path d="M 10 120 A 40 15 0 0 1 90 120" class="shape-dashed" />
+    
+    <!-- Radius r -->
+    <line x1="50" y1="120" x2="90" y2="120" class="measure" />
+    <text x="70" y="135" class="measure-text">r</text>
+    <!-- Height h (dashed inside) -->
+    <line x1="50" y1="20" x2="50" y2="120" class="measure" />
+    <text x="40" y="75" class="measure-text">h</text>
+
+    <!-- Formula -->
+    <text x="50" y="170" class="math" text-anchor="middle">V = (π × r² × h) / 3</text>
+  </g>
+
+  <!-- SPHERE (Boule) -->
+  <g transform="translate(600, 100)">
+    <text x="50" y="-20" class="label" text-anchor="middle">Sphère / Boule</text>
+    
+    <!-- Outer circle -->
+    <circle cx="50" cy="70" r="50" class="shape" />
+    <!-- Equator front -->
+    <path d="M 0 70 A 50 15 0 0 0 100 70" class="shape-line" />
+    <!-- Equator back -->
+    <path d="M 0 70 A 50 15 0 0 1 100 70" class="shape-dashed" />
+    
+    <!-- Radius r -->
+    <line x1="50" y1="70" x2="100" y2="70" class="measure" />
+    <text x="75" y="65" class="measure-text">r</text>
+    <!-- Center point -->
+    <circle cx="50" cy="70" r="2" fill="#0f172a" />
+
+    <!-- Formula -->
+    <text x="50" y="170" class="math" text-anchor="middle">V = 4/3 × π × r³</text>
+  </g>
+
+  <!-- Conversion Box -->
+  <rect x="250" y="320" width="300" height="50" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" rx="8" />
+  <text x="400" y="340" class="label" text-anchor="middle" font-size="14">À retenir par cœur :</text>
+  <text x="400" y="360" class="math" text-anchor="middle" fill="#2563eb">1 L = 1 dm³  |  1 mL = 1 cm³</text>
+
+</svg>

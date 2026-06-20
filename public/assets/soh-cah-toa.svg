@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <rect width="800" height="400" fill="#1e293b" rx="20"/>
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#f8fafc" font-weight="bold" text-anchor="middle">Trigonométrie : SOH CAH TOA</text>
+
+  <!-- Right Triangle -->
+  <g transform="translate(150, 100)">
+    <!-- Fill -->
+    <polygon points="0,200 250,200 250,0" fill="#334155" />
+    
+    <!-- Right Angle Symbol -->
+    <polyline points="230,200 230,180 250,180" fill="none" stroke="#ef4444" stroke-width="3" />
+    
+    <!-- Angle Alpha -->
+    <path d="M 50 200 A 50 50 0 0 0 39 168" fill="none" stroke="#eab308" stroke-width="3" />
+    <text x="60" y="190" font-family="sans-serif" font-size="20" fill="#eab308" font-weight="bold">α</text>
+
+    <!-- Hypoténuse (Blue) -->
+    <line x1="0" y1="200" x2="250" y2="0" stroke="#3b82f6" stroke-width="5" />
+    <text x="100" y="80" font-family="sans-serif" font-size="16" fill="#3b82f6" font-weight="bold" transform="rotate(-38.6, 100, 80)">Hypoténuse (H)</text>
+
+    <!-- Opposé (Green) -->
+    <line x1="250" y1="0" x2="250" y2="200" stroke="#22c55e" stroke-width="5" />
+    <text x="260" y="110" font-family="sans-serif" font-size="16" fill="#22c55e" font-weight="bold">Opposé (O)</text>
+
+    <!-- Adjacent (Purple) -->
+    <line x1="0" y1="200" x2="250" y2="200" stroke="#a855f7" stroke-width="5" />
+    <text x="100" y="230" font-family="sans-serif" font-size="16" fill="#a855f7" font-weight="bold">Adjacent (A)</text>
+  </g>
+
+  <!-- Formulas Area -->
+  <g transform="translate(480, 100)">
+    <!-- SOH -->
+    <rect x="0" y="0" width="280" height="60" fill="#1e293b" stroke="#cbd5e1" stroke-width="2" rx="8" />
+    <text x="140" y="25" font-family="sans-serif" font-size="18" fill="#f8fafc" font-weight="bold" text-anchor="middle"><tspan fill="#eab308">S</tspan>in(α) = <tspan fill="#22c55e">O</tspan>pposé / <tspan fill="#3b82f6">H</tspan>ypoténuse</text>
+    <text x="140" y="45" font-family="sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">S O H</text>
+
+    <!-- CAH -->
+    <rect x="0" y="80" width="280" height="60" fill="#1e293b" stroke="#cbd5e1" stroke-width="2" rx="8" />
+    <text x="140" y="105" font-family="sans-serif" font-size="18" fill="#f8fafc" font-weight="bold" text-anchor="middle"><tspan fill="#eab308">C</tspan>os(α) = <tspan fill="#a855f7">A</tspan>djacent / <tspan fill="#3b82f6">H</tspan>ypoténuse</text>
+    <text x="140" y="125" font-family="sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">C A H</text>
+
+    <!-- TOA -->
+    <rect x="0" y="160" width="280" height="60" fill="#1e293b" stroke="#cbd5e1" stroke-width="2" rx="8" />
+    <text x="140" y="185" font-family="sans-serif" font-size="18" fill="#f8fafc" font-weight="bold" text-anchor="middle"><tspan fill="#eab308">T</tspan>an(α) = <tspan fill="#22c55e">O</tspan>pposé / <tspan fill="#a855f7">A</tspan>djacent</text>
+    <text x="140" y="205" font-family="sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">T O A</text>
+  </g>
+
+</svg>
